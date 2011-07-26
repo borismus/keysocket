@@ -1,6 +1,7 @@
 from setuptools import setup
 
 OPTIONS = {
+    'iconfile': 'icon.icns',
     'resources': ['icon.png', 'icon-hi.png']
 }
 
