@@ -11,30 +11,58 @@ function simulateClick(elementId) {
   document.getElementById(elementId).dispatchEvent(evt);
 }
 
-// Connect to a websocket server
-var connection = new WebSocket('ws://localhost:1337/');
+var connection = null;
+var isConnected = false;
 
-// When the connection is open, send some data to the server
-connection.onopen = function () {
-  connection.send('Ping'); // Send the message 'Ping' to the server
-};
+function connect() {
+  // Connect to a websocket server
+  connection = new WebSocket('ws://localhost:1337/');
 
-// Log errors
-connection.onerror = function (error) {
-  console.log('WebSocket Error ' + error);
-};
+  // When the connection is open, send some data to the server
+  connection.onopen = function() {
+    console.log('WS open');
+    isConnected = true;
+    connection.send('Ping'); // Send the message 'Ping' to the server
 
-// Log messages from the server
-connection.onmessage = function (e) {
-  var key = e.data;
-  if (key == PREV) {
-    // Play the previous song
-    simulateClick('rew');
-  } else if (key == NEXT) {
-    // Play the next song
-    simulateClick('ff');
-  } else if (key == PLAY) {
-    // Play the next song
-    simulateClick('playPause');
+
+    // Log errors
+    connection.onerror = function(error) {
+      console.log('WS error', error);
+    };
+
+    // Log messages from the server
+    connection.onmessage = function(e) {
+      console.log('WS message', e);
+      var key = e.data;
+      if (key == PREV) {
+        // Play the previous song
+        simulateClick('rew');
+      } else if (key == NEXT) {
+        // Play the next song
+        simulateClick('ff');
+      } else if (key == PLAY) {
+        // Play the next song
+        simulateClick('playPause');
+      }
+    };
+
+    connection.onclose = function(e) {
+      console.log('WS close', e);
+      isConnected = false;
+      reconnect();
+    };
+  };
+
+}
+
+function reconnect() {
+  // If we're not connected,
+  if (!isConnected) {
+    // Attempt to connect.
+    connect();
+    // Then ensure we're connected.
+    setTimeout(reconnect, 1000);
   }
-};
+}
+
+reconnect();

@@ -27,8 +27,8 @@ class KeySocketApp(NSApplication):
         menu.addItem_(menuitem)
         self.statusitem.setMenu_(menu)
 
+
     def sendEvent_(self, event):
-        print event
         if event.type() is NSSystemDefined and event.subtype() is 8:
             data = event.data1()
             keyCode = (data & 0xFFFF0000) >> 16
