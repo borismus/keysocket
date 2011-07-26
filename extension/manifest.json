@@ -1,0 +1,13 @@
+{
+  "name": "Google Music Media Keys",
+  "version": "0.1",
+  "icons": {"128": "icon128.png"},
+  "description": "Control Google Music with your keyboard's media keys",
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["http://music.google.com/*"],
+      "js": ["keysocket.js"]
+    }
+  ]
+}
