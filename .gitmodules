@@ -1,3 +1,0 @@
-[submodule "CoreWebSocket"]
-	path = CoreWebSocket
-	url = git://github.com/mirek/CoreWebSocket.git
