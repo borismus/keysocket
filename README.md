@@ -22,5 +22,5 @@ To build Key Socket.app,
 * Looking for adapters for other music players.
 * Looking for Key Socket servers for Windows and Linux.
 
-[crx]: 
+[crx]: https://chrome.google.com/webstore/detail/fphfgdknbpakeedbaenojjdcdoajihik
 [app]: https://github.com/downloads/borismus/keysocket/KeySocket.zip
