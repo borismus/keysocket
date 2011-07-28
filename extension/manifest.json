@@ -1,15 +1,23 @@
 {
-  "name": "Google Music Media Keys",
+  "name": "Key Socket Media Keys",
   "version": "0.1",
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
             "128": "icon128.png" },
-  "description": "Control Google Music with your keyboard's media keys",
+  "description": "Control your favorite web-based music player with your keyboard's media keys",
   "permissions": ["tabs"],
   "content_scripts": [
     {
+      "matches": ["http://www.thesixtyone.com/*"],
+      "js": ["keysocket-t61.js"]
+    },
+    {
       "matches": ["http://music.google.com/*"],
-      "js": ["keysocket.js"]
+      "js": ["keysocket-gmusic.js"]
+    },
+    {
+      "matches": ["http://grooveshark.com/*"],
+      "js": ["keysocket-grooveshark.js"]
     }
   ]
 }

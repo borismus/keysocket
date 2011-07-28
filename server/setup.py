@@ -4,6 +4,7 @@ OPTIONS = {
     'iconfile': 'icon.icns',
     'resources': ['icon.png', 'icon-hi.png'],
     'plist': {
+        'CFBundleVersion': "0.1",
         'LSUIElement': True
     }
 }
