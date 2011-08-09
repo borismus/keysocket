@@ -18,6 +18,10 @@
     {
       "matches": ["http://grooveshark.com/*"],
       "js": ["keysocket-grooveshark.js"]
+    },
+    {
+      "matches": ["https://www.amazon.com/gp/dmusic/mp3/player*"],
+      "js": ["keysocket-amazon-cloud-player.js"]
     }
   ]
 }
