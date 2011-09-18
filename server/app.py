@@ -1,8 +1,22 @@
-# objc-related imports
+# PyObjC-related imports
 import objc
 from Foundation import *
 from AppKit import *
 from PyObjCTools import AppHelper
+
+# Twisted and autobahn imports
+try:
+     from twisted.internet import _threadedselect as threadedselectreactor
+except:
+     from twisted.internet import threadedselectreactor
+try:
+     threadedselectreactor.install()
+except:
+     pass
+from twisted.internet import reactor
+from broadcast import BroadcastServerFactory
+
+KEY_UP = 11
 
 class KeySocketApp(NSApplication):
 
@@ -27,6 +41,11 @@ class KeySocketApp(NSApplication):
         menu.addItem_(menuitem)
         self.statusitem.setMenu_(menu)
 
+        # Also start twisted
+        reactor.interleave(AppHelper.callAfter)
+        reactor.addSystemEventTrigger(
+            'after', 'shutdown', AppHelper.stopEventLoop)
+
 
     def sendEvent_(self, event):
         if event.type() is NSSystemDefined and event.subtype() is 8:
@@ -40,7 +59,27 @@ class KeySocketApp(NSApplication):
 
         NSApplication.sendEvent_(self, event)
 
-def initialize(callback):
+
+    def applicationShouldTerminate_(self, sender):
+        if reactor.running:
+            reactor.stop()
+            return False
+        return True
+
+    def applicationDidFinishLaunching_(self, aNotification):
+        """Create and display a new connection window
+        """
+
+
+if __name__ == '__main__':
+    factory = BroadcastServerFactory()
+    reactor.listenTCP(1337, factory)
+
+    def callback(code, state):
+        if state is KEY_UP:
+            factory.broadcast(str(code))
+
     app = KeySocketApp.sharedApplication()
     app.callback = callback
     AppHelper.runEventLoop()
+

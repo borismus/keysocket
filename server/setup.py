@@ -1,8 +1,8 @@
 from setuptools import setup
 
 OPTIONS = {
-    'iconfile': 'icon.icns',
-    'resources': ['icon.png', 'icon-hi.png'],
+    'iconfile': 'res/icon.icns',
+    'resources': ['res/icon.png', 'res/icon-hi.png'],
     'plist': {
         'CFBundleVersion': "0.1",
         'LSUIElement': True
@@ -11,7 +11,7 @@ OPTIONS = {
 
 setup(
     name="Key Socket",
-    app=["keysocket.py"],
+    app=["app.py"],
     options={'py2app': OPTIONS},
     setup_requires=["py2app"],
 )
