@@ -1,3 +1,7 @@
+Global keyboard bindings to control your Chrome-based music player.
+
+**UPDATE: Now works for all versions of Chrome**
+
 # Usage instructions:
 
 1. Install extension from the [chrome web store][crx].
@@ -7,13 +11,18 @@
 
 To build Key Socket.app,
 
+0. Prerequisites:
+
+    * [Autobahn](https://github.com/oberstet/Autobahn/) for websockets.
+    * [PyObjC](http://pyobjc.sourceforge.net) for keyboard events.
+
 1. Clone this repository:
 
     git clone git@github.com:borismus/keysocket.git
 
-2. Go into the server/ directory and run setup.py:
+2. Go into the `server` directory and run setup.py:
 
-    python setup.py py2app -A
+    python setup.py py2app
 
 3. The app is built in ./dist/Key\ Socket.app
 
