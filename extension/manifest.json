@@ -1,31 +1,32 @@
 {
-  "name": "Key Socket Media Keys",
-  "version": "0.2",
-  "icons": { "16": "icon16.png",
-             "48": "icon48.png",
-            "128": "icon128.png" },
-  "description": "Control your favorite web-based music player with your keyboard's media keys",
-  "permissions": ["tabs"],
-  "content_scripts": [
-    {
-      "matches": ["http://www.thesixtyone.com/*"],
-      "js": ["keysocket-t61.js"]
-    },
-    {
-      "matches": ["https://music.google.com/*"],
-      "js": ["keysocket-gmusic.js"]
-    },
-    {
-      "matches": ["http://grooveshark.com/*"],
-      "js": ["keysocket-grooveshark.js"]
-    },
-    {
-      "matches": ["https://www.amazon.com/gp/dmusic/mp3/player*"],
-      "js": ["keysocket-amazon-cloud-player.js"]
-    },
-    {
-      "matches": ["http://www.pandora.com/*"],
-      "js": ["keysocket-pandora.js"]
-    }
-  ]
+   "content_scripts": [ {
+      "js": [ "keysocket-t61.js" ],
+      "matches": [ "http://www.thesixtyone.com/*" ]
+   }, {
+      "js": [ "keysocket-gmusic.js" ],
+      "matches": [ "https://music.google.com/*" ]
+   }, {
+      "js": [ "keysocket-grooveshark.js" ],
+      "matches": [ "http://grooveshark.com/*" ]
+   }, {
+      "js": [ "keysocket-rdio.js" ],
+      "matches": [ "http://www.rdio.com/*" ]
+   }, {
+      "js": [ "keysocket-amazon-cloud-player.js" ],
+      "matches": [ "https://www.amazon.com/gp/dmusic/mp3/player*" ]
+   }, {
+      "js": [ "keysocket-pandora.js" ],
+      "matches": [ "http://www.pandora.com/*" ]
+   } ],
+   "description": "Control your favorite web-based music player with your keyboard's media keys",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxjIRcEWKE0VsTUWHXx8wGqqFnYkZsxGLdIjfwesprYw+PG0z+994P4qcXEw/iPtvVyeyuVxqk3fcSSrhZHiplX+PWO80ww0Sh0Hf2fFaj83FFa02oFO22iUoUjz0uGkfguBmR/AKUuMCGjRpdqrezbEC38RMWYQmDpVxYXrqnRwIDAQAB",
+   "name": "Key Socket Media Keys",
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.2"
 }
