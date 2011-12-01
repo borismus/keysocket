@@ -1,6 +1,8 @@
 {
-  "name": "Key Socket Media Keys",
-  "version": "0.2",
+   "name": "Key Socket Media Keys",
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.2"
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
             "128": "icon128.png" },
@@ -10,6 +12,10 @@
     {
       "matches": ["http://www.thesixtyone.com/*"],
       "js": ["keysocket-t61.js"]
+    },
+    {
+      "js": [ "keysocket-rdio.js" ],
+      "matches": [ "http://www.rdio.com/*" ]
     },
     {
       "matches": ["https://music.google.com/*"],
@@ -29,3 +35,4 @@
     }
   ]
 }
+
