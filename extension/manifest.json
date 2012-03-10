@@ -12,7 +12,7 @@
       "js": ["keysocket-t61.js"]
     },
     {
-      "matches": ["https://music.google.com/*"],
+      "matches": ["https://play.google.com/music/*"],
       "js": ["keysocket-gmusic.js"]
     },
     {
