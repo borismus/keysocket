@@ -12,6 +12,10 @@
       "js": ["keysocket-t61.js"]
     },
     {
+      "matches": ["http://www.rdio.com/*"],
+      "js": ["keysocket-rdio.js"]
+    },
+    {
       "matches": ["https://play.google.com/music/*"],
       "js": ["keysocket-gmusic.js"]
     },
