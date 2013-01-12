@@ -15,7 +15,7 @@ Global keyboard bindings to control your Chrome-based music player.
    `git clone git@github.com:max99x/keysocket.git`
 3. Build the app for your system:
     * **Mac**  
-      Go into the `server` directory and run setup.py:  
+      Go into the `server-mac` directory and run setup.py:  
       `python setup.py py2app`  
       The app is built in `./dist/Key Socket.app`.
     * **Windows**  
