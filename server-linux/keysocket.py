@@ -1,3 +1,4 @@
+#!/usr/bin/python2
 # Copyright (c) 2011 Adi Roiban.
 # Public Domain .
 # To run this script make sure you have twisted and python-bus installed.
@@ -56,10 +57,10 @@ class DBusMediaKeyListener(object):
     def unsubscribe(self, callback):
         self._subscribers.remove(callback)
 
- 
+
 class BroadcastServerProtocol(WebSocketServerProtocol):
     '''A simple protocol, that registers/unregisters itself.'''
- 
+
     def onOpen(self):
         self.factory.register(self)
 
@@ -71,10 +72,10 @@ class BroadcastServerProtocol(WebSocketServerProtocol):
     def connectionLost(self, reason):
         WebSocketServerProtocol.connectionLost(self, reason)
         self.factory.unregister(self)
- 
- 
+
+
 class BroadcastServerFactory(WebSocketServerFactory):
- 
+
     protocol = BroadcastServerProtocol
 
     def __init__(self, url):
@@ -106,8 +107,14 @@ class BroadcastServerFactory(WebSocketServerFactory):
 
 
 if __name__ == '__main__':
-    uri = 'ws://localhost:1337'
-    factory = BroadcastServerFactory(uri)
-    listenWS(factory)
-    print 'Starting %s on %s.' % (APP_NAME, uri)
-    reactor.run()
+  # Wake up the settings manager dbus service.
+  SessionBus().get_object(
+      'org.gnome.SettingsDaemon', '/org/gnome/SettingsDaemon').Awake(
+           dbus_interface='org.gnome.SettingsDaemon')
+
+  # Run the key monitor.
+  uri = 'ws://localhost:1337'
+  factory = BroadcastServerFactory(uri)
+  listenWS(factory)
+  print 'Starting %s on %s.' % (APP_NAME, uri)
+  reactor.run()
