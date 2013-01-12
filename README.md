@@ -7,7 +7,7 @@ Global keyboard bindings to control your Chrome-based music player.
    * **Mac**  
      Install [Key Socket.app][dl-mac].
    * **Windows**  
-     Download and run [KeySocket.windows..msi][dl-windows].
+     Download and run [KeySocket.windows.msi][dl-windows].
    * **Linux**  
      Download and run [KeySocket.linux.py][dl-linux].
      Note that `gnome-settings-daemon` must be running for KeySocket to work.
