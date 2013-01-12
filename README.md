@@ -46,8 +46,8 @@ Global keyboard bindings to control your Chrome-based music player.
 
 1. Prerequisites:
     * [Autobahn](https://github.com/oberstet/Autobahn/) for websockets.
-    * [PyGTK](http://pypi.python.org/pypi/PyGTK) and 
-    * [dbus-python](https://pypi.python.org/pypi/dbus-python/).
+    * [PyGTK](http://pypi.python.org/pypi/PyGTK) for the tray icon.
+    * [dbus-python](https://pypi.python.org/pypi/dbus-python/) for media key interception.
 2. Clone this repository:  
    `git clone git@github.com:max99x/keysocket.git`
 3. No building required. Just run `./server-linux/keysocket.py`.
