@@ -30,6 +30,10 @@
     {
       "matches": ["http://www.pandora.com/*"],
       "js": ["keysocket-pandora.js"]
+    },
+    {
+      "matches": ["http://vk.com/*"],
+      "js": ["keysocket-vkontakte.js"]
     }
   ]
 }
