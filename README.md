@@ -2,6 +2,14 @@ Global keyboard bindings to control your Chrome-based music player.
 
 **UPDATE: Now works for all versions of Chrome**
 
+**Supported sites:**
+   * vk.com (Vkontakte)
+   * Google Music
+   * Grooveshark
+   * thesixtyone
+   * Amazon music player
+   * Pandora
+
 # Usage instructions:
 
 1. Install extension from the [chrome web store][crx].
