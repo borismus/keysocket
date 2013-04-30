@@ -2,6 +2,16 @@ var PREV = 20;
 var PLAY = 16;
 var NEXT = 19;
 
+var fake_prev_el = document.createElement('button');
+fake_prev_el.id = "fake_prev_el";
+fake_prev_el.style.height = 0;
+fake_prev_el.style.width = 0;
+document.body.appendChild(fake_prev_el);
+
+var s = document.createElement('script')
+s.src = chrome.extension.getURL("rdio-prev.js")
+document.head.appendChild(s);
+
 function simulateClick(selector) {
   var evt = document.createEvent('MouseEvents');
   evt.initMouseEvent('click', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
@@ -32,10 +42,8 @@ function connect() {
       console.log('WS message', e);
       var key = e.data;
       if (key == PREV) {
-        // Play the previous song
-        simulateClick('.left_controls .prev');
+        simulateClick("#fake_prev_el")
       } else if (key == NEXT) {
-        // Play the next song.
         simulateClick('.left_controls .next');
       } else if (key == PLAY) {
         simulateClick('.left_controls .play_pause');
@@ -62,5 +70,3 @@ function reconnect() {
 }
 
 reconnect();
-
-
