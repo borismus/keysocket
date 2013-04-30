@@ -1,5 +1,6 @@
 {
   "name": "Key Socket Media Keys",
+  "manifest_version": 2,
   "version": "0.3",
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
@@ -34,6 +35,10 @@
     {
       "matches": ["http://vk.com/*"],
       "js": ["keysocket-vkontakte.js"]
+    },
+    {
+      "matches": ["http://tracksflow.com/*"],
+      "js": ["keysocket-tracksflow.js"]
     }
   ]
 }
