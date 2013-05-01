@@ -1,4 +1,6 @@
 {
+  "manifest_version": 2,
+
   "name": "Key Socket Media Keys",
   "version": "0.3",
   "icons": { "16": "icon16.png",
@@ -34,6 +36,10 @@
     {
       "matches": ["http://vk.com/*"],
       "js": ["keysocket-vkontakte.js"]
+    },
+    {
+      "matches": ["https://soundcloud.com/*", "http://soundcloud.com/*"],
+      "js": ["keysocket-soundcloud.js"]
     }
   ]
 }
