@@ -39,6 +39,10 @@
     {
       "matches": ["http://tracksflow.com/*"],
       "js": ["keysocket-tracksflow.js"]
+    },
+    {
+      "matches": ["http://www.jango.com/*"],
+      "js": ["keysocket-jango.js"]
     }
   ]
 }
