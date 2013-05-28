@@ -12,7 +12,9 @@ var PREV = 18,
     prevTarget = '.b-jambox__prev';
 
 var simulateClick = function (target) {
-    document.querySelectorAll(target)[0].click();
+    var evt = document.createEvent('MouseEvents');
+    evt.initMouseEvent('click', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    document.querySelectorAll(target)[0].dispatchEvent(evt);
 };
 
 var reconnect = function () {
