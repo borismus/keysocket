@@ -1,5 +1,5 @@
 #! /usr/bin/python
-import sys, gtk
+import gtk
 
 from pyxhook import HookManager
 
