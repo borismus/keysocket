@@ -1,10 +1,6 @@
 "use strict";
 
-var PREV = 18,
-    PLAY = 16,
-    NEXT = 17,
-
-    connection  = null,
+var connection  = null,
     isConnected = false,
 
     playTarget = '.b-jambox__play',
@@ -36,13 +32,13 @@ var connect = function () {
         };
 
         connection.onmessage = function (e) {
-            var key = e.data;
+            var key = parseInt(e.data);
 
-            if (key == PREV) {
+            if (18 === key || 20 === key) {
                 simulateClick(prevTarget);
-            } else if (key == NEXT) {
+            } else if (17 === key || 19 === key) {
                 simulateClick(nextTarget);
-            } else if (key == PLAY) {
+            } else if (16 === key) {
                 simulateClick(playTarget);
             }
         };
