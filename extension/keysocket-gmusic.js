@@ -2,17 +2,19 @@ var PREV = 20;
 var PLAY = 16;
 var NEXT = 19;
 
-function simulateClick(elementId) {
-  var evt = document.createEvent('MouseEvents');
-  evt.initMouseEvent('mousedown', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-  document.getElementById(elementId).dispatchEvent(evt);
-  evt = document.createEvent('MouseEvents');
-  evt.initMouseEvent('mouseup', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-  document.getElementById(elementId).dispatchEvent(evt);
-}
-
 var connection = null;
 var isConnected = false;
+
+// Inject javascript into the dom so we can call the native SJBpost function to
+// control the player.
+function gmusic_sjbpost(command) {
+  var elem = document.createElement("script");
+  elem.type = "text/javascript";
+  elem.innerHTML = "SJBpost('"+ command +"'); void 0";
+
+  var append = document.head.appendChild(elem);
+  document.head.removeChild(append);
+}
 
 function connect() {
   // Connect to a websocket server
@@ -23,7 +25,6 @@ function connect() {
     console.log('WS open');
     isConnected = true;
     connection.send('Ping'); // Send the message 'Ping' to the server
-
 
     // Log errors
     connection.onerror = function(error) {
@@ -36,13 +37,13 @@ function connect() {
       var key = e.data;
       if (key == PREV) {
         // Play the previous song
-        simulateClick('rew');
+        gmusic_sjbpost("prevSong");
       } else if (key == NEXT) {
         // Play the next song
-        simulateClick('ff');
+        gmusic_sjbpost("nextSong");
       } else if (key == PLAY) {
         // Play the next song
-        simulateClick('playPause');
+        gmusic_sjbpost("playPause");
       }
     };
 
@@ -52,7 +53,6 @@ function connect() {
       reconnect();
     };
   };
-
 }
 
 function reconnect() {
