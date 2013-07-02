@@ -3,12 +3,7 @@ var PLAY = 16;
 var NEXT = 19;
 
 function simulateClick(elementId) {
-  var evt = document.createEvent('MouseEvents');
-  evt.initMouseEvent('mousedown', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-  document.getElementById(elementId).dispatchEvent(evt);
-  evt = document.createEvent('MouseEvents');
-  evt.initMouseEvent('mouseup', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-  document.getElementById(elementId).dispatchEvent(evt);
+  document.querySelector('[data-id="' + elementId + '"]').click();
 }
 
 var connection = null;
@@ -36,13 +31,13 @@ function connect() {
       var key = e.data;
       if (key == PREV) {
         // Play the previous song
-        simulateClick('rew');
+        simulateClick('rewind');
       } else if (key == NEXT) {
         // Play the next song
-        simulateClick('ff');
+        simulateClick('forward');
       } else if (key == PLAY) {
         // Play the next song
-        simulateClick('playPause');
+        simulateClick('play-pause');
       }
     };
 
