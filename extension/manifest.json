@@ -37,7 +37,7 @@
       "js": ["keysocket-vkontakte.js"]
     },
     {
-      "matches": ["http://youtube.com/*"],
+      "matches": ["*://*.youtube.com/*"],
       "js": ["keysocket-youtube.js"]
     }
   ]

@@ -1,6 +1,6 @@
-var PREV = 20;
-var PLAY = 16;
-var NEXT = 19;
+var PREV = '20';
+var PLAY = '16';
+var NEXT = '19';
 
 function simulateClick(selector) {
   var evt = document.createEvent('MouseEvents');
@@ -23,7 +23,6 @@ function connect() {
 
   // When the connection is open, send some data to the server
   connection.onopen = function() {
-    console.log('WS open');
     isConnected = true;
     connection.send('Ping'); // Send the message 'Ping' to the server
 
@@ -35,9 +34,8 @@ function connect() {
 
     // Log messages from the server
     connection.onmessage = function(e) {
-      console.log('WS message', e);
       var key = e.data;
-      if (key == NEXT) {
+      if (key === NEXT) {
         simulateClick('.yt-uix-button-icon-playlist-bar-next');
       } else if (key === PLAY) {
         var video = document.getElementById("movie_player");
@@ -52,7 +50,6 @@ function connect() {
     };
 
     connection.onclose = function(e) {
-      console.log('WS close', e);
       isConnected = false;
       reconnect();
     };
