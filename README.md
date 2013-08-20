@@ -13,8 +13,13 @@ Global keyboard bindings to control your Chrome-based music player.
 
 # Usage instructions:
 
-1. Install extension from the [chrome web store][crx].
-2. Install Key Socket.app from the [github downloads][app]
++ Install extension from the [chrome web store][crx].
+
+## For Mac:
++ Install Key Socket.app from the [github downloads][app].
+
+## For Linux
++ Install keysocket_server from the [code.google.com downloads][linuxapp].
 
 # Build instructions:
 
@@ -38,7 +43,8 @@ To build Key Socket.app,
 # Contribute please!
 
 * Looking for adapters for other music players.
-* Looking for Key Socket servers for Windows and Linux.
+* Looking for Key Socket servers for Windows.
 
 [crx]: https://chrome.google.com/webstore/detail/fphfgdknbpakeedbaenojjdcdoajihik
 [app]: https://github.com/downloads/borismus/keysocket/KeySocket.zip
+[linuxapp]: https://keysocket-server.googlecode.com/files/keyserver.bz2
