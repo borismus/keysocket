@@ -1,12 +1,12 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
             "128": "icon128.png" },
   "description": "Control your favorite web-based music player with your keyboard's media keys",
   "permissions": ["tabs"],
-	"manifest_version": 2,
+  "manifest_version": 2,
   "content_scripts": [
     {
       "matches": ["http://www.thesixtyone.com/*"],
