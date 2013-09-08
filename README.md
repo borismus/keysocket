@@ -10,6 +10,7 @@ Global keyboard bindings to control your Chrome-based music player.
    * Pandora
    * vk.com (Vkontakte)
    * Youtube.com
+   * Slacker
 
 # Usage instructions:
 
