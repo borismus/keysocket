@@ -1,8 +1,8 @@
 "use strict";
 
-var PREV = '18';
+var PREV = '20';
 var PLAY = '16';
-var NEXT = '17';
+var NEXT = '19';
 
 var connection  = null;
 var isConnected = false;
