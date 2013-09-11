@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
             "128": "icon128.png" },
@@ -47,6 +47,14 @@
     {
       "matches": ["*://music.yandex.ru/*"],
       "js": ["keysocket-yandex-music.js"]
+    },
+    {
+      "matches": ["*://tracksflow.com/*"],
+      "js": ["keysocket-tracksflow.js"]
+    },
+    {
+      "matches": ["*://www.jango.com/*"],
+      "js": ["keysocket-jango.js"]
     }
   ]
 }

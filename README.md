@@ -12,6 +12,8 @@ Global keyboard bindings to control your Chrome-based music player.
    * Youtube.com
    * Slacker
    * Яндекс.Музыка (Yandex.Music)
+   * Tracksflow.com
+   * Jango.com
 
 # Usage instructions:
 
