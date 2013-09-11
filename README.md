@@ -11,6 +11,7 @@ Global keyboard bindings to control your Chrome-based music player.
    * vk.com (Vkontakte)
    * Youtube.com
    * Slacker
+   * Яндекс.Музыка (Yandex.Music)
 
 # Usage instructions:
 

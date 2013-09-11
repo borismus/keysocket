@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
             "128": "icon128.png" },
@@ -43,6 +43,10 @@
     {
       "matches": ["*://www.slacker.com/*"],
       "js": ["keysocket-slacker.js"]
+    },
+    {
+      "matches": ["*://music.yandex.ru/*"],
+      "js": ["keysocket-yandex-music.js"]
     }
   ]
 }
