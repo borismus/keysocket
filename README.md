@@ -14,6 +14,7 @@ Global keyboard bindings to control your Chrome-based music player.
    * Яндекс.Музыка (Yandex.Music)
    * Tracksflow.com
    * Jango.com
+   * Spotify
 
 # Usage instructions:
 
