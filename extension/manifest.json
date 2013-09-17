@@ -55,6 +55,10 @@
     {
       "matches": ["*://www.jango.com/*"],
       "js": ["keysocket-jango.js"]
+    },
+    {
+      "matches": ["*://play.spotify.com/*"],
+      "js": ["keysocket-spotify.js"]
     }
   ]
 }
