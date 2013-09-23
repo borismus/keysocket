@@ -59,6 +59,10 @@
     {
       "matches": ["*://play.spotify.com/*"],
       "js": ["keysocket-spotify.js"]
+    },
+    {
+      "matches": ["*://www.deezer.com/*"],
+      "js": ["keysocket-deezer.js"]
     }
   ]
 }
