@@ -15,6 +15,7 @@ Global keyboard bindings to control your Chrome-based music player.
    * Tracksflow.com
    * Jango.com
    * Spotify
+   * Deezer
 
 # Usage instructions:
 
