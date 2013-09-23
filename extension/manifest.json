@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
             "128": "icon128.png" },
