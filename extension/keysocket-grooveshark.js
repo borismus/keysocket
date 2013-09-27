@@ -7,7 +7,7 @@ function controlGrooveShark(key) {
         simulateClick(nextButton);
     } else if(key === PLAY) {
         var playPauseButton = document.getElementById('play-pause');
-        simulateClick(playPauseButton)
+        simulateClick(playPauseButton);
     } else if(key === PREV) {
         var backButton = document.getElementById('play-prev');
         simulateClick(backButton);

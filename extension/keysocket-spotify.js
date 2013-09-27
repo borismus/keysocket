@@ -8,7 +8,7 @@ function controlSpotify(key) {
         simulateClick(nextButton);
     } else if(key === PLAY) {
         var playPauseButton = frame.contentDocument.getElementById('play-pause');
-        simulateClick(playPauseButton)
+        simulateClick(playPauseButton);
     } else if(key === PREV) {
         var backButton = frame.contentDocument.getElementById('previous');
         simulateClick(backButton);

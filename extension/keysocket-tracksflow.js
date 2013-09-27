@@ -7,7 +7,7 @@ function controlTracksFlow(key) {
         simulateClick(nextButton);
     } else if(key === PLAY) {
         var playPauseButton = document.getElementsByClassName('js-play')[0];
-        simulateClick(playPauseButton)
+        simulateClick(playPauseButton);
     } else if(key === PREV) {
         var backButton = document.getElementsByClassName('js-forward')[0];
         simulateClick(backButton);

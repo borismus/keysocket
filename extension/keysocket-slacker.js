@@ -7,7 +7,7 @@ function controlSlacker(key) {
         simulateClick(nextButton);
     } else if(key === PLAY) {
         var playPauseButton = document.getElementById('playerPlayPauseButton');
-        simulateClick(playPauseButton)
+        simulateClick(playPauseButton);
     } else if(key === PREV) {
         var backButton = document.getElementById('playerSkipBackButton');
         simulateClick(backButton);

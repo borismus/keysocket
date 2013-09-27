@@ -22,10 +22,8 @@ function connect(audioController, connection, isConnected) {
 
 function reconnect(audioController, connection, isConnected) {
     if(!window[isConnected]) {
-        console.log("Reconnecting")
-        console.log(window[isConnected])
         connect(audioController, connection, isConnected);
-        setTimeout(function() { reconnect(audioController, connection, isConnected) }, 1000);
+        setTimeout(function() { reconnect(audioController, connection, isConnected); }, 1000);
     }
 }
 
@@ -36,9 +34,9 @@ function simulateClick(element) {
 
     var mouseup = document.createEvent('MouseEvents');
     mouseup.initMouseEvent('mouseup', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-    element.dispatchEvent(mouseup)
+    element.dispatchEvent(mouseup);
 
     var click = document.createEvent('MouseEvents');
     click.initMouseEvent('click', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-    element.dispatchEvent(click)
+    element.dispatchEvent(click);
 }
