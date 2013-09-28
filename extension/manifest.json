@@ -1,36 +1,39 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.7",
-  "icons": { "16": "icon16.png",
-             "48": "icon48.png",
-            "128": "icon128.png" },
+  "version": "0.4.8",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "description": "Control your favorite web-based music player with your keyboard's media keys",
+  "homepage_url": "https://github.com/borismus/keysocket",
   "permissions": ["tabs"],
-  "manifest_version": 2,
+  "manifest_version": 3,
   "content_scripts": [
     {
       "matches": ["http://www.thesixtyone.com/*"],
-      "js": ["keysocket-t61.js"]
+      "js": ["shared.js","keysocket-t61.js"]
     },
     {
       "matches": ["http://www.rdio.com/*"],
-      "js": ["keysocket-rdio.js"]
+      "js": ["shared.js","keysocket-rdio.js"]
     },
     {
       "matches": ["https://play.google.com/music/*"],
-      "js": ["keysocket-gmusic.js"]
+      "js": ["shared.js","keysocket-gmusic.js"]
     },
     {
       "matches": ["http://grooveshark.com/*"],
-      "js": ["keysocket-grooveshark.js"]
+      "js": ["shared.js","keysocket-grooveshark.js"]
     },
     {
       "matches": ["https://www.amazon.com/gp/dmusic/mp3/player*"],
-      "js": ["keysocket-amazon-cloud-player.js"]
+      "js": ["shared.js","keysocket-amazon-cloud-player.js"]
     },
     {
       "matches": ["http://www.pandora.com/*"],
-      "js": ["keysocket-pandora.js"]
+      "js": ["shared.js","keysocket-pandora.js"]
     },
     {
       "matches": ["http://vk.com/*"],
@@ -38,11 +41,11 @@
     },
     {
       "matches": ["*://*.youtube.com/*"],
-      "js": ["keysocket-youtube.js"]
+      "js": ["shared.js","keysocket-youtube.js"]
     },
     {
       "matches": ["*://www.slacker.com/*"],
-      "js": ["keysocket-slacker.js"]
+      "js": ["shared.js","keysocket-slacker.js"]
     },
     {
       "matches": ["*://music.yandex.ru/*"],
@@ -50,19 +53,19 @@
     },
     {
       "matches": ["*://tracksflow.com/*"],
-      "js": ["keysocket-tracksflow.js"]
+      "js": ["shared.js","keysocket-tracksflow.js"]
     },
     {
       "matches": ["*://www.jango.com/*"],
-      "js": ["keysocket-jango.js"]
+      "js": ["shared.js","keysocket-jango.js"]
     },
     {
       "matches": ["*://play.spotify.com/*"],
-      "js": ["keysocket-spotify.js"]
+      "js": ["shared.js","keysocket-spotify.js"]
     },
     {
       "matches": ["*://www.deezer.com/*"],
-      "js": ["keysocket-deezer.js"]
+      "js": ["shared.js","keysocket-deezer.js"]
     }
   ]
 }

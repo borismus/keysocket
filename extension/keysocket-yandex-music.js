@@ -1,5 +1,3 @@
-"use strict";
-
 var PREV = '20';
 var PLAY = '16';
 var NEXT = '19';
