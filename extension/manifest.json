@@ -9,7 +9,7 @@
   "description": "Control your favorite web-based music player with your keyboard's media keys",
   "homepage_url": "https://github.com/borismus/keysocket",
   "permissions": ["tabs"],
-  "manifest_version": 3,
+  "manifest_version": 2,
   "content_scripts": [
     {
       "matches": ["http://www.thesixtyone.com/*"],
