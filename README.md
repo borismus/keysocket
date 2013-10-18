@@ -29,11 +29,18 @@ Global keyboard bindings to control your Chrome-based music player.
      Download and run [KeySocket.linux.py][dl-linux].
      Note that `gnome-settings-daemon` must be running for KeySocket to work.
      It is installed by default on Gnome- and Unity-based systems, but may need
-     to be installed and started separately on systems using other deskstop environments
+     to be installed and started separately on systems using other deskstop
+     environments
      (KDE, XFCE, etc.). The script also depends on
      [Autobahn](https://github.com/oberstet/Autobahn/),
      [PyGTK](http://pypi.python.org/pypi/PyGTK) and 
      [dbus-python](https://pypi.python.org/pypi/dbus-python/).
+
+   * **Linux Alternate**
+     Download and run [keyserver.bz2][dl-linux-alt].
+
+     Note that this has no gui and requires that you know something of how X
+     maps media keys.
 
 # Building
 
@@ -99,3 +106,4 @@ Global keyboard bindings to control your Chrome-based music player.
 [dl-mac]: https://github.com/borismus/keysocket/raw/master/downloads/KeySocket.mac.zip
 [dl-windows]: https://github.com/borismus/keysocket/raw/master/downloads/KeySocket.windows.msi
 [dl-linux]: https://github.com/borismus/keysocket/raw/master/downloads/KeySocket.linux.py
+[dl-linux-alt]: https://keysocket-server.googlecode.com/files/keyserver.bz2
