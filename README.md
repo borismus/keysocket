@@ -1,6 +1,5 @@
 Global keyboard bindings to control your Chrome-based music player.
 
-=======
 **UPDATE: Now works for all versions of Chrome**
 
 **Supported sites:**
@@ -44,7 +43,7 @@ Global keyboard bindings to control your Chrome-based music player.
     * [Autobahn](https://github.com/oberstet/Autobahn/) for websockets.
     * [PyObjC](http://pyobjc.sourceforge.net) for keyboard events.
 2. Clone this repository:  
-   `git clone git@github.com:max99x/keysocket.git`
+   `git clone git@github.com:borismus/keysocket.git`
 3. Go into the `server-mac` directory and run setup.py:  
    `python setup.py py2app`  
    The app is built in `./dist/Key Socket.app`.
@@ -55,26 +54,48 @@ Global keyboard bindings to control your Chrome-based music player.
     * [Autobahn](https://github.com/oberstet/Autobahn/) for websockets.
     * [cx_Freeze](http://pypi.python.org/pypi/cx_Freeze) for building an executable.
 2. Clone this repository:  
-   `git clone git@github.com:max99x/keysocket.git`
+   `git clone git@github.com:borismus/keysocket.git`
 3. Go into the `server-windows` directory and run setup.py:  
    `python setup.py build`  
    The executable is built in `./dist/KeySocket.exe`.
 
-### Linux
+### Linux GTK Client
 
 1. Prerequisites:
-    * [Autobahn](https://github.com/oberstet/Autobahn/) for websockets.
+    * [Autobahn](https://github.com/tavendo/Autobahn/) for websockets.
     * [PyGTK](http://pypi.python.org/pypi/PyGTK) for the tray icon.
     * [dbus-python](https://pypi.python.org/pypi/dbus-python/) for media key interception.
-2. Clone this repository:  
-   `git clone git@github.com:max99x/keysocket.git`
-3. No building required. Just run `./server-linux/keysocket.py`.
+
+2. Installation of Prerequisites on Ubuntu/Debian
+    * `sudo apt-get install python-dbus python-gtk2 gnome-settings-daemon`
+    * `sudo easy_install autobahn`
+
+3. Clone this repository:  
+   `git clone https://github.com/borismus/keysocket.git`
+
+4. No building required. Just run `./server-linux/keysocket.py`.
+
+### Linux Go Client (less user friendly)
+
+1. Prerequisites:
+    * [Golang](http://golang.org/doc/install#bsd_linux) for Go
+
+2. Once your go environment is setup:
+    * `go get -u -v code.google.com/p/keysocket-server`
+    * `cd $GOPATH/src/code.google.com/p/keysocket-server`
+    * `go build -o keyserver`
+
+3. ./keyserver -help for options.
+
+4. If you've setup X Media Keys the Go Server listens to XF86AudioNext,Prev and
+   Play by default.  These can be changed with command line flags.
+
 
 # Contribute please!
 
 * Looking for adapters for other music players.
 
 [crx]: https://chrome.google.com/webstore/detail/fphfgdknbpakeedbaenojjdcdoajihik
-[dl-mac]: https://github.com/max99x/keysocket/raw/master/downloads/KeySocket.mac.zip
-[dl-windows]: https://github.com/max99x/keysocket/raw/master/downloads/KeySocket.windows.msi
-[dl-linux]: https://github.com/max99x/keysocket/raw/master/downloads/KeySocket.linux.py
+[dl-mac]: https://github.com/borismus/keysocket/raw/master/downloads/KeySocket.mac.zip
+[dl-windows]: https://github.com/borismus/keysocket/raw/master/downloads/KeySocket.windows.msi
+[dl-linux]: https://github.com/borismus/keysocket/raw/master/downloads/KeySocket.linux.py
