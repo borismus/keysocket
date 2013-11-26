@@ -8,7 +8,7 @@ var PREV = 20,
     playTarget = {
         audio_page   : 'ac_play',
         audio_modal  : 'pd_play',
-        audio_widget : 'gp_paly',
+        audio_widget : 'gp_play',
         head_button  : 'head_play_btn'
     },
     nextTarget = {
