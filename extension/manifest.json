@@ -66,6 +66,10 @@
     {
       "matches": ["*://www.deezer.com/*"],
       "js": ["shared.js","keysocket-deezer.js"]
+    },
+    {
+      "matches": ["*://plex.tv/web/*"],
+      "js": ["shared.js","keysocket-plex.js"]
     }
   ]
 }
