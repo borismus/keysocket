@@ -14,4 +14,5 @@ function controlGmusic(key) {
     }
 }
 
+console.log("keysocket: Loading Gmusic extension");
 reconnect(controlGmusic, connection, isConnected);
