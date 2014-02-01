@@ -23,7 +23,6 @@ function connect() {
   // When the connection is open, send some data to the server
   connection.onopen = function() {
     console.log('WS open');
-    
     isConnected = true;
     connection.send('Ping'); // Send the message 'Ping' to the server
 
@@ -44,7 +43,12 @@ function connect() {
         // Play the next song.
         simulateClick('NextTrack');
       } else if (key == PLAY) {
-        simulateClick('PlayTrack');
+        // Toggle between play and pause.
+        if (isVisible('PauseTrack')) {
+          simulateClick('PauseTrack');
+        } else {
+          simulateClick('PlayTrack');
+        }
       }
     };
 
