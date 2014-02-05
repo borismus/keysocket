@@ -66,6 +66,10 @@
     {
       "matches": ["*://www.deezer.com/*"],
       "js": ["shared.js","keysocket-deezer.js"]
+    },
+    {
+      "matches": ["*://jamstash.com/*"],
+      "js": ["shared.js","keysocket-jamstash.js"]
     }
   ]
 }
