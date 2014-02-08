@@ -16,6 +16,7 @@ Global keyboard bindings to control your Chrome-based music player.
    * Jango.com
    * Spotify
    * Deezer
+   * Jamstash
 
 # Usage
 
