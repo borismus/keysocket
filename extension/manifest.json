@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.10",
+  "version": "0.4.11",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -66,6 +66,10 @@
     {
       "matches": ["*://www.deezer.com/*"],
       "js": ["shared.js","keysocket-deezer.js"]
+    },
+    {
+      "matches": ["*://jamstash.com/*"],
+      "js": ["shared.js","keysocket-jamstash.js"]
     }
   ]
 }
