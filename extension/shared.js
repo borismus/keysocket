@@ -37,7 +37,9 @@ function reconnect(audioController, connection, isConnected) {
 }
 
 function simulateClick(element) {
+    if(!element) return false;
+
     var click = document.createEvent('MouseEvents');
     click.initMouseEvent('click', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-    element.dispatchEvent(click);
+    return element.dispatchEvent(click);
 }
