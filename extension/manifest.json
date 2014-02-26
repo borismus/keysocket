@@ -74,6 +74,10 @@
     {
       "matches": ["*://*.phishtracks.com/*"],
       "js": ["shared.js","keysocket-phishtracks.js"]
+    },
+    {
+      "matches": ["*://*.musicchoice.com/*"],
+      "js": ["shared.js","keysocket-musicchoice.js"]
     }
   ]
 }
