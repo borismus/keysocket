@@ -17,6 +17,8 @@ Global keyboard bindings to control your Chrome-based music player.
    * Spotify
    * Deezer
    * Jamstash
+   * Music Choice
+   * Phish Tracks
 
 # Usage
 
