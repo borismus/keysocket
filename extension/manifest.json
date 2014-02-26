@@ -70,6 +70,10 @@
     {
       "matches": ["*://jamstash.com/*"],
       "js": ["shared.js","keysocket-jamstash.js"]
+    },
+    {
+      "matches": ["*://*.phishtracks.com/*"],
+      "js": ["shared.js","keysocket-phishtracks.js"]
     }
   ]
 }
