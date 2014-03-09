@@ -89,13 +89,10 @@ Global keyboard bindings to control your Chrome-based music player.
     * [Golang](http://golang.org/doc/install#bsd_linux) for Go
 
 2. Once your go environment is setup:
-    * `go get -u -v code.google.com/p/keysocket-server`
-    * `cd $GOPATH/src/code.google.com/p/keysocket-server`
-    * `go build -o keyserver`
+    * `go install -u -v github.com/hobeone/keysocket-server`
+    * `$GOPATH/bin/keysocket-server -help`
 
-3. ./keyserver -help for options.
-
-4. If you've setup X Media Keys the Go Server listens to XF86AudioNext,Prev and
+3. If you've setup X Media Keys the Go Server listens to XF86AudioNext,Prev and
    Play by default.  These can be changed with command line flags.
 
 
