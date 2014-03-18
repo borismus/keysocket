@@ -21,4 +21,5 @@ reconnect(controlDsAudio5, connection, isConnected);
 function simulateClick(element) {
     var click = document.createEvent('MouseEvents');
     click.initMouseEvent('click', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-	element.dispatchEvent(click);}
+	element.dispatchEvent(click);
+}
