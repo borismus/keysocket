@@ -17,6 +17,7 @@ Global keyboard bindings to control your Chrome-based music player.
    * Spotify
    * Deezer
    * Jamstash
+   * Synology Audio Station v.5
 
 # Usage
 

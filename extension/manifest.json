@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.11",
+  "version": "0.4.12",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -70,6 +70,10 @@
     {
       "matches": ["*://jamstash.com/*"],
       "js": ["shared.js","keysocket-jamstash.js"]
+    },
+    {
+      "matches": ["http://*/webman/*"],
+      "js": ["shared.js","keysocket-dsaudio5.js"]
     }
   ]
 }
