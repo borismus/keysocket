@@ -78,6 +78,6 @@
     {
       "matches": ["http://songza.com/*"],
       "js": ["shared.js","keysocket-songza.js"]
-    },
+    }
   ]
 }
