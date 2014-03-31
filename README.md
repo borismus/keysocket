@@ -3,21 +3,22 @@ Global keyboard bindings to control your Chrome-based music player.
 **UPDATE: Now works for all versions of Chrome**
 
 **Supported sites:**
+   * Amazon music player
+   * Deezer
    * Google Music
    * Grooveshark
-   * thesixtyone
-   * Amazon music player
-   * Pandora
-   * vk.com (Vkontakte)
-   * Youtube.com
-   * Slacker
-   * Яндекс.Музыка (Yandex.Music)
-   * Tracksflow.com
-   * Jango.com
-   * Spotify
-   * Deezer
    * Jamstash
+   * Jango.com
+   * Pandora
+   * Slacker
+   * Songza
+   * Spotify
    * Synology Audio Station v.5
+   * thesixtyone
+   * Tracksflow.com
+   * vk.com (Vkontakte)
+   * Яндекс.Музыка (Yandex.Music)
+   * Youtube.com
 
 # Usage
 
