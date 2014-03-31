@@ -74,6 +74,10 @@
     {
       "matches": ["*://*/webman/*"],
       "js": ["shared.js","keysocket-dsaudio5.js"]
-    }
+    },
+    {
+      "matches": ["http://songza.com/*"],
+      "js": ["shared.js","keysocket-songza.js"]
+    },
   ]
 }
