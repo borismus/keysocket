@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.13",
+  "version": "0.4.14",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -74,6 +74,10 @@
     {
       "matches": ["*://*/webman/*"],
       "js": ["shared.js","keysocket-dsaudio5.js"]
+    },
+    {
+      "matches": ["http://songza.com/*"],
+      "js": ["shared.js","keysocket-songza.js"]
     }
   ]
 }
