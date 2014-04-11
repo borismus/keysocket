@@ -78,6 +78,10 @@
     {
       "matches": ["http://songza.com/*"],
       "js": ["shared.js","keysocket-songza.js"]
+    },
+    {
+      "matches": ["http://*.naxosmusiclibrary.com/mediaplayer/*"],
+      "js": ["shared.js","keysocket-nml.js"]
     }
   ]
 }
