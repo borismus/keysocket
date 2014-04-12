@@ -9,6 +9,7 @@ Global keyboard bindings to control your Chrome-based music player.
    * Grooveshark
    * Jamstash
    * Jango.com
+   * Naxos Music Library
    * Pandora
    * Slacker
    * Songza
