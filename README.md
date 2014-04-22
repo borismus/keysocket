@@ -13,6 +13,7 @@ Global keyboard bindings to control your Chrome-based music player.
    * Pandora
    * Slacker
    * Songza
+   * SoundCloud
    * Spotify
    * Synology Audio Station v.5
    * thesixtyone

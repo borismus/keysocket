@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.17",
+  "version": "0.4.18",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -82,6 +82,10 @@
     {
       "matches": ["http://*.naxosmusiclibrary.com/mediaplayer/*"],
       "js": ["shared.js","keysocket-nml.js"]
+    },
+    {
+      "matches": ["https://soundcloud.com/*"],
+      "js": ["shared.js","keysocket-soundcloud.js"]
     }
   ]
 }
