@@ -2,6 +2,7 @@ var PREV = '20';
 var PLAY = '16';
 var NEXT = '19';
 var reconnectTimeout;
+var dupTimeout = 100;
 
 function connect(audioController, connection, isConnected) {
     console.log("keysocket: connecting to WS");
@@ -17,11 +18,11 @@ function connect(audioController, connection, isConnected) {
     };
 
     window[connection].onmessage = function(e) {
-      // if the message has been received within the last 250ms, ignore it.
+      // if the message has been received within the last dupTimeout, ignore it.
       if( window[connection].msgReceived ) { return; }
       window[connection].msgReceived = setTimeout(function() {
           window[connection].msgReceived = null;
-      },250);
+      },dupTimeout);
       console.log("keysocket: Got Key:", e.data);
       var key = e.data;
       audioController(key);
