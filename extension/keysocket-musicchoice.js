@@ -1,11 +1,8 @@
-var connection = null;
-var isConnected = false;
+console.log("keysocket: Loading Music Choice extension");
 
-function controlMC(key) {
-    if(key === PLAY) {
+function onKeyPress(key){
+    if (key === PLAY) {
         simulateClick(document.querySelector('#audiomute'));
     }
 }
 
-console.log("keysocket: Loading Music Choice extension");
-reconnect(controlMC, connection, isConnected);
