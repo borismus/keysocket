@@ -64,7 +64,7 @@
     },
     {
       "matches": ["*://music.yandex.ru/*"],
-      "js": ["keysocket-yandex-music.js"]
+      "js": ["shared.js","keysocket-yandex-music.js"]
     },
     {
       "matches": ["*://tracksflow.com/*"],
