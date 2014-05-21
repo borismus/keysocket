@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlSlacker(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.getElementById('playerSkipButton');
         simulateClick(nextButton);
@@ -13,5 +10,3 @@ function controlSlacker(key) {
         simulateClick(backButton);
     }
 }
-
-reconnect(controlSlacker, connection, isConnected);

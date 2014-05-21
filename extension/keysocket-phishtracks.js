@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlPhishTracks(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.querySelector('[data-control=next]');
         simulateClick(nextButton);
@@ -15,4 +12,3 @@ function controlPhishTracks(key) {
 }
 
 console.log("keysocket: Loading Phishtracks extension");
-reconnect(controlPhishTracks, connection, isConnected);

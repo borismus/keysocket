@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlDeezer(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.getElementById('player_control_next');
         simulateClick(nextButton);
@@ -19,5 +16,3 @@ function controlDeezer(key) {
         simulateClick(backButton);
     }
 }
-
-reconnect(controlDeezer, connection, isConnected);

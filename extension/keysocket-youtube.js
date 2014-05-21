@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlYoutube(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.getElementsByClassName('yt-uix-button-icon-playlist-bar-next')[0];
         simulateClick(nextButton);
@@ -17,5 +14,3 @@ function controlYoutube(key) {
         simulateClick(backButton);
     }
 }
-
-reconnect(controlYoutube, connection, isConnected);
