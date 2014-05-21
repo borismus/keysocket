@@ -1,6 +1,6 @@
 Global keyboard bindings to control your Chrome-based music player.
 
-**UPDATE: Now works for all versions of Chrome**
+**UPDATE: Now uses Chrome's built in key binding (as of version 25)**
 
 **Supported sites:**
    * Google Music
@@ -24,9 +24,9 @@ Global keyboard bindings to control your Chrome-based music player.
 
 1. Install extension from the [chrome web store][crx].
 2. Edit the `Keyboard shortcuts` to give Keysocket 'Global' permissions
-    * open a browser tab to `chrome://extensions`
+    * open a browser tab to [chrome://extensions](chrome://extensions)
     * scroll to the bottom & click `Keyboard shortcuts`
-    * find `Keysocket Media Keys` and change each desired key to 'Global'
+    * find `Keysocket Media Keys` and change each desired key to `Global`
 
 # Contribute please!
 
