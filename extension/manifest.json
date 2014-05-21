@@ -11,12 +11,33 @@
   "permissions": ["tabs"],
   "manifest_version": 2,
   "commands": {
-    "play-pause": {
+    "prev": {
         "suggested_key": {
-            "default": "Alt+Shift+P",
+            "default": "MediaPrevTrack",
+            "mac": "MediaPrevTrack"
+        },
+        "description": "Play Previous Track"
+    },
+      "play-pause": {
+        "suggested_key": {
+            "default": "MediaPlayPause",
             "mac": "MediaPlayPause"
         },
         "description": "Play/Pause Active Audio"
+    },
+      "next": {
+        "suggested_key": {
+            "default": "MediaNextTrack",
+            "mac": "MediaNextTrack"
+        },
+        "description": "Play Next Track"
+    },
+      "stop": {
+        "suggested_key": {
+            "default": "MediaStop",
+            "mac": "MediaStop"
+        },
+        "description": "Stop Audio"
     }
   },
   "background": {

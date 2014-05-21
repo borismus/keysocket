@@ -1,6 +1,7 @@
 var PREV = 'prev';
 var PLAY = 'play-pause';
 var NEXT = 'next';
+var STOP = 'stop';
 
 function simulateClick(element) {
     if(!element){
