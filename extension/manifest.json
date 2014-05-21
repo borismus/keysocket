@@ -52,7 +52,7 @@
     },
     {
       "matches": ["http://vk.com/*"],
-      "js": ["keysocket-vkontakte.js"]
+      "js": ["shared.js","keysocket-vkontakte.js"]
     },
     {
       "matches": ["*://*.youtube.com/*"],
