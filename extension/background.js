@@ -11,7 +11,7 @@ chrome.commands.onCommand.addListener(function(command) {
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         console.log("Received tab message: ", request);
-        if(request.command == "activateTab" && sender.tab){
+        if(request.command == "activateTab" && sender.tab && activeTabs.indexOf(sender.tab.id) == -1){
             activeTabs.push(sender.tab.id);
         }
     }
