@@ -26,8 +26,8 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
 
 You need two things in order to work:
 
- * Install **Chrome extension from the [chrome web store][crx]**
  * Install the KeySocket daemon/server (see below depending on your OS)
+ * Install **Chrome extension** (see below)
 
 ## Installing the KeySocket daemon 
 
@@ -100,6 +100,12 @@ Install either:
         * `$GOPATH/bin/keysocket-server -help`
     3. If you've setup X Media Keys the Go Server listens to XF86AudioNext,Prev and
        Play by default.  These can be changed with command line flags.
+
+## Installing the Chrome extension
+
+Install the [Google Chrome extensionfrom the Chrome web store][crx]. Once installed go your favorite music website and you should be able to control with your media keys. Pay attention to the script security warning, you'll have to allow the unsafe script in order to work:
+ 
+![Chrome Load unsafe script](https://camo.githubusercontent.com/2ef791900e226e7a083c2a83a4514fdfb831de08/68747470733a2f2f77696b69732e74616d752e6564752f646f776e6c6f61642f6174746163686d656e74732f32353630343934392f6c6f61642b756e736166652b7363726970742b6368726f6d652e706e673f76657273696f6e3d31266d6f64696669636174696f6e446174653d31333831333534333237303030)
 
 # Contribute please!
 
