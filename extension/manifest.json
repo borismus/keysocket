@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.12",
+  "version": "0.4.19",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -36,7 +36,7 @@
       "js": ["shared.js","keysocket-pandora.js"]
     },
     {
-      "matches": ["http://vk.com/*"],
+      "matches": ["https://vk.com/*"],
       "js": ["keysocket-vkontakte.js"]
     },
     {
@@ -78,6 +78,22 @@
     {
       "matches": ["*://*.musicchoice.com/*"],
       "js": ["shared.js","keysocket-musicchoice.js"]
+    },
+    {
+      "matches": ["*://*/webman/*"],
+      "js": ["shared.js","keysocket-dsaudio5.js"]
+    },
+    {
+      "matches": ["http://songza.com/*"],
+      "js": ["shared.js","keysocket-songza.js"]
+    },
+    {
+      "matches": ["http://*.naxosmusiclibrary.com/mediaplayer/*"],
+      "js": ["shared.js","keysocket-nml.js"]
+    },
+    {
+      "matches": ["https://soundcloud.com/*"],
+      "js": ["shared.js","keysocket-soundcloud.js"]
     }
   ]
 }

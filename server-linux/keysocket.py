@@ -13,7 +13,7 @@ from twisted.internet import glib2reactor
 glib2reactor.install()
 from twisted.internet import reactor, task
 from twisted.internet.protocol import Protocol, Factory
-from autobahn.websocket import (listenWS,
+from autobahn.twisted.websocket import (listenWS,
                                 WebSocketServerFactory,
                                 WebSocketServerProtocol,)
 
