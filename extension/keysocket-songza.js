@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlSongza(key) {
+function onKeyPress(key){
     if(key === NEXT) {
         var nextButton = document.querySelector('#player .miniplayer-control-skip');
         simulateClick(nextButton);
@@ -10,5 +7,3 @@ function controlSongza(key) {
         simulateClick(playPauseButton);
     } 
 }
-
-reconnect(controlSongza, connection, isConnected);

@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlRdio(key) {
+function onKeyPress(key){
     if(key === NEXT) {
         var nextButton = document.querySelector('.skipControl__next');
         simulateClick(nextButton);
@@ -13,5 +10,3 @@ function controlRdio(key) {
         simulateClick(backButton);
     }
 }
-
-reconnect(controlRdio, connection, isConnected);

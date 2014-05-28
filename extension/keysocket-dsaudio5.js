@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlDsAudio5(key) {
+function onKeyPress(key){
     if(key === PREV) {
         var prevButton = document.querySelector(".player-prev [type='button']");
         simulateClick(prevButton);
@@ -15,4 +12,3 @@ function controlDsAudio5(key) {
 }
 
 console.log("keysocket: Loading Synology extension");
-reconnect(controlDsAudio5, connection, isConnected);
