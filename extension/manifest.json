@@ -76,7 +76,7 @@
       "js": ["shared.js","keysocket-pandora.js"]
     },
     {
-      "matches": ["http://vk.com/*"],
+      "matches": ["*://vk.com/*"],
       "js": ["shared.js","keysocket-vkontakte.js"]
     },
     {
