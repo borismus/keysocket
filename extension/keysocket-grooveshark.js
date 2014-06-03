@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlGrooveShark(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.getElementById('play-next');
         simulateClick(nextButton);
@@ -13,5 +10,3 @@ function controlGrooveShark(key) {
         simulateClick(backButton);
     }
 }
-
-reconnect(controlGrooveShark, connection, isConnected);

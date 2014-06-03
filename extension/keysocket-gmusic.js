@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlGmusic(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.querySelector('[data-id=forward]');
         simulateClick(nextButton);
@@ -15,4 +12,3 @@ function controlGmusic(key) {
 }
 
 console.log("keysocket: Loading Gmusic extension");
-reconnect(controlGmusic, connection, isConnected);

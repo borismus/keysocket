@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlJamstash(key) {
+function onKeyPress(key) {
     if(key === PREV) {
         var prevButton = document.getElementById('PreviousTrack');
         simulateClick(prevButton);
@@ -19,5 +16,3 @@ function controlJamstash(key) {
         simulateClick(playPauseButton);
     }
 }
-
-reconnect(controlJamstash, connection, isConnected);

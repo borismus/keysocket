@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlNML(key) {
+function onKeyPress(key){
     if(key === NEXT) {
         var nextButton = document.querySelector('#ctrl-next');
         simulateClick(nextButton);
@@ -19,5 +16,3 @@ function controlNML(key) {
         simulateClick(prevButton);
     }
 }
-
-reconnect(controlNML, connection, isConnected);

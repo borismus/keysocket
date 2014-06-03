@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlAmazon(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.querySelector('[playeraction=next]');
         simulateClick(nextButton);
@@ -13,5 +10,3 @@ function controlAmazon(key) {
         simulateClick(backButton);
     }
 }
-
-reconnect(controlAmazon, connection, isConnected);
