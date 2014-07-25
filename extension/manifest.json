@@ -134,6 +134,10 @@
     {
       "matches": ["https://soundcloud.com/*"],
       "js": ["shared.js","keysocket-soundcloud.js"]
+    },
+    {
+      "matches": ["*://music.xbox.com/*"],
+      "js": ["shared.js","keysocket-xboxmusic.js"]
     }
   ]
 }
