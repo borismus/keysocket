@@ -25,6 +25,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * vk.com (Vkontakte)
    * Яндекс.Музыка (Yandex.Music)
    * Youtube.com
+   * Xbox Music
 
 # Usage
 
