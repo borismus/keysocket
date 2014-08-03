@@ -26,6 +26,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Яндекс.Музыка (Yandex.Music)
    * Youtube.com
    * Xbox Music
+   * Xiami Music
 
 # Usage
 
