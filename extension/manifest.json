@@ -138,6 +138,10 @@
     {
       "matches": ["*://music.xbox.com/*"],
       "js": ["shared.js","keysocket-xboxmusic.js"]
+    },
+    {
+      "matches": ["*://hypem.com/*"],
+      "js": ["shared.js","keysocket-hypem.js"]
     }
   ]
 }
