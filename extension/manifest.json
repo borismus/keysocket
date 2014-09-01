@@ -140,8 +140,20 @@
       "js": ["shared.js","keysocket-xboxmusic.js"]
     },
     {
+      "matches": ["http://www.xiami.com/play"],
+      "js": ["shared.js","keysocket-xiami.js"]
+    },
+    {
+      "matches": ["https://now.jbhifi.com.au/*"],
+      "js": ["shared.js","keysocket-now-jbhifi.js"]
+    },
+    {
       "matches": ["*://hypem.com/*"],
       "js": ["shared.js","keysocket-hypem.js"]
+
+
+
+
     }
   ]
 }
