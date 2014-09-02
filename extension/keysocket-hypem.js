@@ -1,9 +1,9 @@
 function onKeyPress(key) {
     if(key === NEXT) {
-        window.nextTrack();
+        simulateClick(document.querySelector('#playerNext'));
     } else if(key === PLAY) {
-        window.togglePlay();
+        simulateClick(document.querySelector('#playerPlay'));
     } else if(key === PREV) {
-        window.prevTrack();
+        simulateClick(document.querySelector('#playerPrev'));
     }
 }
