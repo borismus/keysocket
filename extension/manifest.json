@@ -146,6 +146,14 @@
     {
       "matches": ["https://now.jbhifi.com.au/*"],
       "js": ["shared.js","keysocket-now-jbhifi.js"]
+    },
+    {
+      "matches": ["*://hypem.com/*"],
+      "js": ["shared.js","keysocket-hypem.js"]
+
+
+
+
     }
   ]
 }
