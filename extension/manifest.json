@@ -150,10 +150,10 @@
     {
       "matches": ["*://hypem.com/*"],
       "js": ["shared.js","keysocket-hypem.js"]
-
-
-
-
+    },
+    {
+      "matches": ["https://overcast.fm/*"],
+      "js": ["shared.js","keysocket-overcast.js"]
     }
   ]
 }
