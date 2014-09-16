@@ -140,7 +140,7 @@
       "js": ["shared.js","keysocket-xboxmusic.js"]
     },
     {
-      "matches": ["http://www.xiami.com/play"],
+      "matches": ["http://www.xiami.com/play*"],
       "js": ["shared.js","keysocket-xiami.js"]
     },
     {
