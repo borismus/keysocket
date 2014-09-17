@@ -1,6 +1,6 @@
-var playTarget = '.b-jambox__play';
-var nextTarget = '.b-jambox__next';
-var prevTarget = '.b-jambox__prev';
+var playTarget = '.player-controls__btn_play';
+var nextTarget = '.player-controls__btn_next';
+var prevTarget = '.player-controls__btn_prev';
 
 function onKeyPress(key) {
     if (key === PREV) {
