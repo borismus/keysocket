@@ -4,11 +4,11 @@ var prevTarget = '.player-controls__btn_prev, .b-jambox__prev';
 
 function onKeyPress(key) {
     // try to click both old and new interface buttons
-    if (key === PREV) {
+    if (key === PLAY) {
         simulateClick(document.querySelector(playTarget));
     } else if (key === NEXT) {
         simulateClick(document.querySelector(nextTarget));
-    } else if (key === PLAY) {
+    } else if (key === PREV) {
         simulateClick(document.querySelector(prevTarget));
     }
 }
