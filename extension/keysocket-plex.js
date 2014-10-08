@@ -20,7 +20,7 @@ function onKeyPress(key) {
         var backButton = document.querySelector('button.previous-btn');
         simulateClick(backButton);
     } else if(key === STOP) {
-        var backButton = document.querySelector('button.stop-btn');
-        simulateClick(backButton);
+        var stopButton = document.querySelector('button.stop-btn');
+        simulateClick(stopButton);
     }
 }
