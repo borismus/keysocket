@@ -28,6 +28,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Xbox Music
    * Xiami Music
    * JB Hi-Fi Now
+   * Plex
 
 # Usage
 
