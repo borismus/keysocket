@@ -1,29 +1,26 @@
-var connection = null;
-var isConnected = false;
-
-function controlPlex(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
-        var nextButton = document.querySelector('.music-player .next-btn');
+        var nextButton = document.querySelector('button.next-btn');
         simulateClick(nextButton);
     } else if(key === PLAY) {
-        var playButton = document.querySelector('.music-player .play-btn');
-        var pauseButton = null;
-        var firstTrack = null;
+        var playButton = document.querySelector('button.play-btn'),
+            pauseButton;
         try {
-            if (playButton.className.indexOf('hide') != -1) {
-                pauseButton = document.querySelector('.music-player .pause-btn');
+            if (playButton.classList.contains('hidden')) {
+                pauseButton = document.querySelector('button.pause-btn');
                 simulateClick(pauseButton);
             } else {
                 simulateClick(playButton);
             }
         } catch (e) {
-            firstTrack = document.querySelector('ul.track-list>li:first-child>a')
-            simulateClick(firstTrack);
+            var playAllButton = document.querySelector('a.play-btn');
+            simulateClick(playAllButton);
         }
     } else if(key === PREV) {
-        var backButton = document.querySelector('.music-player .previous-btn');
+        var backButton = document.querySelector('button.previous-btn');
+        simulateClick(backButton);
+    } else if(key === STOP) {
+        var backButton = document.querySelector('button.stop-btn');
         simulateClick(backButton);
     }
 }
-
-reconnect(controlPlex, connection, isConnected);
