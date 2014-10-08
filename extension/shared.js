@@ -1,34 +1,25 @@
-var PREV = '20';
-var PLAY = '16';
-var NEXT = '19';
+var PREV = 'prev';
+var PLAY = 'play-pause';
+var NEXT = 'next';
+var STOP = 'stop';
 
-function connect(audioController, connection, isConnected) {
-    window[connection] = new WebSocket('ws://localhost:1337/');
-
-    window[connection].onopen = function() {
-        window[isConnected] = true;
-        window[connection].send('Ping');
-    };
-
-    window[connection].onerror = function(error) {
-        console.log('WebSocket Error:', error);
-    };
-
-    window[connection].onmessage = function(e) {
-        var key = e.data;
-        audioController(key);
-    };
-}
-
-function reconnect(audioController, connection, isConnected) {
-    if(!window[isConnected]) {
-        connect(audioController, connection, isConnected);
-        setTimeout(function() { reconnect(audioController, connection, isConnected); }, 1000);
-    }
-}
 
 function simulateClick(element) {
+    if(!element){
+        console.log('keysocket: Cannot simulate click, element undefined');
+        return false;
+    } 
+
     var click = document.createEvent('MouseEvents');
     click.initMouseEvent('click', true, false,  document, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-    element.dispatchEvent(click);
+    return element.dispatchEvent(click);
 }
+
+chrome.runtime.onMessage.addListener(
+    function(request) {
+        console.log("Received keypress: ", request);
+        onKeyPress(request.command);
+    }
+);
+
+chrome.runtime.sendMessage({command: "activateTab"});

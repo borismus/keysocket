@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlTracksFlow(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.getElementsByClassName('js-rewind')[0];
         simulateClick(nextButton);
@@ -13,5 +10,3 @@ function controlTracksFlow(key) {
         simulateClick(backButton);
     }
 }
-
-reconnect(controlTracksFlow, connection, isConnected);

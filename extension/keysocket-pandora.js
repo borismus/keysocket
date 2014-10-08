@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlPandora(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.querySelector('div.skipButton > a');
         simulateClick(nextButton);
@@ -16,5 +13,3 @@ function controlPandora(key) {
         simulateClick(playPauseButton);
     }
 }
-
-reconnect(controlPandora, connection, isConnected);

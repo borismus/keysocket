@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlSpotify(key) {
+function onKeyPress(key) {
     var frame = document.getElementById('app-player');
     if(key === NEXT) {
         var nextButton = frame.contentDocument.getElementById('next');
@@ -14,5 +11,3 @@ function controlSpotify(key) {
         simulateClick(backButton);
     }
 }
-
-reconnect(controlSpotify, connection, isConnected);

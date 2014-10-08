@@ -1,7 +1,4 @@
-var connection = null;
-var isConnected = false;
-
-function controlTheSixtyOne(key) {
+function onKeyPress(key) {
     if(key === NEXT) {
         var nextButton = document.getElementById('large_next_song_button');
         simulateClick(nextButton);
@@ -19,6 +16,3 @@ function controlTheSixtyOne(key) {
         simulateClick(backButton);
     }
 }
-
-reconnect(controlTheSixtyOne, connection, isConnected);
-

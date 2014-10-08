@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.4.9",
+  "version": "0.5.0",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -10,6 +10,46 @@
   "homepage_url": "https://github.com/borismus/keysocket",
   "permissions": ["tabs"],
   "manifest_version": 2,
+  "commands": {
+    "prev": {
+        "suggested_key": {
+            "default": "MediaPrevTrack",
+            "mac": "MediaPrevTrack"
+        },
+        "description": "Play Previous Track",
+        "global":true
+    },
+      "play-pause": {
+        "suggested_key": {
+            "default": "MediaPlayPause",
+            "mac": "MediaPlayPause"
+        },
+        "description": "Play/Pause Active Audio",
+        "global":true
+    },
+      "next": {
+        "suggested_key": {
+            "default": "MediaNextTrack",
+            "mac": "MediaNextTrack"
+        },
+        "description": "Play Next Track",
+        "global":true
+    },
+      "stop": {
+        "suggested_key": {
+            "default": "MediaStop",
+            "mac": "MediaStop"
+        },
+        "description": "Stop Audio",
+        "global":true
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
   "content_scripts": [
     {
       "matches": ["http://www.thesixtyone.com/*"],
@@ -36,8 +76,8 @@
       "js": ["shared.js","keysocket-pandora.js"]
     },
     {
-      "matches": ["http://vk.com/*"],
-      "js": ["keysocket-vkontakte.js"]
+      "matches": ["*://vk.com/*"],
+      "js": ["shared.js","keysocket-vkontakte.js"]
     },
     {
       "matches": ["*://*.youtube.com/*"],
@@ -49,7 +89,7 @@
     },
     {
       "matches": ["*://music.yandex.ru/*"],
-      "js": ["keysocket-yandex-music.js"]
+      "js": ["shared.js","keysocket-yandex-music.js"]
     },
     {
       "matches": ["*://tracksflow.com/*"],
@@ -66,6 +106,54 @@
     {
       "matches": ["*://www.deezer.com/*"],
       "js": ["shared.js","keysocket-deezer.js"]
+    },
+    {
+      "matches": ["*://jamstash.com/*"],
+      "js": ["shared.js","keysocket-jamstash.js"]
+    },
+    {
+      "matches": ["*://*.phishtracks.com/*"],
+      "js": ["shared.js","keysocket-phishtracks.js"]
+    },
+    {
+      "matches": ["*://*.musicchoice.com/*"],
+      "js": ["shared.js","keysocket-musicchoice.js"]
+    },
+    {
+      "matches": ["*://*/webman/*"],
+      "js": ["shared.js","keysocket-dsaudio5.js"]
+    },
+    {
+      "matches": ["http://songza.com/*"],
+      "js": ["shared.js","keysocket-songza.js"]
+    },
+    {
+      "matches": ["http://*.naxosmusiclibrary.com/mediaplayer/*"],
+      "js": ["shared.js","keysocket-nml.js"]
+    },
+    {
+      "matches": ["https://soundcloud.com/*"],
+      "js": ["shared.js","keysocket-soundcloud.js"]
+    },
+    {
+      "matches": ["*://music.xbox.com/*"],
+      "js": ["shared.js","keysocket-xboxmusic.js"]
+    },
+    {
+      "matches": ["http://www.xiami.com/play*"],
+      "js": ["shared.js","keysocket-xiami.js"]
+    },
+    {
+      "matches": ["https://now.jbhifi.com.au/*"],
+      "js": ["shared.js","keysocket-now-jbhifi.js"]
+    },
+    {
+      "matches": ["*://hypem.com/*"],
+      "js": ["shared.js","keysocket-hypem.js"]
+    },
+    {
+      "matches": ["https://overcast.fm/*"],
+      "js": ["shared.js","keysocket-overcast.js"]
     },
     {
       "matches": ["*://plex.tv/web/*"],
