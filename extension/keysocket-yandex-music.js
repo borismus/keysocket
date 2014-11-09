@@ -1,6 +1,7 @@
-var playTarget = '.player-controls__btn_play';
-var nextTarget = '.player-controls__btn_next';
-var prevTarget = '.player-controls__btn_prev';
+// support both old and new Yandex Music interfaces: '.old, .new'
+var playTarget = '.b-jambox__play, .player-controls__btn_play';
+var nextTarget = '.b-jambox__next, .player-controls__btn_next';
+var prevTarget = '.b-jambox__prev, .player-controls__btn_prev';
 
 function onKeyPress(key) {
     if (key === PREV) {
