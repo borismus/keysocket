@@ -158,6 +158,10 @@
     {
       "matches": ["*://plex.tv/web/*"],
       "js": ["shared.js","keysocket-plex.js"]
+    },
+    {
+      "matches": ["*://listen.tidalhifi.com/*"],
+      "js": ["shared.js","keysocket-tidal.js"]
     }
   ]
 }
