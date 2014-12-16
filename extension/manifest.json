@@ -124,7 +124,7 @@
       "js": ["shared.js","keysocket-dsaudio5.js"]
     },
     {
-      "matches": ["http://songza.com/*"],
+      "matches": ["*://songza.com/*"],
       "js": ["shared.js","keysocket-songza.js"]
     },
     {
