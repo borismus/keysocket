@@ -162,6 +162,10 @@
     {
       "matches": ["*://listen.tidalhifi.com/*"],
       "js": ["shared.js","keysocket-tidal.js"]
+    },
+    {
+      "matches": ["*://ok.ru/*"],
+      "js": ["shared.js","keysocket-ok.js"]
     }
   ]
 }
