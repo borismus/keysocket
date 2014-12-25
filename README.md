@@ -32,7 +32,8 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Tidal
    * Gaana.com
    * Saavn.com
-   
+   * Ok.ru
+
 # Usage
 
 1. Install extension from the [chrome web store][crx].
