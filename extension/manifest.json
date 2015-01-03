@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -162,6 +162,9 @@
     {
       "matches": ["*://listen.tidalhifi.com/*"],
       "js": ["shared.js","keysocket-tidal.js"]
+    }, {
+      "matches": [ "*://bop.fm/*" ],
+      "js": [ "shared.js", "keysocket-bop.js" ]
     }
   ]
 }
