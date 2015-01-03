@@ -1,167 +1,138 @@
 {
-  "name": "Key Socket Media Keys",
-  "version": "0.6.0",
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
-  "description": "Control your favorite web-based music player with your keyboard's media keys",
-  "homepage_url": "https://github.com/borismus/keysocket",
-  "permissions": ["tabs"],
-  "manifest_version": 2,
-  "commands": {
-    "prev": {
-        "suggested_key": {
-            "default": "MediaPrevTrack",
-            "mac": "MediaPrevTrack"
-        },
-        "description": "Play Previous Track",
-        "global":true
-    },
-      "play-pause": {
-        "suggested_key": {
-            "default": "MediaPlayPause",
-            "mac": "MediaPlayPause"
-        },
-        "description": "Play/Pause Active Audio",
-        "global":true
-    },
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "commands": {
       "next": {
-        "suggested_key": {
+         "description": "Play Next Track",
+         "global": true,
+         "suggested_key": {
             "default": "MediaNextTrack",
             "mac": "MediaNextTrack"
-        },
-        "description": "Play Next Track",
-        "global":true
-    },
+         }
+      },
+      "play-pause": {
+         "description": "Play/Pause Active Audio",
+         "global": true,
+         "suggested_key": {
+            "default": "MediaPlayPause",
+            "mac": "MediaPlayPause"
+         }
+      },
+      "prev": {
+         "description": "Play Previous Track",
+         "global": true,
+         "suggested_key": {
+            "default": "MediaPrevTrack",
+            "mac": "MediaPrevTrack"
+         }
+      },
       "stop": {
-        "suggested_key": {
+         "description": "Stop Audio",
+         "global": true,
+         "suggested_key": {
             "default": "MediaStop",
             "mac": "MediaStop"
-        },
-        "description": "Stop Audio",
-        "global":true
-    }
-  },
-  "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": true
-  },
-  "content_scripts": [
-    {
-      "matches": ["http://www.thesixtyone.com/*"],
-      "js": ["shared.js","keysocket-t61.js"]
-    },
-    {
-      "matches": ["http://www.rdio.com/*"],
-      "js": ["shared.js","keysocket-rdio.js"]
-    },
-    {
-      "matches": ["https://play.google.com/music/*"],
-      "js": ["shared.js","keysocket-gmusic.js"]
-    },
-    {
-      "matches": ["http://grooveshark.com/*"],
-      "js": ["shared.js","keysocket-grooveshark.js"]
-    },
-    {
-      "matches": ["https://www.amazon.com/gp/dmusic/mp3/player*"],
-      "js": ["shared.js","keysocket-amazon-cloud-player.js"]
-    },
-    {
-      "matches": ["http://www.pandora.com/*"],
-      "js": ["shared.js","keysocket-pandora.js"]
-    },
-    {
-      "matches": ["*://vk.com/*"],
-      "js": ["shared.js","keysocket-vkontakte.js"]
-    },
-    {
-      "matches": ["*://*.youtube.com/*"],
-      "js": ["shared.js","keysocket-youtube.js"]
-    },
-    {
-      "matches": ["*://www.slacker.com/*"],
-      "js": ["shared.js","keysocket-slacker.js"]
-    },
-    {
-      "matches": ["*://music.yandex.ru/*"],
-      "js": ["shared.js","keysocket-yandex-music.js"]
-    },
-    {
-      "matches": ["*://tracksflow.com/*"],
-      "js": ["shared.js","keysocket-tracksflow.js"]
-    },
-    {
-      "matches": ["*://www.jango.com/*"],
-      "js": ["shared.js","keysocket-jango.js"]
-    },
-    {
-      "matches": ["*://play.spotify.com/*"],
-      "js": ["shared.js","keysocket-spotify.js"]
-    },
-    {
-      "matches": ["*://www.deezer.com/*"],
-      "js": ["shared.js","keysocket-deezer.js"]
-    },
-    {
-      "matches": ["*://jamstash.com/*"],
-      "js": ["shared.js","keysocket-jamstash.js"]
-    },
-    {
-      "matches": ["*://*.phishtracks.com/*"],
-      "js": ["shared.js","keysocket-phishtracks.js"]
-    },
-    {
-      "matches": ["*://*.musicchoice.com/*"],
-      "js": ["shared.js","keysocket-musicchoice.js"]
-    },
-    {
-      "matches": ["*://*/webman/*"],
-      "js": ["shared.js","keysocket-dsaudio5.js"]
-    },
-    {
-      "matches": ["*://songza.com/*"],
-      "js": ["shared.js","keysocket-songza.js"]
-    },
-    {
-      "matches": ["http://*.naxosmusiclibrary.com/mediaplayer/*"],
-      "js": ["shared.js","keysocket-nml.js"]
-    },
-    {
-      "matches": ["https://soundcloud.com/*"],
-      "js": ["shared.js","keysocket-soundcloud.js"]
-    },
-    {
-      "matches": ["*://music.xbox.com/*"],
-      "js": ["shared.js","keysocket-xboxmusic.js"]
-    },
-    {
-      "matches": ["http://www.xiami.com/play*"],
-      "js": ["shared.js","keysocket-xiami.js"]
-    },
-    {
-      "matches": ["https://now.jbhifi.com.au/*"],
-      "js": ["shared.js","keysocket-now-jbhifi.js"]
-    },
-    {
-      "matches": ["*://hypem.com/*"],
-      "js": ["shared.js","keysocket-hypem.js"]
-    },
-    {
-      "matches": ["https://overcast.fm/*"],
-      "js": ["shared.js","keysocket-overcast.js"]
-    },
-    {
-      "matches": ["*://plex.tv/web/*"],
-      "js": ["shared.js","keysocket-plex.js"]
-    },
-    {
-      "matches": ["*://listen.tidalhifi.com/*"],
-      "js": ["shared.js","keysocket-tidal.js"]
-    }
-  ]
+         }
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "shared.js", "keysocket-t61.js" ],
+      "matches": [ "http://www.thesixtyone.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-rdio.js" ],
+      "matches": [ "http://www.rdio.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-gmusic.js" ],
+      "matches": [ "https://play.google.com/music/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-grooveshark.js" ],
+      "matches": [ "http://grooveshark.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-amazon-cloud-player.js" ],
+      "matches": [ "https://www.amazon.com/gp/dmusic/mp3/player*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-pandora.js" ],
+      "matches": [ "http://www.pandora.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-vkontakte.js" ],
+      "matches": [ "*://vk.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-youtube.js" ],
+      "matches": [ "*://*.youtube.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-slacker.js" ],
+      "matches": [ "*://www.slacker.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-yandex-music.js" ],
+      "matches": [ "*://music.yandex.ru/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-tracksflow.js" ],
+      "matches": [ "*://tracksflow.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-jango.js" ],
+      "matches": [ "*://www.jango.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-spotify.js" ],
+      "matches": [ "*://play.spotify.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-deezer.js" ],
+      "matches": [ "*://www.deezer.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-jamstash.js" ],
+      "matches": [ "*://jamstash.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-phishtracks.js" ],
+      "matches": [ "*://*.phishtracks.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-musicchoice.js" ],
+      "matches": [ "*://*.musicchoice.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-dsaudio5.js" ],
+      "matches": [ "*://*/webman/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-songza.js" ],
+      "matches": [ "http://songza.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-nml.js" ],
+      "matches": [ "http://*.naxosmusiclibrary.com/mediaplayer/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-soundcloud.js" ],
+      "matches": [ "https://soundcloud.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-xboxmusic.js" ],
+      "matches": [ "*://music.xbox.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-xiami.js" ],
+      "matches": [ "http://www.xiami.com/play*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-now-jbhifi.js" ],
+      "matches": [ "https://now.jbhifi.com.au/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-hypem.js" ],
+      "matches": [ "*://hypem.com/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-overcast.js" ],
+      "matches": [ "https://overcast.fm/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-plex.js" ],
+      "matches": [ "*://plex.tv/web/*" ]
+   }, {
+      "js": [ "shared.js", "keysocket-bop.js" ],
+      "matches": [ "*://bop.fm/*" ]
+   } ],
+   "description": "Control your favorite web-based music player with your keyboard's media keys",
+   "homepage_url": "https://github.com/borismus/keysocket",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxjIRcEWKE0VsTUWHXx8wGqqFnYkZsxGLdIjfwesprYw+PG0z+994P4qcXEw/iPtvVyeyuVxqk3fcSSrhZHiplX+PWO80ww0Sh0Hf2fFaj83FFa02oFO22iUoUjz0uGkfguBmR/AKUuMCGjRpdqrezbEC38RMWYQmDpVxYXrqnRwIDAQAB",
+   "manifest_version": 2,
+   "name": "Key Socket Media Keys",
+   "permissions": [ "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.6.1"
 }
