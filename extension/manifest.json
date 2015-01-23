@@ -165,6 +165,9 @@
     }, {
       "matches": [ "*://bop.fm/*" ],
       "js": [ "shared.js", "keysocket-bop.js" ]
+    }, {
+      "matches": ["*://*.gaana.com/*"],
+      "js": ["shared.js", "keysocket-gaana.js"]
     }
   ]
 }

@@ -30,7 +30,8 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * JB Hi-Fi Now
    * Plex
    * Tidal
-
+   * Gaana.com
+   
 # Usage
 
 1. Install extension from the [chrome web store][crx].
