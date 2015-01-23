@@ -31,6 +31,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Plex
    * Tidal
    * Gaana.com
+   * Saavn.com
    
 # Usage
 

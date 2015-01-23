@@ -168,6 +168,9 @@
     }, {
       "matches": ["*://*.gaana.com/*"],
       "js": ["shared.js", "keysocket-gaana.js"]
+    }, {
+      "matches": ["*://*.saavn.com/*"],
+      "js": ["shared.js", "keysocket-saavn.js"]
     }
   ]
 }
