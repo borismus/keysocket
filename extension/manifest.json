@@ -108,7 +108,7 @@
       "js": ["shared.js","keysocket-deezer.js"]
     },
     {
-      "matches": ["*://jamstash.com/*"],
+      "matches": ["*://jamstash.com/*", "*://*.jamstash.com/*"],
       "js": ["shared.js","keysocket-jamstash.js"]
     },
     {

@@ -6,12 +6,10 @@ function onKeyPress(key) {
         var nextButton = document.getElementById('NextTrack');
         simulateClick(nextButton);
     } else if(key === PLAY) {
-        var isPlaying = document.getElementById('PlayTrack').style.display === 'none';
-        var playPauseButton = null;
+        var playPauseButton = document.getElementsByClassName('PlayTrack')[0];
+        var isPlaying = playPauseButton.style.display === 'none';
         if(isPlaying) {
-          playPauseButton = document.getElementById('PauseTrack');
-        } else {
-          playPauseButton = document.getElementById('PlayTrack');
+          playPauseButton = document.getElementsByClassName('PauseTrack')[0];
         }
         simulateClick(playPauseButton);
     }
