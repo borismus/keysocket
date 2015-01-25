@@ -171,6 +171,14 @@
     }, {
       "matches": ["*://*.saavn.com/*"],
       "js": ["shared.js", "keysocket-saavn.js"]
+    },
+    {
+      "matches": [ "*://bop.fm/*" ],
+      "js": [ "shared.js", "keysocket-bop.js" ]
+    },
+    {
+      "matches": ["*://ok.ru/*"],
+      "js": ["shared.js","keysocket-ok.js"]
     }
   ]
 }
