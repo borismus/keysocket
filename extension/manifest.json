@@ -171,6 +171,9 @@
     }, {
       "matches": ["*://*.saavn.com/*"],
       "js": ["shared.js", "keysocket-saavn.js"]
+    }, {
+      "matches": ["*://ok.ru/*"],
+      "js": ["shared.js", "keysocket-ok.js"]
     }
   ]
 }
