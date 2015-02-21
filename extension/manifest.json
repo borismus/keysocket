@@ -88,7 +88,7 @@
       "js": ["shared.js","keysocket-slacker.js"]
     },
     {
-      "matches": ["*://music.yandex.ru/*"],
+      "matches": ["*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*"],
       "js": ["shared.js","keysocket-yandex-music.js"]
     },
     {
