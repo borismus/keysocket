@@ -12,5 +12,8 @@ function onKeyPress(key) {
           playPauseButton = document.getElementsByClassName('PauseTrack')[0];
         }
         simulateClick(playPauseButton);
+    } else if(key === STOP) {
+        playPauseButton = document.getElementsByClassName('PauseTrack')[0];
+		simulateClick(playPauseButton);
     }
 }
