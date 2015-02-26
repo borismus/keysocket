@@ -6,5 +6,9 @@ function onKeyPress(key) {
         } else {
             player.play();
         }
+    } elseif (key === STOP) {
+        if (!player.paused) {
+            player.pause();
+        }
     }
 }
