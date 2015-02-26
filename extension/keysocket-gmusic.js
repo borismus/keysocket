@@ -5,6 +5,9 @@ function onKeyPress(key) {
     } else if(key === PLAY) {
         var playPauseButton = document.querySelector('[data-id=play-pause]');
         simulateClick(playPauseButton);
+    } else if(key === STOP) {
+        var playPauseButton = document.querySelector('[data-id=play-pause].playing');
+        if (playPauseButton != null) simulateClick(playPauseButton);
     } else if(key === PREV) {
         var backButton = document.querySelector('[data-id=rewind]');
         simulateClick(backButton);

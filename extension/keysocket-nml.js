@@ -14,5 +14,12 @@ function onKeyPress(key){
     } else if(key === PREV) {
         var prevButton = document.querySelector('#ctrl-previous');
         simulateClick(prevButton);
+    } else if(key === STOP) {
+        var isPlaying = document.querySelector('#ctrl-play').style.display == 'none';
+        var playPauseButton = null;
+        if(isPlaying) {
+          playPauseButton = document.querySelector('#ctrl-pause');
+        }
+        simulateClick(playPauseButton);
     }
 }

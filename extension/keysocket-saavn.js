@@ -15,6 +15,14 @@ function onKeyPress(key) {
 			else
 				simulateClick(playbutton);			
 		}
+	} else if(key == PLAY) {
+		var playbutton = document.querySelector('button#play');
+		var pausebutton = document.querySelector('button#pause');
+		var hidebutton = document.querySelector('button.controls.hide');
+		if(hidebutton != null) {
+			if(hidebutton.id == 'play')
+				simulateClick(pausebutton);
+		}
 	}
 
 }

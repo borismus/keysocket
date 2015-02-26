@@ -11,6 +11,13 @@ function onKeyPress(key) {
           playPauseButton = document.getElementById('play_button');
         }
         simulateClick(playPauseButton);
+    } else if(key === STOP) {
+        var isPlaying = document.getElementById('pause_button').style.display !== 'none';
+        var playPauseButton = null;
+        if(isPlaying) {
+          playPauseButton = document.getElementById('pause_button');
+        }
+        simulateClick(playPauseButton);
     } else if(key === PREV) {
         var backButton = document.getElementById('large_previous_song_button');
         simulateClick(backButton);
