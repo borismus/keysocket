@@ -11,5 +11,12 @@ function onKeyPress(key) {
           playPauseButton = document.querySelector('div.playButton > a');
         }
         simulateClick(playPauseButton);
+    } else if(key === STOP) {
+        var isPlaying = document.querySelector('div.playButton').style.display !== 'block';
+        var playPauseButton = null;
+        if(isPlaying) {
+          playPauseButton = document.querySelector('div.pauseButton > a');
+		  simulateClick(playPauseButton);
+        }
     }
 }
