@@ -13,6 +13,12 @@ function onKeyPress(key) {
     } else if(key === PREV) {
         var backButton = document.querySelector('button.play-controls__previous');
         simulateClick(backButton);
+    } else if(key === STOP) {
+        var playButton = document.querySelector('button.play-controls__play');
+        var pauseButton = document.querySelector('button.play-controls__pause');
+        if(!isVisible(playButton)) {
+            simulateClick(pauseButton)
+        }
     }
 }
 
