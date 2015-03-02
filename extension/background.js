@@ -13,6 +13,7 @@ chrome.runtime.onMessage.addListener(
         console.log("Received tab message: ", request);
         if(request.command == "activateTab" && sender.tab && activeTabs.indexOf(sender.tab.id) == -1){
             activeTabs.push(sender.tab.id);
+            chrome.pageAction.show(sender.tab.id);
         }
     }
 );
