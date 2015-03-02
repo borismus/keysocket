@@ -11,8 +11,10 @@ chrome.commands.onCommand.addListener(function(command) {
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         console.log("Received tab message: ", request);
-        if(request.command == "activateTab" && sender.tab && activeTabs.indexOf(sender.tab.id) == -1){
-            activeTabs.push(sender.tab.id);
+        if(request.command == "activateTab" && sender.tab){
+            if(activeTabs.indexOf(sender.tab.id) == -1){
+                activeTabs.push(sender.tab.id);
+            }
             chrome.pageAction.show(sender.tab.id);
             chrome.pageAction.setTitle("Key Socket Media Keys: tab control is enabled, click to disable");
         }
