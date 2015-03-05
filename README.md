@@ -5,6 +5,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
 **Supported sites:**
    * Amazon music player
    * Deezer
+   * Digitally Imported (di.fm)
    * Google Music
    * Grooveshark
    * Jamstash
