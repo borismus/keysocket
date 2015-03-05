@@ -16,7 +16,7 @@ chrome.runtime.onMessage.addListener(
                 activeTabs.push(sender.tab.id);
             }
             chrome.pageAction.show(sender.tab.id);
-            chrome.pageAction.setTitle(sender.tab.id, "Click to disable media keys for this tab");
+            chrome.pageAction.setTitle({tabId: sender.tab.id, title: "Click to disable media keys for this tab"});
         }
     }
 );
@@ -33,10 +33,10 @@ chrome.pageAction.onClicked.addListener(function (tab) {
     if(index < 0){
         activeTabs.push(tab.id);
         chrome.pageAction.setIcon({tabId: tab.id, path: {"19": "icons/icon19.png", "38": "icons/icon38.png"}});
-        chrome.pageAction.setTitle(sender.tab.id, "Click to disable media keys for this tab");
+        chrome.pageAction.setTitle({tabId: tab.id, title: "Click to disable media keys for this tab"});
     } else {
         activeTabs.splice(index,1);
         chrome.pageAction.setIcon({tabId: tab.id, path: {"19": "icons/icon19-inactive.png", "38": "icons/icon38-inactive.png"}});
-        chrome.pageAction.setTitle(sender.tab.id, "Click to enable media keys for this tab");
+        chrome.pageAction.setTitle({tabId: tab.id, title: "Click to enable media keys for this tab"});
     }
 });
