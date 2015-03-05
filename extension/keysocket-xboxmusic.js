@@ -1,14 +1,11 @@
 function onKeyPress(key) {
-    if(key === NEXT) {
-        var nextButton = document.querySelector('.iconPlayerNext');
-        simulateClick(nextButton);
-    } else if(key === PLAY) {
-        var playPauseButton = document.querySelector('.iconPlayerPause') || document.querySelector('.iconPlayerPlay');
-        simulateClick(playPauseButton);
-    } else if(key === PREV) {
-        var backButton = document.querySelector('.iconPlayerPrevious');
-        simulateClick(backButton);
-    }
+	if(key === NEXT) {
+		simulateClick(document.querySelector('.iconPlayerNext'));
+	} else if(key === PLAY) {
+		simulateClick(document.querySelector('.iconPlayerPause') || document.querySelector('.iconPlayerPlay'));
+	} else if(key === PREV) {
+		simulateClick(document.querySelector('.iconPlayerPrevious'));
+	} else if(key === STOP) {
+		simulateClick(document.querySelector('.iconPlayerPause'));
+	}
 }
-
-console.log("keysocket: Loading Xbox Music extension");

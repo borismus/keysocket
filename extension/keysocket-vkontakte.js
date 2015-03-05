@@ -13,7 +13,7 @@ var playTarget = {
         audio_modal : 'pd_prev'
     };
 
-function clickMany(targets){
+function clickMany(targets) {
     for (var elementId in targets) {
         if(targets.hasOwnProperty(elementId))
             simulateClick(document.getElementById(targets[elementId]));
@@ -21,11 +21,11 @@ function clickMany(targets){
 }
 
 function onKeyPress(key) {
-    if (key == PREV) {
+    if(key == PREV) {
         clickMany(prevTarget);
-    } else if (key == NEXT) {
+    } else if(key == NEXT) {
         clickMany(nextTarget);
-    } else if (key == PLAY) {
+    } else if(key == PLAY) {
         clickMany(playTarget);
     }
 }

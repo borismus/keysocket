@@ -1,14 +1,9 @@
 function onKeyPress(key) {
-    if(key === NEXT) {
-        var nextButton = document.querySelector('[data-control=next]');
-        simulateClick(nextButton);
-    } else if(key === PLAY) {
-        var playPauseButton = document.querySelector('[data-control=togglePause]');
-        simulateClick(playPauseButton);
-    } else if(key === PREV) {
-        var backButton = document.querySelector('[data-control=prev]');
-        simulateClick(backButton);
-    }
+	if(key === NEXT) {
+		simulateClick(document.querySelector('[data-control=next]'));
+	} else if(key === PLAY) {
+		simulateClick(document.querySelector('[data-control=togglePause]'));
+	} else if(key === PREV) {
+		simulateClick(document.querySelector('[data-control=prev]'));
+	}
 }
-
-console.log("keysocket: Loading Phishtracks extension");
