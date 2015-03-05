@@ -7,8 +7,6 @@ function onKeyPress(key) {
             player.play();
         }
     } else if(key === STOP) {
-        if(!player.paused) {
-            player.pause();
-        }
+        player.pause();
     }
 }
