@@ -1,18 +1,11 @@
-function onKeyPress(key){
-    if(key === NEXT) {
-        var nextButton = document.querySelector('#ctrl-next');
-        simulateClick(nextButton);
-    } else if(key === PLAY) {
-        var isPlaying = document.querySelector('#ctrl-play').style.display == 'none';
-        var playPauseButton = null;
-        if(isPlaying) {
-          playPauseButton = document.querySelector('#ctrl-pause');
-        } else {
-          playPauseButton = document.querySelector('#ctrl-play');
-        }
-        simulateClick(playPauseButton);
-    } else if(key === PREV) {
-        var prevButton = document.querySelector('#ctrl-previous');
-        simulateClick(prevButton);
-    }
+function onKeyPress(key) {
+  if(key === NEXT) {
+    simulateClick(document.querySelector('#ctrl-next'));
+  } else if(key === PLAY) {
+    simulateClick(document.querySelector('#ctrl-play').style.display == 'none' ? document.querySelector('#ctrl-pause') : document.querySelector('#ctrl-play'));
+  } else if(key === PREV) {
+    simulateClick(document.querySelector('#ctrl-previous'));
+  } else if(key === STOP) {
+    simulateClick(document.querySelector('#ctrl-pause'));
+  }
 }

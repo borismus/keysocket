@@ -1,12 +1,9 @@
 function onKeyPress(key) {
-    if(key === NEXT) {
-        var nextButton = document.getElementsByClassName('js-rewind')[0];
-        simulateClick(nextButton);
-    } else if(key === PLAY) {
-        var playPauseButton = document.getElementsByClassName('js-play')[0];
-        simulateClick(playPauseButton);
-    } else if(key === PREV) {
-        var backButton = document.getElementsByClassName('js-forward')[0];
-        simulateClick(backButton);
-    }
+  if(key === NEXT) {
+    simulateClick(document.querySelector('.js-rewind')[0]);
+  } else if(key === PLAY) {
+    simulateClick(document.querySelector('.js-play')[0]);
+  } else if(key === PREV) {
+    simulateClick(document.querySelector('.js-forward')[0]);
+  }
 }

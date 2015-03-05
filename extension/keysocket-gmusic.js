@@ -1,14 +1,11 @@
 function onKeyPress(key) {
-    if(key === NEXT) {
-        var nextButton = document.querySelector('[data-id=forward]');
-        simulateClick(nextButton);
-    } else if(key === PLAY) {
-        var playPauseButton = document.querySelector('[data-id=play-pause]');
-        simulateClick(playPauseButton);
-    } else if(key === PREV) {
-        var backButton = document.querySelector('[data-id=rewind]');
-        simulateClick(backButton);
-    }
+  if(key === NEXT) {
+    simulateClick(document.querySelector('[data-id=forward]'));
+  } else if(key === PLAY) {
+    simulateClick(document.querySelector('[data-id=play-pause]'));
+  } else if(key === PREV) {
+    simulateClick(document.querySelector('[data-id=rewind]'));
+  } else if(key === STOP) {
+    if(document.querySelector('[data-id=play-pause].playing') != null) simulateClick(document.querySelector('[data-id=play-pause]'));
+  }
 }
-
-console.log("keysocket: Loading Gmusic extension");

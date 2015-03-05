@@ -1,13 +1,12 @@
 function onKeyPress(key) {
-    var frame = document.getElementById('app-player');
-    if(key === NEXT) {
-        var nextButton = frame.contentDocument.getElementById('next');
-        simulateClick(nextButton);
-    } else if(key === PLAY) {
-        var playPauseButton = frame.contentDocument.getElementById('play-pause');
-        simulateClick(playPauseButton);
-    } else if(key === PREV) {
-        var backButton = frame.contentDocument.getElementById('previous');
-        simulateClick(backButton);
-    }
+var frame = document.querySelector('#app-player');
+  if(key === NEXT) {
+    simulateClick(frame.contentDocument.querySelector('#next'));
+  } else if(key === PLAY) {
+    simulateClick(frame.contentDocument.querySelector('#play-pause'));
+  } else if(key === PREV) {
+    simulateClick(frame.contentDocument.querySelector('#previous'));
+  } else if(key === STOP) {
+    if(frame.contentDocument.querySelector('#play-pause.playing') != null) simulateClick(frame.contentDocument.querySelector('#play-pause'));
+  }
 }
