@@ -12,8 +12,8 @@ function simulateClick(element) {
 
     var click = new MouseEvent("click", {
         bubbles: true,
-		cancelable: false,
-		view: window,
+        cancelable: false,
+        view: window,
     });
     return element.dispatchEvent(click);
 }
