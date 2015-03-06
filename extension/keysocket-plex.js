@@ -1,8 +1,8 @@
 function onKeyPress(key) {
-    if(key === NEXT) {
+    if (key === NEXT) {
         var nextButton = document.querySelector('button.next-btn');
         simulateClick(nextButton);
-    } else if(key === PLAY) {
+    } else if (key === PLAY) {
         var playButton = document.querySelector('button.play-btn'),
             pauseButton;
         try {
@@ -16,10 +16,10 @@ function onKeyPress(key) {
             var playAllButton = document.querySelector('a.play-btn');
             simulateClick(playAllButton);
         }
-    } else if(key === PREV) {
+    } else if (key === PREV) {
         var backButton = document.querySelector('button.previous-btn');
         simulateClick(backButton);
-    } else if(key === STOP) {
+    } else if (key === STOP) {
         var stopButton = document.querySelector('button.stop-btn');
         simulateClick(stopButton);
     }
