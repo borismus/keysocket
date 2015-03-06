@@ -12,33 +12,33 @@
   "manifest_version": 2,
   "commands": {
     "prev": {
-        "suggested_key": {
-            "default": "MediaPrevTrack",
-            "mac": "MediaPrevTrack"
-        },
-        "description": "Play Previous Track",
-        "global":true
+      "suggested_key": {
+        "default": "MediaPrevTrack",
+        "mac": "MediaPrevTrack"
+      },
+      "description": "Play Previous Track",
+      "global":true
     },
       "play-pause": {
         "suggested_key": {
-            "default": "MediaPlayPause",
-            "mac": "MediaPlayPause"
+          "default": "MediaPlayPause",
+          "mac": "MediaPlayPause"
         },
         "description": "Play/Pause Active Audio",
         "global":true
     },
       "next": {
         "suggested_key": {
-            "default": "MediaNextTrack",
-            "mac": "MediaNextTrack"
+          "default": "MediaNextTrack",
+          "mac": "MediaNextTrack"
         },
         "description": "Play Next Track",
         "global":true
     },
       "stop": {
         "suggested_key": {
-            "default": "MediaStop",
-            "mac": "MediaStop"
+          "default": "MediaStop",
+          "mac": "MediaStop"
         },
         "description": "Stop Audio",
         "global":true
@@ -169,19 +169,24 @@
     {
       "matches": ["*://listen.tidalhifi.com/*"],
       "js": ["shared.js","keysocket-tidal.js"]
-    }, {
+    },
+    {
       "matches": [ "*://bop.fm/*" ],
       "js": [ "shared.js", "keysocket-bop.js" ]
-    }, {
+    },
+    {
       "matches": ["*://*.gaana.com/*"],
       "js": ["shared.js", "keysocket-gaana.js"]
-    }, {
+    },
+    {
       "matches": ["*://*.saavn.com/*"],
       "js": ["shared.js", "keysocket-saavn.js"]
-    }, {
+    },
+    {
       "matches": ["*://ok.ru/*"],
       "js": ["shared.js", "keysocket-ok.js"]
-    }, {
+    },
+    {
       "matches": ["*://www.di.fm/*"],
       "js": ["shared.js", "keysocket-digitallyimported.js"]
     }
