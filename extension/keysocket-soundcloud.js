@@ -1,9 +1,9 @@
 function onKeyPress(key) {
     if (key === NEXT) {
-        clickHelper('.skipControl__next');
+        simulateSelectorClick('.skipControl__next');
     } else if (key === PLAY) {
-        simulateClick('.playControl');
+        simulateSelectorClick('.playControl');
     } else if (key === PREV) {
-        simulateClick('.skipControl__previous');
+        simulateSelectorClick('.skipControl__previous');
     }
 }
