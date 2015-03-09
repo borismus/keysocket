@@ -5,7 +5,7 @@ function onKeyPress(key) {
             var nextButton = document.querySelector('.ytp-button-next');
             simulateClick(nextButton);
         } else if (key === PLAY) {
-            var playPauseButton = document.querySelector('.ytp-button-pause') || document.querySelector('.ytp-button-play');
+            var playPauseButton = document.querySelector('.ytp-button-pause, .ytp-button-play');
             simulateClick(playPauseButton);
         } else if (key === PREV) {
             var backButton = document.querySelector('.ytp-button-prev');
