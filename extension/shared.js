@@ -33,6 +33,26 @@ function simulateClick(element) {
     return element.dispatchEvent(click);
 }
 
+function simulateSelectorClick(element, frame) {
+    if (!element) {
+        console.log('keysocket: Cannot simulate click, element undefined');
+        return false;
+    }
+
+    var click = new MouseEvent('click', {
+        bubbles: true,
+        cancelable: false,
+        view: window,
+    });
+
+    if (frame !== 'undefined') {
+      clickOn = document.querySelector(frame).contentDocument;
+    } else {
+      clickOn = document;
+    }
+    return clickOn.querySelector(element).dispatchEvent(click);
+}
+
 chrome.runtime.onMessage.addListener(
     function(request) {
         console.log('Received keypress: ', request);

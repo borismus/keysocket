@@ -1,21 +1,13 @@
 function onKeyPress(key) {
     if (key === NEXT) {
-        var nextButton = document.querySelector('button.play-controls__next');
-        simulateClick(nextButton);
+        simulateSelectorClick('button.play-controls__next');
     } else if (key === PLAY) {
-        var playButton = document.querySelector('button.play-controls__play');
-        var pauseButton = document.querySelector('button.play-controls__pause');
-        if (isVisible(playButton)) {
-            simulateClick(playButton);
+        if (document.querySelector('button.play-controls__play').offsetParent != null) {
+            simulateSelectorClick('button.play-controls__play');
         } else {
-            simulateClick(pauseButton);
+            simulateSelectorClick('button.play-controls__pause');
         }
     } else if (key === PREV) {
-        var backButton = document.querySelector('button.play-controls__previous');
-        simulateClick(backButton);
+        simulateSelectorClick('button.play-controls__previous');
     }
-}
-
-function isVisible(el) {
-    return el.offsetParent != null;
 }

@@ -1,19 +1,15 @@
 function onKeyPress(key) {
-    if (key == NEXT) {
-        var nextbutton = document.querySelector('button#fwd');
-        simulateClick(nextbutton);
-    } else if (key == PREV) {
-        var prevbutton = document.querySelector('button#rew');
-        simulateClick(prevbutton);
-    } else if (key == PLAY) {
-        var playbutton = document.querySelector('button#play');
-        var pausebutton = document.querySelector('button#pause');
+    if (key === NEXT) {
+        simulateSelectorClick('button#fwd');
+    } else if (key === PREV) {
+        simulateSelectorClick('button#rew');
+    } else if (key === PLAY) {
         var hidebutton = document.querySelector('button.controls.hide');
         if (hidebutton != null) {
             if (hidebutton.id == 'play')
-                simulateClick(pausebutton);
+                simulateSelectorClick('button#pause');
             else
-                simulateClick(playbutton);
+                simulateSelectorClick('button#play');
         }
     }
 
