@@ -33,7 +33,7 @@ function simulateClick(element) {
     return element.dispatchEvent(click);
 }
 
-function clickHelper(element, frame) {
+function simulateSelectorClick(element, frame) {
     if (!element) {
         console.log('keysocket: Cannot simulate click, element undefined');
         return false;
