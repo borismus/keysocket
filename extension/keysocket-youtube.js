@@ -1,6 +1,6 @@
 function onKeyPress(key) {
     var video = document.querySelector('#movie_player');
-    if (!video.getPlayerState) { // HTML5
+    if (!video.getPlayerState) { // HTML5 Player
         if (key === NEXT) {
             var nextButton = document.querySelector('.ytp-button-next');
             simulateClick(nextButton);
@@ -11,7 +11,7 @@ function onKeyPress(key) {
             var backButton = document.querySelector('.ytp-button-prev');
             simulateClick(backButton);
         }
-    } else { // Flash
+    } else { // Flash Player
         if (key === PLAY) {
             if (video.getPlayerState() === 2) {
                 video.playVideo();
