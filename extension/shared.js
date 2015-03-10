@@ -39,18 +39,21 @@ function simulateSelectorClick(element, frame) {
         return false;
     }
 
+    var elementSelected;
+    if (typeof frame !== 'undefined') {
+      elementSelected = document.querySelector(frame).contentDocument.querySelector(element);
+    } else {
+      elementSelected = document.querySelector(element);
+    }
+	if (typeof elementSelected[0] !== 'undefined') elementSelected = elementSelected[0];
+	
     var click = new MouseEvent('click', {
         bubbles: true,
         cancelable: false,
         view: window,
     });
 
-    if (frame !== 'undefined') {
-      clickOn = document.querySelector(frame).contentDocument;
-    } else {
-      clickOn = document;
-    }
-    return clickOn.querySelector(element).dispatchEvent(click);
+    return elementSelected.dispatchEvent(click);
 }
 
 chrome.runtime.onMessage.addListener(
