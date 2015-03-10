@@ -1,8 +1,6 @@
 function onKeyPress(key) {
     if (key === NEXT) {
-        var nextButton = document
-            .querySelector('.yt-uix-button-icon-playlist-bar-next,.yt-uix-button-icon-watch-appbar-play-next');
-        simulateClick(nextButton);
+        simulateSelectorClick('.yt-uix-button-icon-playlist-bar-next,.yt-uix-button-icon-watch-appbar-play-next');
     } else if (key === PLAY) {
         var video = document.querySelector('#movie_player');
 
@@ -24,8 +22,6 @@ function onKeyPress(key) {
             }
         }
     } else if (key === PREV) {
-        var backButton = document
-            .querySelector('.yt-uix-button-icon-playlist-bar-prev,.yt-uix-button-icon-watch-appbar-play-prev');
-        simulateClick(backButton);
+        simulateSelectorClick('.yt-uix-button-icon-playlist-bar-prev,.yt-uix-button-icon-watch-appbar-play-prev');
     }
 }
