@@ -1,37 +1,27 @@
 function onKeyPress(key) {
-    if (document.getElementById('player_control_play')) { // old deezer style
+    if (document.querySelector('#player_control_play')) { // old deezer style
         if (key === NEXT) {
-            var nextButton = document.getElementById('player_control_next');
-            simulateClick(nextButton);
+            simulateSelectorClick('#player_control_next');
         } else if (key === PLAY) {
-            var isPlaying = document.getElementById('player_control_play').style.display === 'none';
-            var playPauseButton = null;
-            if (isPlaying) {
-                playPauseButton = document.getElementById('player_control_pause');
+            if (document.querySelector('#player_control_play').style.display === 'none') {
+                simulateSelectorClick('#player_control_pause');
             } else {
-                playPauseButton = document.getElementById('player_control_play');
+                simulateSelectorClick('#player_control_play');
             }
-            simulateClick(playPauseButton);
         } else if (key === PREV) {
-            var backButton = document.getElementById('player_control_prev');
-            simulateClick(backButton);
+            simulateSelectorClick('#player_control_prev');
         }
     } else { // new deezer style
         if (key === NEXT) {
-            var nextButton = document.getElementsByClassName('control-next')[0];
-            simulateClick(nextButton);
+            simulateSelectorClick('.control-next');
         } else if (key === PLAY) {
-            var isPlaying = document.getElementsByClassName('control-play')[0] ? false : true;
-            var playPauseButton = null;
-            if (isPlaying) {
-                playPauseButton = document.getElementsByClassName('control-pause')[0];
+            if (!document.querySelector('.control-play')[0]) {
+                simulateSelectorClick('.control-pause');
             } else {
-                playPauseButton = document.getElementsByClassName('control-play')[0];
+                simulateSelectorClick('.control-play');
             }
-            simulateClick(playPauseButton);
         } else if (key === PREV) {
-            var backButton = document.getElementsByClassName('control-prev')[0];
-            simulateClick(backButton);
+            simulateSelectorClick('.control-prev');
         }
     }
 }

@@ -1,12 +1,9 @@
 function onKeyPress(key) {
     if (key === NEXT) {
-        var nextButton = document.getElementById('J_nextBtn');
-        simulateClick(nextButton);
+        simulateSelectorClick('#J_nextBtn');
     } else if (key === PLAY) {
-        var playPauseButton = document.getElementById('J_playBtn');
-        simulateClick(playPauseButton);
+        simulateSelectorClick('#J_playBtn');
     } else if (key === PREV) {
-        var backButton = document.getElementById('J_prevBtn');
-        simulateClick(backButton);
+        simulateSelectorClick('#J_prevBtn');
     }
 }

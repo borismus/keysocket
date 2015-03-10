@@ -33,6 +33,29 @@ function simulateClick(element) {
     return element.dispatchEvent(click);
 }
 
+function simulateSelectorClick(element, frame) {
+    if (!element) {
+        console.log('keysocket: Cannot simulate click, element undefined');
+        return false;
+    }
+
+    var elementSelected;
+    if (typeof frame !== 'undefined') {
+      elementSelected = document.querySelector(frame).contentDocument.querySelector(element);
+    } else {
+      elementSelected = document.querySelector(element);
+    }
+	if (typeof elementSelected[0] !== 'undefined') elementSelected = elementSelected[0];
+	
+    var click = new MouseEvent('click', {
+        bubbles: true,
+        cancelable: false,
+        view: window,
+    });
+
+    return elementSelected.dispatchEvent(click);
+}
+
 chrome.runtime.onMessage.addListener(
     function(request) {
         console.log('Received keypress: ', request);
