@@ -1,6 +1,5 @@
 function onKeyPress(key) {
     if (key === PLAY) {
-        var playPauseButton = document.querySelector('#webplayer-region .controls a:first-child');
-        simulateClick(playPauseButton);
+        simulateClick('#webplayer-region .controls a:first-child');
     }
 }

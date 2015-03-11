@@ -1,16 +1,12 @@
 function onKeyPress(key) {
-    if (key == NEXT) {
-        var nextbutton = document.querySelector('div.player_wrapper > a.next');
-        simulateClick(nextbutton);
-    } else if (key == PREV) {
-        var prevbutton = document.querySelector('div.player_wrapper > a.prev');
-        simulateClick(prevbutton);
-    } else if (key == PLAY) {
-        var playbutton = document.querySelector('div.player_wrapper > a.playPause.pause');
-        var pausebutton = document.querySelector('div.player_wrapper > a.playPause.play');
-        if (playbutton)
-            simulateClick(playbutton);
+    if (key === NEXT) {
+        simulateClick('div.player_wrapper > a.next');
+    } else if (key === PREV) {
+        simulateClick('div.player_wrapper > a.prev');
+    } else if (key === PLAY) {
+        if (!document.querySelector('div.player_wrapper > a.playPause.play'))
+            simulateClick('div.player_wrapper > a.playPause.pause');
         else
-            simulateClick(pausebutton);
+            simulateClick('div.player_wrapper > a.playPause.play');
     }
 }
