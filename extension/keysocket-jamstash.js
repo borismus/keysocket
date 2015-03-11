@@ -9,6 +9,6 @@ function onKeyPress(key) {
             simulateClick('.PauseTrack');
         } else {
             simulateClick('.PlayTrack');
-		}
+        }
     }
 }
