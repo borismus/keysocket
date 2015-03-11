@@ -19,10 +19,21 @@ var NEXT = 'next';
 var STOP = 'stop';
 
 
-function simulateClick(element) {
+function simulateClick(element, frame) {
     if (!element) {
         console.log('keysocket: Cannot simulate click, element undefined');
         return false;
+    }
+
+    if (!element.nodeName) {
+        if (typeof frame !== 'undefined') {
+          element = document.querySelector(frame).contentDocument.querySelector(element);
+        } else {
+          element = document.querySelector(element);
+        }
+        if (typeof element[0] !== 'undefined') {
+            element = element[0];
+        }
     }
 
     var click = new MouseEvent('click', {
@@ -30,6 +41,7 @@ function simulateClick(element) {
         cancelable: false,
         view: window,
     });
+
     return element.dispatchEvent(click);
 }
 
