@@ -34,6 +34,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Gaana.com
    * Saavn.com
    * Ok.ru
+   * Superplayer.fm
 
 # Usage
 
