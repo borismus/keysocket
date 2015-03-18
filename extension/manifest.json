@@ -193,6 +193,10 @@
     {
       "matches": ["*://www.superplayer.fm/*"],
       "js": ["shared.js", "keysocket-superplayer.js"]
+    },
+    {
+      "matches": ["*://*.ustream.tv/*"],
+      "js": ["shared.js","keysocket-ustream.js"]
     }
   ]
 }
