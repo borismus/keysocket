@@ -35,6 +35,8 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Saavn.com
    * Ok.ru
    * Superplayer.fm
+   * Ustream.tv
+   * Pocketcasts.com
 
 # Usage
 
