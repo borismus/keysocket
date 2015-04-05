@@ -10,7 +10,3 @@ function onKeyPress(key) {
         simulateClick(backButton);
     }
 }
-
-function isVisible(el) {
-    return el.offsetParent != null;
-}
