@@ -194,9 +194,13 @@
       "matches": ["*://www.superplayer.fm/*"],
       "js": ["shared.js", "keysocket-superplayer.js"]
     },
-	{
+    {
       "matches": ["*://play.pocketcasts.com/*"],
       "js": ["shared.js", "keysocket-pocketcasts.js"]
+    },
+    {
+      "matches": ["*://zvooq.ru/*"],
+      "js": ["shared.js", "keysocket-zvooq.js"]
     }
   ]
 }
