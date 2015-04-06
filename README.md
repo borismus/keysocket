@@ -37,6 +37,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Superplayer.fm
    * Ustream.tv
    * Pocketcasts.com
+   * Zvooq
 
 # Usage
 
