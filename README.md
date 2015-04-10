@@ -4,6 +4,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
 
 **Supported sites:**
    * Amazon music player
+   * birp.fm
    * Deezer
    * Digitally Imported (di.fm)
    * Google Music
