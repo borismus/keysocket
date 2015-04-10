@@ -201,6 +201,10 @@
     {
       "matches": ["*://zvooq.ru/*"],
       "js": ["shared.js", "keysocket-zvooq.js"]
+    },
+    {
+      "matches": ["*://*.birp.fm/*"],
+      "js": ["shared.js", "keysocket-birp.js"]
     }
   ]
 }
