@@ -59,6 +59,10 @@
   },
   "content_scripts": [
     {
+      "matches": ["*://22tracks.com/*"],
+      "js": ["shared.js","keysocket-22tracks.js"]
+    },
+    {
       "matches": ["http://www.thesixtyone.com/*"],
       "js": ["shared.js","keysocket-t61.js"]
     },
