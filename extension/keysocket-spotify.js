@@ -9,5 +9,8 @@ function onKeyPress(key) {
     } else if (key === PREV) {
         var backButton = frame.contentDocument.getElementById('previous');
         simulateClick(backButton);
+    } else if (key === STOP) {
+        var stopButton = frame.contentDocument.querySelector('#play-pause.playing');
+        simulateClick(stopButton);
     }
 }

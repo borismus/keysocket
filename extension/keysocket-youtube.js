@@ -10,6 +10,9 @@ function onKeyPress(key) {
         } else if (key === PREV) {
             var backButton = document.querySelector('.ytp-button-prev');
             simulateClick(backButton);
+        } else if (key === STOP) {
+            var stopButton = document.querySelector('.ytp-button-pause');
+            simulateClick(stopButton);
         }
     } else { // Flash Player
         if (key === PLAY) {
@@ -18,6 +21,8 @@ function onKeyPress(key) {
             } else {
                 video.pauseVideo();
             }
+        } else if (key === STOP) {
+            video.pauseVideo();
         }
     }
 }

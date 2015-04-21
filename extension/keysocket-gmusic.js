@@ -8,6 +8,9 @@ function onKeyPress(key) {
     } else if (key === PREV) {
         var backButton = document.querySelector('[data-id=rewind]');
         simulateClick(backButton);
+    } else if (key === STOP) {
+        var stopButton = document.querySelector('[data-id=play-pause].playing');
+        simulateClick(stopButton);
     }
 }
 
