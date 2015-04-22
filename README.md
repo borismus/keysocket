@@ -16,6 +16,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Songza
    * SoundCloud
    * Spotify
+   * Spreaker
    * Deezer
    * Jamstash
    * Music Choice

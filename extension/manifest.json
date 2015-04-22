@@ -143,6 +143,10 @@
       "js": ["shared.js","keysocket-soundcloud.js"]
     },
     {
+      "matches": ["*://www.spreaker.com/*"],
+      "js": ["shared.js","keysocket-spreaker.js"]
+    },
+    {
       "matches": ["*://music.xbox.com/*"],
       "js": ["shared.js","keysocket-xboxmusic.js"]
     },
