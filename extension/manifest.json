@@ -191,6 +191,10 @@
       "js": ["shared.js", "keysocket-digitallyimported.js"]
     },
     {
+      "matches": ["*://somafm.com/player/*"],
+      "js": ["shared.js", "keysocket-somafm.js"]
+    },
+    {
       "matches": ["*://www.superplayer.fm/*"],
       "js": ["shared.js", "keysocket-superplayer.js"]
     },

@@ -5,38 +5,39 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
 **Supported sites:**
    * Amazon music player
    * Deezer
+   * Deezer
    * Digitally Imported (di.fm)
+   * Gaana.com
    * Google Music
    * Grooveshark
    * Jamstash
+   * Jamstash
    * Jango.com
+   * JB Hi-Fi Now
+   * Music Choice
    * Naxos Music Library
+   * Ok.ru
    * Pandora
+   * Phish Tracks
+   * Plex
+   * Pocketcasts.com
+   * Saavn.com
    * Slacker
+   * SomaFM
    * Songza
    * SoundCloud
    * Spotify
-   * Deezer
-   * Jamstash
-   * Music Choice
-   * Phish Tracks
+   * Superplayer.fm
    * Synology Audio Station v.5
    * thesixtyone
+   * Tidal
    * Tracksflow.com
    * vk.com (Vkontakte)
-   * Яндекс.Музыка (Yandex.Music)
-   * Youtube.com
    * Xbox Music
    * Xiami Music
-   * JB Hi-Fi Now
-   * Plex
-   * Tidal
-   * Gaana.com
-   * Saavn.com
-   * Ok.ru
-   * Superplayer.fm
-   * Pocketcasts.com
+   * Youtube.com
    * Zvooq
+   * Яндекс.Музыка (Yandex.Music)
 
 # Usage
 
