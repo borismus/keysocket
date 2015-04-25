@@ -4,21 +4,25 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
 
 **Supported sites:**
    * Amazon music player
+   * Bop
    * Deezer
    * Digitally Imported (di.fm)
    * Gaana.com
    * Google Music
    * Grooveshark
+   * Hype Machine
    * Jamstash
    * Jango.com
    * JB Hi-Fi Now
    * Music Choice
    * Naxos Music Library
    * Ok.ru
+   * Overcast
    * Pandora
    * Phish Tracks
    * Plex
    * Pocketcasts.com
+   * Rdio.com
    * Saavn.com
    * Slacker
    * SomaFM
