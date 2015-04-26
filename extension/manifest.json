@@ -203,7 +203,7 @@
       "js": ["shared.js", "keysocket-zvooq.js"]
     },
     {
-      "matches": ["http://relax-hub.com"],
+      "matches": ["http://relax-hub.com/"],
       "js": ["shared.js", "keysocket-generic-api.js"]
     }
   ]
