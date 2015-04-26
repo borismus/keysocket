@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -201,6 +201,10 @@
     {
       "matches": ["*://zvooq.ru/*"],
       "js": ["shared.js", "keysocket-zvooq.js"]
+    },
+    {
+      "matches": ["http://relax-hub.com"],
+      "js": ["shared.js", "keysocket-generic-api.js"]
     }
   ]
 }
