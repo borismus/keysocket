@@ -13,6 +13,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Naxos Music Library
    * Pandora
    * Slacker
+   * SomaFM
    * Songza
    * SoundCloud
    * Spotify
