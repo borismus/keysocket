@@ -1,13 +1,10 @@
 function onKeyPress(key) {
     if (key === NEXT) {
-        var nextButton = document.querySelector('[data-control=next]');
-        simulateClick(nextButton);
+        simulateClick('[data-control=next]');
     } else if (key === PLAY) {
-        var playPauseButton = document.querySelector('[data-control=togglePause]');
-        simulateClick(playPauseButton);
+        simulateClick('[data-control=togglePause]');
     } else if (key === PREV) {
-        var backButton = document.querySelector('[data-control=prev]');
-        simulateClick(backButton);
+        simulateClick('[data-control=prev]');
     }
 }
 

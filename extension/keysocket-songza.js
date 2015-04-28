@@ -1,9 +1,7 @@
 function onKeyPress(key) {
     if (key === NEXT) {
-        var nextButton = document.querySelector('#player .miniplayer-control-skip');
-        simulateClick(nextButton);
+        simulateClick('#player .miniplayer-control-skip');
     } else if (key === PLAY) {
-        var playPauseButton = document.querySelector('#player .miniplayer-control-play-pause');
-        simulateClick(playPauseButton);
+        simulateClick('#player .miniplayer-control-play-pause');
     }
 }
