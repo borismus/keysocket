@@ -23,6 +23,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Plex
    * Pocketcasts.com
    * Rdio
+   * Relax-Hub.com
    * Saavn.com
    * Slacker
    * SomaFM
