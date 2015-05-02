@@ -1,43 +1,46 @@
-Global keyboard bindings to control your Chrome-based music player. Allows your keyboard media keys (play/pause, next, previous) to work when you're listening to music on common streaming websites.
+﻿Global keyboard bindings to control your Chrome-based music player. Allows your keyboard media keys (play/pause, next, previous) to work when you're listening to music on common streaming websites.
 
 **UPDATE: Now uses Chrome's built in key binding (as of version 25)**
 
 **Supported sites:**
    * Amazon music player
+   * Bop
    * Deezer
    * Digitally Imported (di.fm)
+   * Gaana.com
    * Google Music
    * Grooveshark
+   * Hype Machine
    * Jamstash
    * Jango.com
+   * JB Hi-Fi Now
+   * Music Choice
    * Naxos Music Library
+   * Ok.ru
+   * Overcast
    * Pandora
+   * Phish Tracks
+   * Plex
+   * Pocketcasts.com
+   * Rdio
+   * Saavn.com
    * Slacker
+   * SomaFM
    * Songza
    * SoundCloud
    * Spotify
-   * Deezer
-   * Jamstash
-   * Music Choice
-   * Phish Tracks
+   * Superplayer.fm
    * Synology Audio Station v.5
    * thesixtyone
+   * Tidal
    * Tracksflow.com
+   * Ustream.tv
    * vk.com (Vkontakte)
-   * Яндекс.Музыка (Yandex.Music)
-   * Youtube.com
    * Xbox Music
    * Xiami Music
-   * JB Hi-Fi Now
-   * Plex
-   * Tidal
-   * Gaana.com
-   * Saavn.com
-   * Ok.ru
-   * Superplayer.fm
-   * Ustream.tv
-   * Pocketcasts.com
+   * Youtube.com
    * Zvooq
+   * Яндекс.Музыка (Yandex.Music)
 
 # Usage
 
