@@ -1,13 +1,3 @@
-// Tab registration by MediaControlled event
-document.addEventListener("MediaControlled", function () {
-    chrome.runtime.sendMessage({command: "registerTab"});
-});
-
-// Tab unregistration by MediaUncontrolled event
-document.addEventListener("MediaUncontrolled", function () {
-    chrome.runtime.sendMessage({command: "unregisterTab"});
-});
-
 // Media Events emmiter
 chrome.runtime.onMessage.addListener(function(request) {
     switch (request.command) {
@@ -29,16 +19,31 @@ chrome.runtime.onMessage.addListener(function(request) {
     }
 });
 
-// Tell document that we are ready
-console.log('Keysocket Media Control API initialized');
-document.dispatchEvent(new Event("MediaControlApiInit"));
-
-// Tab registration by meta tag
-if (document.getElementsByName("media-controlled").length > 0) {
-    chrome.runtime.sendMessage({command: "registerTab"});
-}
+// Tab registration/unregistration by MediaControlStateChanged event
+document.addEventListener("MediaControlStateChanged", function () {
+    registerOrUnregisterPage();
+});
 
 // Unregister tab before move to another URI
 window.onunload = function() {
     chrome.runtime.sendMessage({command: "unregisterTab"});
+}
+
+// Initial tab registration by meta tag
+registerOrUnregisterPage();
+
+function isPageMediaControllable() {
+    var tags = document.getElementsByName("media-controllable");
+    if (tags.length > 0) {
+        for (var i = 0; i < tags.length; i++) {
+            if (tags[i].getAttribute("content") !== 'no') {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+function registerOrUnregisterPage() {
+    chrome.runtime.sendMessage({command: isPageMediaControllable() ? "registerTab" : "unregisterTab"});
 }
