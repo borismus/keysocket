@@ -3,6 +3,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
 **UPDATE: Now uses Chrome's built in key binding (as of version 25)**
 
 **Supported sites:**
+   * 22tracks.com
    * Amazon music player
    * Bop
    * Deezer
