@@ -34,6 +34,7 @@
    * thesixtyone
    * Tidal
    * Tracksflow.com
+   * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)
    * Xbox Music
