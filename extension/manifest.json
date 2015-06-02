@@ -207,7 +207,7 @@
       "js": ["shared.js", "keysocket-zvooq.js"]
     },
     {
-      "matches": ["*://*/*.mp3"],
+      "matches": ["*://*/*.mp3*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     }
   ]
