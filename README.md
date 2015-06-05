@@ -40,6 +40,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Youtube.com
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
+   * Яндекс.Радио (Yandex.Radio)
 
 # Usage
 
