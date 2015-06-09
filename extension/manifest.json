@@ -99,6 +99,10 @@
       "js": ["shared.js","keysocket-yandex-music.js"]
     },
     {
+      "matches": ["*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
+      "js": ["shared.js","keysocket-yandex-radio.js"]
+    },
+    {
       "matches": ["*://tracksflow.com/*"],
       "js": ["shared.js","keysocket-tracksflow.js"]
     },
