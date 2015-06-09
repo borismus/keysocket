@@ -40,4 +40,8 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
-chrome.runtime.sendMessage({command: 'activateTab'});
+chrome.runtime.sendMessage({command: 'registerTab'});
+
+window.onunload = function() {
+    chrome.runtime.sendMessage({command: "unregisterTab"});
+}
