@@ -9,7 +9,6 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Digitally Imported (di.fm)
    * Gaana.com
    * Google Music
-   * Grooveshark
    * Hype Machine
    * Jamstash
    * Jango.com
