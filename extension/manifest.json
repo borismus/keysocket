@@ -217,6 +217,10 @@
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
+    },
+    {
+      "matches": ["*://www.netflix.com/*"],
+      "js": ["shared.js", "keysocket-netflix.js"]
     }
   ]
 }
