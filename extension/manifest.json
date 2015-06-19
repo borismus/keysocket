@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -58,6 +58,10 @@
     }
   },
   "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["media-control-api.js"]
+    },
     {
       "matches": ["http://www.thesixtyone.com/*"],
       "js": ["shared.js","keysocket-t61.js"]
@@ -211,7 +215,7 @@
       "js": ["shared.js", "keysocket-zvooq.js"]
     },
     {
-      "matches": ["*://*/*.mp3"],
+      "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     }
   ]

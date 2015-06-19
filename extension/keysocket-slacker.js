@@ -1,12 +1,12 @@
 function onKeyPress(key) {
     if (key === NEXT) {
-        var nextButton = document.getElementById('playerSkipButton');
+        var nextButton = document.querySelector('#transport > li.skip-forward > a');
         simulateClick(nextButton);
     } else if (key === PLAY) {
-        var playPauseButton = document.getElementById('playerPlayPauseButton');
+        var playPauseButton = document.querySelector('#transport > li.playpause > a.play');
         simulateClick(playPauseButton);
     } else if (key === PREV) {
-        var backButton = document.getElementById('playerSkipBackButton');
+        var backButton = document.querySelector('#transport > li.skip-back > a');
         simulateClick(backButton);
     }
 }

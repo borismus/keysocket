@@ -9,7 +9,6 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Digitally Imported (di.fm)
    * Gaana.com
    * Google Music
-   * Grooveshark
    * Hype Machine
    * Jamstash
    * Jango.com
@@ -23,6 +22,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Plex
    * Pocketcasts.com
    * Rdio
+   * Relax-Hub.com
    * Saavn.com
    * Slacker
    * SomaFM
@@ -40,6 +40,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Youtube.com
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
+   * Яндекс.Радио (Yandex.Radio)
 
 # Usage
 
