@@ -9,7 +9,6 @@
    * Digitally Imported (di.fm)
    * Gaana.com
    * Google Music
-   * Grooveshark
    * Hype Machine
    * Jamstash
    * Jango.com
@@ -23,6 +22,7 @@
    * Plex
    * Pocketcasts.com
    * Rdio
+   * Relax-Hub.com
    * Saavn.com
    * Slacker
    * SomaFM
@@ -42,6 +42,7 @@
    * Youtube.com
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
+   * Яндекс.Радио (Yandex.Radio)
 
 # Usage
 
