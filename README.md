@@ -13,6 +13,7 @@
    * Jamstash
    * Jango.com
    * JB Hi-Fi Now
+   * Livestream.com
    * Music Choice
    * Naxos Music Library
    * Ok.ru
