@@ -207,6 +207,18 @@
       "js": ["shared.js", "keysocket-superplayer.js"]
     },
     {
+      "matches": ["*://*.ustream.tv/*"],
+      "js": ["shared.js","keysocket-ustream.js"]
+    },
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["shared.js","keysocket-twitch.js"]
+    },
+    {
+      "matches": ["*://*.livestream.com/*"],
+      "js": ["shared.js","keysocket-livestream.js"]
+    },
+    {
       "matches": ["*://play.pocketcasts.com/*"],
       "js": ["shared.js", "keysocket-pocketcasts.js"]
     },

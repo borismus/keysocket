@@ -1,4 +1,4 @@
-Global keyboard bindings to control your Chrome-based music player. Allows your keyboard media keys (play/pause, next, previous) to work when you're listening to music on common streaming websites.
+﻿Global keyboard bindings to control your Chrome-based music player. Allows your keyboard media keys (play/pause, next, previous) to work when you're listening to music on common streaming websites.
 
 **UPDATE: Now uses Chrome's built in key binding (as of version 25)**
 
@@ -13,6 +13,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Jamstash
    * Jango.com
    * JB Hi-Fi Now
+   * Livestream.com
    * Music Choice
    * Naxos Music Library
    * Ok.ru
@@ -34,6 +35,8 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * thesixtyone
    * Tidal
    * Tracksflow.com
+   * Twitch.tv
+   * Ustream.tv
    * vk.com (Vkontakte)
    * Xbox Music
    * Xiami Music
