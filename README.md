@@ -16,6 +16,7 @@
    * Livestream.com
    * Music Choice
    * Naxos Music Library
+   * Noon Pacific
    * Ok.ru
    * Overcast
    * Pandora
