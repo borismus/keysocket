@@ -9,6 +9,7 @@
    * Digitally Imported (di.fm)
    * Gaana.com
    * Google Music
+   * Groove Music
    * Hype Machine
    * Jamstash
    * Jango.com
@@ -38,7 +39,6 @@
    * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)
-   * Xbox Music
    * Xiami Music
    * Youtube.com
    * Zvooq
