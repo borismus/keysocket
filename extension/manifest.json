@@ -175,7 +175,7 @@
       "js": ["shared.js","keysocket-plex.js"]
     },
     {
-      "matches": ["*://listen.tidalhifi.com/*"],
+      "matches": ["*://listen.tidalhifi.com/*", "*://listen.tidal.com/*"],
       "js": ["shared.js","keysocket-tidal.js"]
     },
     {
