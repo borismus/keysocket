@@ -11,4 +11,4 @@ function onKeyPress(key) {
     }
 }
 
-console.log('keysocket: Loading Xbox Music extension');
+console.log('keysocket: Loading Groove Music extension');

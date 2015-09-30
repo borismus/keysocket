@@ -151,8 +151,8 @@
       "js": ["shared.js","keysocket-soundcloud.js"]
     },
     {
-      "matches": ["*://music.xbox.com/*"],
-      "js": ["shared.js","keysocket-xboxmusic.js"]
+      "matches": ["*://music.microsoft.com/*"],
+      "js": ["shared.js","keysocket-groovemusic.js"]
     },
     {
       "matches": ["http://www.xiami.com/play*"],
