@@ -229,6 +229,10 @@
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
+    },
+    {
+      "matches": ["*://myspace.com/*"],
+      "js": ["shared.js", "keysocket-myspace.js"]
     }
   ]
 }
