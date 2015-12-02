@@ -227,6 +227,10 @@
       "js": ["shared.js", "keysocket-zvooq.js"]
     },
     {
+      "matches": ["*://*.bandcamp.com/*"],
+      "js": ["shared.js","keysocket-bandcamp.js"]
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     }
