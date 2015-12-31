@@ -44,6 +44,7 @@
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
+   * Bugs Music
 
 # Usage
 
