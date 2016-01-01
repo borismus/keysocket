@@ -135,7 +135,7 @@
       "js": ["shared.js","keysocket-musicchoice.js"]
     },
     {
-      "matches": ["*://*/webman/*"],
+      "matches": ["*://*/webman/*", "*://*/audio/"],
       "js": ["shared.js","keysocket-dsaudio5.js"]
     },
     {
