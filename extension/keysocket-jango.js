@@ -1,10 +1,9 @@
 function onKeyPress(key) {
-    var frame = document.querySelector('[name=content]');
     if (key === NEXT) {
-        var nextButton = frame.contentDocument.getElementById('btn-ff');
+        var nextButton = document.querySelector('#btn-ff button.pcb');
         simulateClick(nextButton);
     } else if (key === PLAY) {
-        var playPauseButton = frame.contentDocument.getElementById('btn-playpause');
+        var playPauseButton = document.querySelector('#btn-playpause button.pcb');
         simulateClick(playPauseButton);
     }
 }
