@@ -239,6 +239,10 @@
       "js": ["shared.js","keysocket-bugs.js"]
     },
     {
+      "matches": ["*://*.qobuz.com/*"],
+      "js": ["shared.js","keysocket-qobuz.js"]
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     }, 
