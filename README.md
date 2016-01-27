@@ -16,6 +16,7 @@
    * JB Hi-Fi Now
    * Livestream.com
    * Music Choice
+   * Myspace
    * Naxos Music Library
    * Ok.ru
    * Overcast
