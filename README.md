@@ -8,7 +8,9 @@ Just created a fork to merge in pull requests for smaller, less popular music pl
 5. Click the button that says `Load unpacked extension...` 
 6. Navigate to where you checked out the Git repo, it might be something like `C:\Users\Me\Git\keysocket\extension`
 7. Click `ok`
-8. Use the extension like normal but hopefully with support for some bonus music players :)
+8. * scroll to the bottom & click `Keyboard shortcuts`
+9.find `Keysocket Media Keys` and change each desired key to `Global`
+10. Use the extension like normal but hopefully with support for some bonus music players :)
 
 Global keyboard bindings to control your Chrome-based music player. Allows your keyboard media keys (play/pause, next, previous) to work when you're listening to music on common streaming websites.
 
@@ -62,7 +64,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
 
-# Usage
+# Offical Extension Usage
 
 1. Install extension from the [chrome web store][crx].
 2. Edit the `Keyboard shortcuts` to give Keysocket 'Global' permissions
