@@ -59,6 +59,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
+   * Bugs Music
 
 # Usage
 

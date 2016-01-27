@@ -235,6 +235,10 @@
       "js": ["shared.js","keysocket-bandcamp.js"]
     },
     {
+      "matches": ["http://music.bugs.co.kr/newPlayer*"],
+      "js": ["shared.js","keysocket-bugs.js"]
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     }, 
