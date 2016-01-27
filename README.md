@@ -31,7 +31,7 @@
    * Songza
    * SoundCloud
    * Spotify
-   * Subsonic
+   * Subsonic (and Madsonic)
    * Superplayer.fm
    * Synology Audio Station v.5
    * thesixtyone
