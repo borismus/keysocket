@@ -79,7 +79,7 @@
       "js": ["shared.js","keysocket-grooveshark.js"]
     },
     {
-      "matches": ["https://www.amazon.com/gp/dmusic/cloudplayer/web*"],
+      "matches": ["https://www.amazon.com/gp/dmusic/cloudplayer/*"],
       "js": ["shared.js","keysocket-amazon-cloud-player.js"]
     },
     {
