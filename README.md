@@ -18,6 +18,7 @@
    * Music Choice
    * Myspace
    * Naxos Music Library
+   * Noon Pacific
    * Ok.ru
    * Overcast
    * Pandora
