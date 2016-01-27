@@ -17,6 +17,7 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
 **Supported sites:**
    * Amazon music player
    * Bop
+   * Bugs Music
    * Deezer
    * Digitally Imported (di.fm)
    * Gaana.com
@@ -59,7 +60,6 @@ Global keyboard bindings to control your Chrome-based music player. Allows your 
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
-   * Bugs Music
 
 # Usage
 
