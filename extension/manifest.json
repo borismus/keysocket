@@ -231,6 +231,10 @@
       "js": ["shared.js","keysocket-bandcamp.js"]
     },
     {
+      "matches": ["*://*.netflix.com/watch/*"],
+      "js": ["shared.js", "keysocket-netflix.js"]
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     }
