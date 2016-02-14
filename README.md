@@ -15,6 +15,7 @@
    * Jango.com
    * JB Hi-Fi Now
    * Livestream.com
+   * Mixcloud
    * Music Choice
    * Naxos Music Library
    * Ok.ru
