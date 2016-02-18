@@ -23,6 +23,7 @@
    * Phish Tracks
    * Plex
    * Pocketcasts.com
+   * NRK Radio
    * Rdio
    * Relax-Hub.com
    * Saavn.com
