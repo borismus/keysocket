@@ -235,6 +235,10 @@
       "js": ["shared.js","keysocket-streamsquid.js"]
     },
     {
+      "matches": ["*://*.8tracks.com/*"],
+      "js": ["shared.js","keysocket-8tracks.js"]
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     }
