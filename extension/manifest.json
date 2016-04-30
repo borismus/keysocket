@@ -8,7 +8,7 @@
   },
   "description": "Control your favorite web-based music player with your keyboard's media keys",
   "homepage_url": "https://github.com/borismus/keysocket",
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "contextMenus"],
   "manifest_version": 2,
   "commands": {
     "prev": {
@@ -229,6 +229,10 @@
     {
       "matches": ["*://*.bandcamp.com/*"],
       "js": ["shared.js","keysocket-bandcamp.js"]
+    },
+    {
+      "matches": ["*://*.streamsquid.com/*"],
+      "js": ["shared.js","keysocket-streamsquid.js"]
     },
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
