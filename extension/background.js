@@ -84,26 +84,52 @@ chrome.pageAction.onClicked.addListener(function(tab) {
 
 chrome.contextMenus.create({id: "keySocketMediaKeys-group", title: "Key Socket Media Keys"});
 
-chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-disableThisTab", title: "Disable for this tab", onclick: function(a, tab){
+chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-disableThisTab", title: "Disable this tab", onclick: function(a, tab){
     unregisterTab(tab.id);
 }});
-chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-enableThisTab", title: "Enable for this tab", onclick: function(a, tab){
+chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-enableThisTab", title: "Enable this tab", onclick: function(a, tab){
     registerTab(tab.id);
 }});
 
 chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-separator1", type: "separator"});
 
-chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-disableAllTabs", title: "Disable for all tabs", onclick: function(a, tab){
+chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-disableAllTabs", title: "Disable all tabs", onclick: function(a, tab){
     chrome.tabs.getAllInWindow(null, function(tabs){
         for (var i = 0; i < tabs.length; i++) {
             unregisterTab(tabs[i].id);
         }
     });
 }});
-chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-enableAllTabs", title: "Enable for all tabs", onclick: function(a, tab){
+chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-enableAllTabs", title: "Enable all tabs", onclick: function(a, tab){
     chrome.tabs.getAllInWindow(null, function(tabs){
         for (var i = 0; i < tabs.length; i++) {
             registerTab(tabs[i].id);
+        }
+    });
+}});
+
+chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-separator2", type: "separator"});
+
+chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-disableAllBut", title: "Disable all but this tab", onclick: function(a, tab){
+    chrome.tabs.getAllInWindow(null, function(tabs){
+        for (var i = 0; i < tabs.length; i++) {
+            if(tab.id !== tabs[i].id) {
+                unregisterTab(tabs[i].id);
+            }
+        }
+    });
+
+    registerTab(tab.id);
+}});
+
+chrome.contextMenus.create({parentId: "keySocketMediaKeys-group", id: "keySocketMediaKeys-enableAllBut", title: "Enable all but this tab", onclick: function(a, tab){
+    unregisterTab(tab.id);
+
+    chrome.tabs.getAllInWindow(null, function(tabs){
+        for (var i = 0; i < tabs.length; i++) {
+            if(tab.id !== tabs[i].id) {
+                registerTab(tabs[i].id);
+            }
         }
     });
 }});
