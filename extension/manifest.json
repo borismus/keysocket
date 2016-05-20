@@ -223,7 +223,7 @@
       "js": ["shared.js", "keysocket-pocketcasts.js"]
     },
     {
-      "matches": ["*://zvooq.ru/*"],
+      "matches": ["*://zvooq.com/*"],
       "js": ["shared.js", "keysocket-zvooq.js"]
     },
     {
