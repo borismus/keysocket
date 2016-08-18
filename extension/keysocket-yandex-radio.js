@@ -3,11 +3,10 @@ var nextTarget = '.button_round';
 
 function onKeyPress(key) {
     if (key === NEXT) {
-        var cards = document.querySelectorAll('.slider__item')
-        var nextCard = cards[cards.length - 3];
-        
+        var nextCard = document.querySelector('.slider__item_next');
+
         console.log(nextCard);
-        simulateClick(nextCard.querySelector(nextTarget));
+        simulateClick(nextCard.querySelectorAll(nextTarget)[2]);
     } else if (key === PLAY) {
         simulateClick(document.querySelector(playTarget));
     }
