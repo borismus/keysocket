@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -239,8 +239,12 @@
       "js": ["shared.js", "keysocket-vimeo.js"]
     },
     {
-      "matches": ["*://*.streamsquid.com/*"],
-      "js": ["shared.js","keysocket-streamsquid.js"]
+      "matches": ["*://*.koel.ru/*"],
+      "js": ["shared.js", "keysocket-koel.js"]
+    },
+    {
+      "matches": ["*://*.koel.sp/*"],
+      "js": ["shared.js", "keysocket-koel.js"]
     },
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
