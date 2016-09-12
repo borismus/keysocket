@@ -231,6 +231,10 @@
       "js": ["shared.js","keysocket-bandcamp.js"]
     },
     {
+      "matches": ["*://tv.xfinity.com/*"],
+      "js": ["shared.js","keysocket-xfinity.js"]
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     }
