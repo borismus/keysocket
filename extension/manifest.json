@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.7.1",
+  "version": "0.7.1.2",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -79,7 +79,7 @@
       "js": ["shared.js","keysocket-grooveshark.js"]
     },
     {
-      "matches": ["https://www.amazon.com/gp/dmusic/cloudplayer/*"],
+      "matches": ["https://www.amazon.com/gp/dmusic/cloudplayer/","https://music.amazon.com/*"],
       "js": ["shared.js","keysocket-amazon-cloud-player.js"]
     },
     {
