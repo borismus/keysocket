@@ -44,6 +44,7 @@ All the best, Boris.
    * thesixtyone
    * Tidal
    * Tracksflow.com
+   * tunein.com
    * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)
