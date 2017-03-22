@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.7.1",
+  "version": "0.7.3",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -217,6 +217,10 @@
     {
       "matches": ["*://*.tunein.com/*"],
       "js": ["shared.js","keysocket-tunein.js"]
+    },
+    {
+      "matches": ["*://*.iloveradio.de/*"],
+      "js": ["shared.js","keysocket-iloveradio.js"]
     },
     {
       "matches": ["*://*.livestream.com/*"],
