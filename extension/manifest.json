@@ -75,10 +75,6 @@
       "js": ["shared.js","keysocket-gmusic.js"]
     },
     {
-      "matches": ["http://grooveshark.com/*"],
-      "js": ["shared.js","keysocket-grooveshark.js"]
-    },
-    {
       "matches": ["https://music.amazon.com/*"],
       "js": ["shared.js","keysocket-amazon-cloud-player.js"]
     },
