@@ -25,6 +25,7 @@ All the best, Boris.
    * Livestream.com
    * Music Choice
    * Naxos Music Library
+   * Netflix
    * Ok.ru
    * Overcast
    * Pandora
