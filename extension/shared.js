@@ -18,7 +18,6 @@ var PLAY = 'play-pause';
 var NEXT = 'next';
 var STOP = 'stop';
 
-
 function simulateClick(element) {
     if (!element) {
         console.log('keysocket: Cannot simulate click, element undefined');
@@ -35,7 +34,7 @@ function simulateClick(element) {
 
 chrome.runtime.onMessage.addListener(
     function(request) {
-        console.log('Received keypress: ', request);
+        // console.log('Received keypress: ', request);
         onKeyPress(request.command);
     }
 );
