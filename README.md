@@ -31,6 +31,7 @@ All the best, Boris.
    * Phish Tracks
    * Plex
    * Pocketcasts.com
+   * Prostopleer
    * Rdio
    * Relax-Hub.com
    * Saavn.com
