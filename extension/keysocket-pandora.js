@@ -11,5 +11,8 @@ function onKeyPress(key) {
             playPauseButton = document.querySelector('div.playButton > a');
         }
         simulateClick(playPauseButton);
+    } else if (key === STOP) {
+        stopButton = document.querySelector('div.pauseButton > a');
+        simulateClick(stopButton);
     }
 }
