@@ -234,6 +234,10 @@
     {
       "matches": ["*://pleer.net/*"],
       "js": ["shared.js", "keysocket-prostopleer.js"]
+    },
+    {
+      "matches": ["https://www.netflix.com/*"],
+      "js": ["shared.js", "keysocket-netflix.js"]
     }
   ]
 }
