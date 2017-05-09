@@ -99,12 +99,9 @@
       "js": ["shared.js","keysocket-slacker.js"]
     },
     {
-      "matches": ["*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*"],
-      "js": ["shared.js","keysocket-yandex-music.js"]
-    },
-    {
-      "matches": ["*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
-      "js": ["shared.js","keysocket-yandex-radio.js"]
+      "matches": ["*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*",
+        "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
+      "js": ["shared.js","shared-injection.js","keysocket-yandex-music-and-radio.js"]
     },
     {
       "matches": ["*://tracksflow.com/*"],
