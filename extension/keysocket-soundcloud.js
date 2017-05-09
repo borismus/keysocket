@@ -8,5 +8,8 @@ function onKeyPress(key) {
     } else if (key === PREV) {
         var backButton = document.querySelector('.skipControl__previous');
         simulateClick(backButton);
+    } else if (key === STOP) {
+        var stopButton = document.querySelector('.playControl.playing');
+        simulateClick(stopButton);
     }
 }
