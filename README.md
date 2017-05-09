@@ -29,6 +29,7 @@ All the best, Boris.
    * Overcast
    * Pandora
    * Phish Tracks
+   * Pleer.com
    * Plex
    * Pocketcasts.com
    * Rdio
