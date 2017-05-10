@@ -1,14 +1,14 @@
 Global keyboard bindings to control your Chrome-based music player.
 Allows your keyboard media keys (play/pause, next, previous) to work
-when you're listening to music on common streaming websites.
+when you're listening to music on various streaming websites.
 
-**Supported sites:**
-   * Amazon music player
+# Supported Sites
+   * Amazon Music Player
    * Bop
    * Deezer
    * Digitally Imported (di.fm)
    * Gaana.com
-   * Google Music
+   * Google Play Music
    * Groove Music
    * Hype Machine
    * Jamstash
@@ -32,7 +32,7 @@ when you're listening to music on common streaming websites.
    * Slacker
    * SomaFM
    * Songza
-   * SoundCloud
+   * Soundcloud
    * Spotify
    * Superplayer.fm
    * Synology Audio Station v.5
@@ -43,7 +43,7 @@ when you're listening to music on common streaming websites.
    * Ustream.tv
    * vk.com (Vkontakte)
    * Xiami Music
-   * Youtube.com
+   * YouTube
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
@@ -52,11 +52,11 @@ when you're listening to music on common streaming websites.
 
 1. Install extension from the [chrome web store][crx].
 2. Edit the `Keyboard shortcuts` to give Keysocket 'Global' permissions
-    * open a browser tab to [chrome://extensions](chrome://extensions)
-    * scroll to the bottom & click `Keyboard shortcuts`
-    * find `Keysocket Media Keys` and change each desired key to `Global`
+    * Open a browser tab to [chrome://extensions](chrome://extensions)
+    * Scroll to the bottom & click `Keyboard shortcuts`
+    * Find `Keysocket Media Keys` and change each desired key to `Global`
 
-# Contribute please!
+# Please contribute!
 
 * Looking for adapters for other music players.
 
