@@ -22,6 +22,7 @@ when you're listening to music on common streaming websites.
    * Overcast
    * Pandora
    * Phish Tracks
+   * Picarto.tv
    * Plex
    * Pocketcasts.com
    * Prostopleer
