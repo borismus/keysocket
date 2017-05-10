@@ -15,6 +15,7 @@ when you're listening to music on various streaming websites.
    * Jango.com
    * JB Hi-Fi Now
    * Livestream.com
+   * Mixcloud
    * Music Choice
    * Myzuka.fm
    * Naxos Music Library
