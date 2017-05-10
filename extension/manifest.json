@@ -236,6 +236,10 @@
       "js": ["shared.js","keysocket-mixcloud.js"]
     },
     {
+      "matches": ["*://radio.nrk.no/*"],
+      "js": ["shared.js","shared-injection.js","keysocket-nrkradio.js"]
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     },
