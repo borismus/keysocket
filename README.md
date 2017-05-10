@@ -1,6 +1,6 @@
-﻿Global keyboard bindings to control your Chrome-based music player. Allows your keyboard media keys (play/pause, next, previous) to work when you're listening to music on common streaming websites.
-
-**UPDATE: Now uses Chrome's built in key binding (as of version 25)**
+Global keyboard bindings to control your Chrome-based music player.
+Allows your keyboard media keys (play/pause, next, previous) to work
+when you're listening to music on common streaming websites.
 
 **Supported sites:**
    * Amazon music player
@@ -17,6 +17,7 @@
    * Livestream.com
    * Music Choice
    * Naxos Music Library
+   * Netflix
    * Ok.ru
    * Overcast
    * Pandora
@@ -24,6 +25,7 @@
    * Plex
    * Pocketcasts.com
    * NRK Radio
+   * Prostopleer
    * Rdio
    * Relax-Hub.com
    * Saavn.com

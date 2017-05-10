@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -8,7 +8,7 @@
   },
   "description": "Control your favorite web-based music player with your keyboard's media keys",
   "homepage_url": "https://github.com/borismus/keysocket",
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "contextMenus"],
   "manifest_version": 2,
   "commands": {
     "prev": {
@@ -75,11 +75,7 @@
       "js": ["shared.js","keysocket-gmusic.js"]
     },
     {
-      "matches": ["http://grooveshark.com/*"],
-      "js": ["shared.js","keysocket-grooveshark.js"]
-    },
-    {
-      "matches": ["https://www.amazon.com/gp/dmusic/cloudplayer/web*"],
+      "matches": ["https://music.amazon.com/*"],
       "js": ["shared.js","keysocket-amazon-cloud-player.js"]
     },
     {
@@ -99,12 +95,9 @@
       "js": ["shared.js","keysocket-slacker.js"]
     },
     {
-      "matches": ["*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*"],
-      "js": ["shared.js","keysocket-yandex-music.js"]
-    },
-    {
-      "matches": ["*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
-      "js": ["shared.js","keysocket-yandex-radio.js"]
+      "matches": ["*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*",
+        "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
+      "js": ["shared.js","shared-injection.js","keysocket-yandex-music-and-radio.js"]
     },
     {
       "matches": ["*://tracksflow.com/*"],
@@ -135,7 +128,7 @@
       "js": ["shared.js","keysocket-musicchoice.js"]
     },
     {
-      "matches": ["*://*/webman/*"],
+      "matches": ["*://*/webman/*", "*://*/audio/"],
       "js": ["shared.js","keysocket-dsaudio5.js"]
     },
     {
@@ -223,7 +216,7 @@
       "js": ["shared.js", "keysocket-pocketcasts.js"]
     },
     {
-      "matches": ["*://zvooq.ru/*"],
+      "matches": ["*://zvooq.com/*"],
       "js": ["shared.js", "keysocket-zvooq.js"]
     },
     {
@@ -237,6 +230,14 @@
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
+    },
+    {
+      "matches": ["*://pleer.net/*"],
+      "js": ["shared.js", "keysocket-prostopleer.js"]
+    },
+    {
+      "matches": ["https://www.netflix.com/*"],
+      "js": ["shared.js", "keysocket-netflix.js"]
     }
   ]
 }
