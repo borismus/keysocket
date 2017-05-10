@@ -20,6 +20,8 @@ when you're listening to music on various streaming websites.
    * Myzuka.fm
    * Naxos Music Library
    * Netflix
+   * Noon Pacific
+   * NRK Radio
    * Ok.ru
    * Overcast
    * Pandora

@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -164,6 +164,10 @@
       "js": ["shared.js","keysocket-overcast.js"]
     },
     {
+      "matches": ["*://noonpacific.com/*"],
+      "js": ["shared.js","keysocket-noon-pacific.js"]
+    },
+    {
       "matches": ["*://plex.tv/web/*"],
       "js": ["shared.js","keysocket-plex.js"]
     },
@@ -234,6 +238,10 @@
     {
       "matches": ["*://*.mixcloud.com/*"],
       "js": ["shared.js","keysocket-mixcloud.js"]
+    },
+    {
+      "matches": ["*://radio.nrk.no/*"],
+      "js": ["shared.js","shared-injection.js","keysocket-nrkradio.js"]
     },
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
