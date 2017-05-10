@@ -79,7 +79,7 @@
       "js": ["shared.js","keysocket-amazon-cloud-player.js"]
     },
     {
-      "matches": ["http://www.pandora.com/*"],
+      "matches": ["*://www.pandora.com/*"],
       "js": ["shared.js","keysocket-pandora.js"]
     },
     {
@@ -212,6 +212,10 @@
       "js": ["shared.js","keysocket-livestream.js"]
     },
     {
+      "matches": ["*://picarto.tv/*", "*://*.picarto.tv/*"],
+      "js": ["shared.js","keysocket-picartotv.js"]
+    },
+    {
       "matches": ["*://play.pocketcasts.com/*"],
       "js": ["shared.js", "keysocket-pocketcasts.js"]
     },
@@ -220,12 +224,16 @@
       "js": ["shared.js", "keysocket-zvooq.js"]
     },
     {
+      "matches": ["*://*.myzuka.fm/*"],
+      "js": ["shared.js", "keysocket-myzukafm.js"]
+    },
+    {
       "matches": ["*://*.bandcamp.com/*"],
       "js": ["shared.js","keysocket-bandcamp.js"]
     },
     {
-      "matches": ["*://radio.nrk.no/*"],
-      "js": ["shared.js","keysocket-nrkradio.js"]
+      "matches": ["*://*.mixcloud.com/*"],
+      "js": ["shared.js","keysocket-mixcloud.js"]
     },
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
