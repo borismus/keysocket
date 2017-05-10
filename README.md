@@ -16,6 +16,7 @@ when you're listening to music on various streaming websites.
    * JB Hi-Fi Now
    * Livestream.com
    * Music Choice
+   * Myzuka.fm
    * Naxos Music Library
    * Netflix
    * Ok.ru

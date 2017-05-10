@@ -224,6 +224,10 @@
       "js": ["shared.js", "keysocket-zvooq.js"]
     },
     {
+      "matches": ["*://*.myzuka.fm/*"],
+      "js": ["shared.js", "keysocket-myzukafm.js"]
+    },
+    {
       "matches": ["*://*.bandcamp.com/*"],
       "js": ["shared.js","keysocket-bandcamp.js"]
     },
