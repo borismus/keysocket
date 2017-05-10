@@ -79,7 +79,7 @@
       "js": ["shared.js","keysocket-amazon-cloud-player.js"]
     },
     {
-      "matches": ["http://www.pandora.com/*"],
+      "matches": ["*://www.pandora.com/*"],
       "js": ["shared.js","keysocket-pandora.js"]
     },
     {
