@@ -18,13 +18,13 @@ when you're listening to music on common streaming websites.
    * Music Choice
    * Naxos Music Library
    * Netflix
+   * NRK Radio
    * Ok.ru
    * Overcast
    * Pandora
    * Phish Tracks
    * Plex
    * Pocketcasts.com
-   * NRK Radio
    * Prostopleer
    * Rdio
    * Relax-Hub.com
