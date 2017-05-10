@@ -232,6 +232,10 @@
       "js": ["shared.js","keysocket-bandcamp.js"]
     },
     {
+      "matches": ["*://*.streamsquid.com/*"],
+      "js": ["shared.js","keysocket-streamsquid.js"]
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     },
