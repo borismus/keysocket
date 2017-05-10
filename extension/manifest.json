@@ -164,6 +164,10 @@
       "js": ["shared.js","keysocket-overcast.js"]
     },
     {
+      "matches": ["*://noonpacific.com/*"],
+      "js": ["shared.js","keysocket-noon-pacific.js"]
+    },
+    {
       "matches": ["*://plex.tv/web/*"],
       "js": ["shared.js","keysocket-plex.js"]
     },
