@@ -3,8 +3,10 @@ Allows your keyboard media keys (play/pause, next, previous) to work
 when you're listening to music on various streaming websites.
 
 # Supported Sites
-   * Amazon Music Player
+   * Amazon Cloud Player
+   * Bandcamp
    * Bop
+   * Chrome Built-In Player
    * Deezer
    * Digitally Imported (di.fm)
    * Gaana.com
