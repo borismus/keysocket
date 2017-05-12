@@ -19,13 +19,13 @@
 function injectionInit(keysocketEventHandler)
 {
     var handleKeysocketMessages = function () {
-        window.addEventListener("message", function(e) {
+        window.addEventListener("message", function(event) {
             if (event.source !== window) {
                 return;
             }
 
             if (event.data.type && (event.data.type === "keysocket-media-event")) {
-                keysocketOnKeyPressed(event.data.command);
+                window.keysocketOnKeyPressed(event.data.command);
             }
         });
     };
