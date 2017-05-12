@@ -1,4 +1,4 @@
-// Media Events emmiter
+// Media Events emitter
 chrome.runtime.onMessage.addListener(function(request) {
     switch (request.command) {
         case "play-pause":
@@ -27,7 +27,7 @@ document.addEventListener("MediaControlStateChanged", function () {
 // Unregister tab before move to another URI
 window.onunload = function() {
     chrome.runtime.sendMessage({command: "unregisterTab"});
-}
+};
 
 // Initial tab registration by meta tag
 registerOrUnregisterPage();
@@ -36,10 +36,11 @@ function isPageMediaControllable() {
     var tags = document.getElementsByName("media-controllable");
     if (tags.length > 0) {
         for (var i = 0; i < tags.length; i++) {
-            if (tags[i].getAttribute("content") !== 'no') {
-                return true;
+            if (tags[i].getAttribute("content") === "no") {
+                return false;
             }
         }
+        return true;
     }
     return false;
 }
