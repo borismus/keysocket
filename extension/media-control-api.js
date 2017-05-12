@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener(function(request) {
         case "play-pause":
             document.dispatchEvent(new Event("MediaPlayPause"));
             break;
-        
+
         case "stop":
             document.dispatchEvent(new Event("MediaStop"));
             break;
@@ -20,8 +20,16 @@ chrome.runtime.onMessage.addListener(function(request) {
 });
 
 // Tab registration/unregistration by MediaControlStateChanged event
-document.addEventListener("MediaControlStateChanged", function () {
-    registerOrUnregisterPage();
+document.addEventListener("MediaControlStateChanged", function (event) {
+    if (event instanceof CustomEvent && event.detail) {
+        if (event.detail === 'enabled') {
+            registerOrUnregisterPage(true);
+        } else if (event.detail === 'disabled') {
+            registerOrUnregisterPage(false);
+        }
+    } else {
+        registerOrUnregisterPage(isPageMediaControllable());
+    }
 });
 
 // Unregister tab before move to another URI
@@ -30,7 +38,7 @@ window.onunload = function() {
 };
 
 // Initial tab registration by meta tag
-registerOrUnregisterPage();
+registerOrUnregisterPage(isPageMediaControllable());
 
 function isPageMediaControllable() {
     var tags = document.getElementsByName("media-controllable");
@@ -45,6 +53,6 @@ function isPageMediaControllable() {
     return false;
 }
 
-function registerOrUnregisterPage() {
-    chrome.runtime.sendMessage({command: isPageMediaControllable() ? "registerTab" : "unregisterTab"});
+function registerOrUnregisterPage(register) {
+    chrome.runtime.sendMessage({command: register ? "registerTab" : "unregisterTab"});
 }
