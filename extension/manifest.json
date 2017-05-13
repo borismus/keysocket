@@ -254,6 +254,10 @@
     {
       "matches": ["https://www.netflix.com/*"],
       "js": ["shared.js", "keysocket-netflix.js"]
+    },
+    {
+      "matches": ["*://8tracks.com/*"],
+      "js": ["shared.js", "keysocket-eighttracks.js"]
     }
   ]
 }
