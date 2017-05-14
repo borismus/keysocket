@@ -236,7 +236,6 @@
       "js": ["shared.js","keysocket-bandcamp.js"]
     },
     {
-<<<<<<< HEAD
       "matches": ["*://*.mixcloud.com/*"],
       "js": ["shared.js","keysocket-mixcloud.js"]
     },
