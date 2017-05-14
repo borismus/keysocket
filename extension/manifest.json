@@ -244,6 +244,11 @@
       "js": ["shared.js","shared-injection.js","keysocket-nrkradio.js"]
     },
     {
+      "matches": ["*://*.qobuz.com/*"],
+      "js": ["shared.js","keysocket-qobuz.js"]
+
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     },
