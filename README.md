@@ -34,6 +34,7 @@ when you're listening to music on various streaming websites.
    * Plex
    * Pocketcasts.com
    * Prostopleer
+   * Qobuz
    * Rdio
    * Relax-Hub.com
    * Saavn.com
