@@ -257,7 +257,11 @@
     },
     {
       "matches": ["*://8tracks.com/*"],
-      "js": ["shared.js", "keysocket-eighttracks.js"]
+      "js": ["shared.js","keysocket-eighttracks.js"]
+    },
+    {
+      "matches": ["*://myspace.com/*"],
+      "js": ["shared.js", "keysocket-myspace.js"]
     }
   ]
 }

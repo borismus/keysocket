@@ -20,6 +20,7 @@ when you're listening to music on various streaming websites.
    * Livestream.com
    * Mixcloud
    * Music Choice
+   * Myspace
    * Myzuka.fm
    * Naxos Music Library
    * Netflix
