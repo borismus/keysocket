@@ -270,6 +270,10 @@
     {
       "matches": ["*://myspace.com/*"],
       "js": ["shared.js", "keysocket-myspace.js"]
+    },
+    {
+      "matches": ["*://*.siriusxm.com/*"],
+      "js": ["shared.js","keysocket-siriusxm.js"]
     }
   ]
 }
