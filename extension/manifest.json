@@ -246,7 +246,10 @@
     {
       "matches": ["*://*.qobuz.com/*"],
       "js": ["shared.js","keysocket-qobuz.js"]
-
+    },
+    {
+      "matches": ["*://tv.xfinity.com/*"],
+      "js": ["shared.js","keysocket-xfinity.js"]
     },
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
