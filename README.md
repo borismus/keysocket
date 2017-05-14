@@ -8,6 +8,7 @@ when you're listening to music on various streaming websites.
    * Bandcamp
    * Bop
    * Chrome Built-In Player
+   * Comcast/xfinity
    * Deezer
    * Digitally Imported (di.fm)
    * Gaana.com

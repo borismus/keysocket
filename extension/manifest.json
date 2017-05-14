@@ -236,6 +236,7 @@
       "js": ["shared.js","keysocket-bandcamp.js"]
     },
     {
+<<<<<<< HEAD
       "matches": ["*://*.mixcloud.com/*"],
       "js": ["shared.js","keysocket-mixcloud.js"]
     },
@@ -246,7 +247,10 @@
     {
       "matches": ["*://*.qobuz.com/*"],
       "js": ["shared.js","keysocket-qobuz.js"]
-
+    },
+    {
+      "matches": ["*://tv.xfinity.com/*"],
+      "js": ["shared.js","keysocket-xfinity.js"]
     },
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
