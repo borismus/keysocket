@@ -244,6 +244,14 @@
       "js": ["shared.js","shared-injection.js","keysocket-nrkradio.js"]
     },
     {
+      "matches": ["*://*.qobuz.com/*"],
+      "js": ["shared.js","keysocket-qobuz.js"]
+    },
+    {
+      "matches": ["*://tv.xfinity.com/*"],
+      "js": ["shared.js","keysocket-xfinity.js"]
+    },
+    {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*"],
       "js": ["shared.js", "keysocket-builtin-player.js"]
     },
@@ -254,6 +262,18 @@
     {
       "matches": ["https://www.netflix.com/*"],
       "js": ["shared.js", "keysocket-netflix.js"]
+    },
+    {
+      "matches": ["*://8tracks.com/*"],
+      "js": ["shared.js","keysocket-eighttracks.js"]
+    },
+    {
+      "matches": ["*://myspace.com/*"],
+      "js": ["shared.js", "keysocket-myspace.js"]
+    },
+    {
+      "matches": ["*://*.siriusxm.com/*"],
+      "js": ["shared.js","keysocket-siriusxm.js"]
     }
   ]
 }

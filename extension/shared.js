@@ -28,7 +28,7 @@ function simulateClick(element, options) {
     var clickConfig = {
         bubbles: true,
         cancelable: false,
-        view: window,
+        view: window
     };
     if (options && options.cancelable) {
         clickConfig.cancelable = options.cancelable;
@@ -48,4 +48,4 @@ chrome.runtime.sendMessage({command: 'registerTab'});
 
 window.onunload = function() {
     chrome.runtime.sendMessage({command: "unregisterTab"});
-}
+};
