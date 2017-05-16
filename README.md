@@ -56,6 +56,7 @@ when you're listening to music on various streaming websites.
    * thesixtyone
    * Tidal
    * Tracksflow.com
+   * tunein.com
    * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)

@@ -7,7 +7,7 @@
     "128": "icons/icon128.png"
   },
   "description": "Control your favorite web-based music player with your keyboard's media keys",
-  "homepage_url": "https://github.com/borismus/keysocket",
+  "homepage_url": "https://github.com/mrpoptart/keysocket",
   "permissions": ["tabs", "contextMenus"],
   "manifest_version": 2,
   "commands": {
@@ -210,6 +210,14 @@
     {
       "matches": ["*://*.twitch.tv/*"],
       "js": ["shared.js","keysocket-twitch.js"]
+    },
+    {
+      "matches": ["*://*.tunein.com/*"],
+      "js": ["shared.js","keysocket-tunein.js"]
+    },
+    {
+      "matches": ["*://*.iloveradio.de/*"],
+      "js": ["shared.js","keysocket-iloveradio.js"]
     },
     {
       "matches": ["*://*.livestream.com/*"],
