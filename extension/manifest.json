@@ -61,6 +61,10 @@
       "js": ["media-control-api.js"]
     },
     {
+      "matches": ["*://8tracks.com/*"],
+      "js": ["shared.js","keysocket-eighttracks.js"]
+    },
+    {
       "matches": ["https://music.amazon.com/*"],
       "js": ["shared.js", "keysocket-amazon-cloud-player.js"]
     },
@@ -125,6 +129,10 @@
       "js": ["shared.js", "keysocket-musicchoice.js"]
     },
     {
+      "matches": ["*://myspace.com/*"],
+      "js": ["shared.js", "keysocket-myspace.js"]
+    },
+    {
       "matches": ["*://*.myzuka.fm/*"],
       "js": ["shared.js", "keysocket-myzukafm.js"]
     },
@@ -177,12 +185,20 @@
       "js": ["shared.js", "keysocket-prostopleer.js"]
     },
     {
+      "matches": ["*://*.qobuz.com/*"],
+      "js": ["shared.js","keysocket-qobuz.js"]
+    },
+    {
       "matches": ["http://www.rdio.com/*"],
       "js": ["shared.js", "keysocket-rdio.js"]
     },
     {
       "matches": ["*://*.saavn.com/*"],
       "js": ["shared.js", "keysocket-saavn.js"]
+    },
+    {
+      "matches": ["*://*.siriusxm.com/*"],
+      "js": ["shared.js","keysocket-siriusxm.js"]
     },
     {
       "matches": ["*://www.slacker.com/*"],
@@ -237,8 +253,16 @@
       "js": ["shared.js", "keysocket-vkontakte.js"]
     },
     {
-      "matches": ["http://www.xiami.com/play*"],
+      "matches": ["*://tv.xfinity.com/*"],
+      "js": ["shared.js","keysocket-xfinity.js"]
+    },
+    {
+    	"matches": ["http://www.xiami.com/play*"],
       "js": ["shared.js", "keysocket-xiami.js"]
+    },
+    {
+      "matches": ["*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*", "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
+      "js": ["shared.js", "shared-injection.js", "keysocket-yandex-music-and-radio.js"]
     },
     {
       "matches": ["*://*.youtube.com/*"],
@@ -247,10 +271,6 @@
     {
       "matches": ["*://zvooq.com/*"],
       "js": ["shared.js", "keysocket-zvooq.js"]
-    },
-    {
-      "matches": ["*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*", "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
-      "js": ["shared.js", "shared-injection.js", "keysocket-yandex-music-and-radio.js"]
     }
   ]
 }
