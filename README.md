@@ -4,11 +4,14 @@ when you're listening to music on various streaming websites.
 
 # Supported Sites
    * 8tracks
+   * 22tracks
    * Amazon Cloud Player
    * Bandcamp
+   * Birp
    * Bop
+   * Bugs Music
    * Chrome Built-In Player
-   * Comcast/xfinity
+   * Comcast/Xfinity
    * Deezer
    * Digitally Imported (di.fm)
    * Gaana.com
@@ -45,6 +48,9 @@ when you're listening to music on various streaming websites.
    * Songza
    * Soundcloud
    * Spotify
+   * Spreaker
+   * Streamsquid
+   * Subsonic (and Madsonic)
    * Superplayer.fm
    * Synology Audio Station v.5
    * thesixtyone
