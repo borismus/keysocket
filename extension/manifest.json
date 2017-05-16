@@ -108,7 +108,7 @@
       "js": ["shared.js","keysocket-jango.js"]
     },
     {
-      "matches": ["*://play.spotify.com/*"],
+      "matches": ["*://*.spotify.com/*"],
       "js": ["shared.js","keysocket-spotify.js"]
     },
     {
