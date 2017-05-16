@@ -274,6 +274,26 @@
     {
       "matches": ["*://*.siriusxm.com/*"],
       "js": ["shared.js","keysocket-siriusxm.js"]
+    },
+    {
+      "matches": ["*://8tracks.com/*"],
+      "js": ["shared.js","keysocket-twentytwotracks.js"]
+    },
+    {
+      "matches": ["*://*.birp.fm/*"],
+      "js": ["shared.js", "keysocket-birp.js"]
+    },
+    {
+      "matches": ["http://music.bugs.co.kr/newPlayer*"],
+      "js": ["shared.js","keysocket-bugs.js"]
+    },
+    {
+      "matches": ["*://www.spreaker.com/*"],
+      "js": ["shared.js","keysocket-spreaker.js"]
+    },
+    {
+      "matches": ["*://*.streamsquid.com/*"],
+      "js": ["shared.js","keysocket-streamsquid.js"]
     }
   ]
 }
