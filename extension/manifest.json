@@ -276,7 +276,7 @@
       "js": ["shared.js","keysocket-siriusxm.js"]
     },
     {
-      "matches": ["*://8tracks.com/*"],
+      "matches": ["*://22tracks.com/*"],
       "js": ["shared.js","keysocket-twentytwotracks.js"]
     },
     {
@@ -296,7 +296,7 @@
       "js": ["shared.js","keysocket-streamsquid.js"]
     }, 
     {
-      "all_frames" : true,
+      "all_frames": true,
       "matches": ["*://*/playQueue.view", "*://*/playQueue.view?", "*://*/playQueue.view?*"],
       "js": ["shared.js", "keysocket-subsonic.js"]
     }
