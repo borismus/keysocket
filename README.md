@@ -50,6 +50,7 @@ when you're listening to music on various streaming websites.
    * Spotify
    * Spreaker
    * Streamsquid
+   * Subsonic
    * Superplayer.fm
    * Synology Audio Station v.5
    * thesixtyone
