@@ -87,6 +87,10 @@
       "js": ["shared.js","keysocket-vkontakte.js"]
     },
     {
+      "matches": ["*://new.vk.com/*"],
+      "js": ["shared.js","keysocket-vk-new.js"]
+    },
+    {
       "matches": ["*://*.youtube.com/*"],
       "js": ["shared.js","keysocket-youtube.js"]
     },
