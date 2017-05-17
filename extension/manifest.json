@@ -65,7 +65,7 @@
       "js": ["shared.js","keysocket-eighttracks.js"]
     },
     {
-      "matches": ["*://8tracks.com/*"],
+      "matches": ["*://22tracks.com/*"],
       "js": ["shared.js","keysocket-twentytwotracks.js"]
     },
     {
@@ -229,7 +229,7 @@
       "js": ["shared.js", "keysocket-soundcloud.js"]
     },
     {
-      "matches": ["*://play.spotify.com/*"],
+      "matches": ["*://*.spotify.com/*"],
       "js": ["shared.js", "keysocket-spotify.js"]
     },
     {
