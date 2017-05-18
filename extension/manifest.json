@@ -117,6 +117,10 @@
       "js": ["shared.js", "keysocket-hypem.js"]
     },
     {
+      "matches": ["*://*.iloveradio.de/*"],
+      "js": ["shared.js","keysocket-iloveradio.js"]
+    },
+    {
       "matches": ["*://jamstash.com/*", "*://*.jamstash.com/*"],
       "js": ["shared.js", "keysocket-jamstash.js"]
     },
@@ -264,6 +268,10 @@
     {
       "matches": ["*://tracksflow.com/*"],
       "js": ["shared.js", "keysocket-tracksflow.js"]
+    },
+    {
+      "matches": ["*://*.tunein.com/*"],
+      "js": ["shared.js","keysocket-tunein.js"]
     },
     {
       "matches": ["*://*.twitch.tv/*"],

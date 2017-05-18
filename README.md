@@ -18,6 +18,7 @@ when you're listening to music on various streaming websites.
    * Google Play Music
    * Groove Music
    * Hype Machine
+   * iloveradio.de
    * Jamstash
    * Jango.com
    * JB Hi-Fi Now
@@ -56,6 +57,7 @@ when you're listening to music on various streaming websites.
    * thesixtyone
    * Tidal
    * Tracksflow.com
+   * tunein.com
    * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)
