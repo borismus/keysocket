@@ -290,7 +290,7 @@
       "js": ["shared.js","keysocket-xfinity.js"]
     },
     {
-    	"matches": ["http://www.xiami.com/play*"],
+      "matches": ["http://www.xiami.com/play*"],
       "js": ["shared.js", "keysocket-xiami.js"]
     },
     {
