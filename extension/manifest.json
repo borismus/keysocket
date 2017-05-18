@@ -212,6 +212,14 @@
       "js": ["shared.js","keysocket-twitch.js"]
     },
     {
+      "matches": ["*://*.tunein.com/*"],
+      "js": ["shared.js","keysocket-tunein.js"]
+    },
+    {
+      "matches": ["*://*.iloveradio.de/*"],
+      "js": ["shared.js","keysocket-iloveradio.js"]
+    },
+    {
       "matches": ["*://*.livestream.com/*"],
       "js": ["shared.js","keysocket-livestream.js"]
     },
