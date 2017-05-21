@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -290,7 +290,7 @@
       "js": ["shared.js","keysocket-xfinity.js"]
     },
     {
-    	"matches": ["http://www.xiami.com/play*"],
+      "matches": ["http://www.xiami.com/play*"],
       "js": ["shared.js", "keysocket-xiami.js"]
     },
     {
