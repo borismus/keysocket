@@ -233,6 +233,10 @@
       "js": ["shared.js", "keysocket-soundcloud.js"]
     },
     {
+      "matches": ["https://sowndhaus.com/*"],
+      "js": ["shared.js", "keysocket-sowndhaus.js"]
+    },
+    {
       "matches": ["*://*.spotify.com/*"],
       "js": ["shared.js", "keysocket-spotify.js"]
     },
