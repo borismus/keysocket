@@ -189,7 +189,7 @@
       "js": ["shared.js", "keysocket-picartotv.js"]
     },
     {
-      "matches": ["*://plex.tv/web/*"],
+      "matches": ["*://plex.tv/web/*", "*://app.plex.tv/web/*"],
       "js": ["shared.js", "keysocket-plex.js"]
     },
     {
