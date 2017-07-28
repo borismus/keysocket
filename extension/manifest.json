@@ -166,7 +166,7 @@
     },
     {
       "matches": ["*://radio.nrk.no/*"],
-      "js": ["shared.js", "shared-injection.js", "keysocket-nrkradio.js"]
+      "js": ["shared.js", "keysocket-nrkradio.js"]
     },
     {
       "matches": ["*://ok.ru/*"],
