@@ -5,6 +5,6 @@
 
 injectionInit(function (key) {
     if (key === "play-pause") {
-        nrk.modules.player.getApi().toggleplay();
+        nrk.modules.player.api().togglePlay()
     }
 });
