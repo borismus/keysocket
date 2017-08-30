@@ -308,6 +308,10 @@
     {
       "matches": ["*://zvooq.com/*"],
       "js": ["shared.js", "keysocket-zvooq.js"]
+    },
+    {
+      "matches": ["*://music.163.com/*"],
+      "js": ["shared.js", "keysocket-163.js"]
     }
   ]
 }
