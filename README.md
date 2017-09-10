@@ -3,8 +3,9 @@ Allows your keyboard media keys (play/pause, next, previous) to work
 when you're listening to music on various streaming websites.
 
 # Supported Sites
-   * 8tracks
+   * 163 Music
    * 22tracks
+   * 8tracks
    * Amazon Cloud Player
    * Bandcamp
    * Birp
@@ -67,7 +68,6 @@ when you're listening to music on various streaming websites.
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
-   * 163 Music
 
 # Usage
 
