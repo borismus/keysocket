@@ -3,22 +3,30 @@ Allows your keyboard media keys (play/pause, next, previous) to work
 when you're listening to music on various streaming websites.
 
 # Supported Sites
+   * 163 Music
+   * 22tracks
+   * 8tracks
    * Amazon Cloud Player
    * Bandcamp
+   * Birp
    * Bop
+   * Bugs Music
    * Chrome Built-In Player
+   * Comcast/Xfinity
    * Deezer
    * Digitally Imported (di.fm)
    * Gaana.com
    * Google Play Music
    * Groove Music
    * Hype Machine
+   * iloveradio.de
    * Jamstash
    * Jango.com
    * JB Hi-Fi Now
    * Livestream.com
    * Mixcloud
    * Music Choice
+   * Myspace
    * Myzuka.fm
    * Naxos Music Library
    * Netflix
@@ -32,19 +40,26 @@ when you're listening to music on various streaming websites.
    * Plex
    * Pocketcasts.com
    * Prostopleer
+   * Qobuz
    * Rdio
    * Relax-Hub.com
    * Saavn.com
    * Slacker
+   * Sirius XM Radio
    * SomaFM
    * Songza
    * Soundcloud
+   * Sowndhaus
    * Spotify
+   * Spreaker
+   * Streamsquid
+   * Subsonic (and Madsonic)
    * Superplayer.fm
    * Synology Audio Station v.5
    * thesixtyone
    * Tidal
    * Tracksflow.com
+   * tunein.com
    * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)
