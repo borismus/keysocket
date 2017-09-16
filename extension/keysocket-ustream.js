@@ -49,12 +49,15 @@ function ustream_pause () {
     window.extisplaing = false;
 }
 
-function onKeyPress(key) {
-    if (key === PLAY) {
-        if (window.extisplaing) {
-            ustream_pause();
-        } else {
-            ustream_play();
+keySocket.init(
+    "ustream",
+    function (key) {
+        if (key === keySocket.PLAY) {
+            if (window.extisplaing) {
+                ustream_pause();
+            } else {
+                ustream_play();
+            }
         }
     }
-}
+);

@@ -3,8 +3,8 @@ Allows your keyboard media keys (play/pause, next, previous) to work
 when you're listening to music on various streaming websites.
 
 # Supported Sites
+
    * 163 Music
-   * 22tracks
    * 8tracks
    * Amazon Cloud Player
    * Bandcamp
@@ -22,52 +22,59 @@ when you're listening to music on various streaming websites.
    * iloveradio.de
    * Jamstash
    * Jango.com
-   * JB Hi-Fi Now
-   * Livestream.com
    * Mixcloud
-   * Music Choice
+   * Music Choice (untested)
    * Myspace
    * Myzuka.fm
    * Naxos Music Library
    * Netflix
-   * Noon Pacific
+   * Noon Pacific (untested)
    * NRK Radio
    * Ok.ru
-   * Overcast
+   * Overcast (untested)
    * Pandora
    * Phish Tracks
    * Picarto.tv
-   * Plex
+   * Plex (untested)
    * Pocketcasts.com
    * Prostopleer
    * Qobuz
-   * Rdio
    * Relax-Hub.com
    * Saavn.com
    * Slacker
    * Sirius XM Radio
    * SomaFM
-   * Songza
    * Soundcloud
    * Sowndhaus
    * Spotify
    * Spreaker
    * Streamsquid
    * Subsonic (and Madsonic)
-   * Superplayer.fm
-   * Synology Audio Station v.5
+   * Superplayer.fm (untested)
+   * Synology Audio Station v.5 (untested)
    * thesixtyone
-   * Tidal
-   * Tracksflow.com
+   * Tidal (untested)
    * tunein.com
    * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)
+   * XFINITY (untested)
    * Xiami Music
    * YouTube
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
+
+# Untested Sites (after latest changes)
+
+   * Music Choice (account is needed)
+   * Noon Pacific (account is needed)
+   * Overcast (account is needed)
+   * Plex (can't simulate click, not working)
+   * Superplayer.fm (regional restrictions)
+   * Synology (special environment is needed)
+   * Tidal (regional restrictions)
+   * XFINITY (account is needed)
 
 # Usage
 
@@ -114,6 +121,7 @@ document.addEventListener("MediaNext", function () {
 
 # Please contribute!
 
-* Looking for adapters for other music players.
+* Looking for adapters for other music players. Create Pull Requests to contribute. Create Issues to inform us about
+broken sites (but PR is preferable). 
 
 [crx]: https://chrome.google.com/webstore/detail/fphfgdknbpakeedbaenojjdcdoajihik

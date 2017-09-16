@@ -1,6 +1,9 @@
-function onKeyPress(key) {
-    if (key === PLAY) {
-	    var playPauseButton = document.querySelector('#playstop');
-	    simulateClick(playPauseButton);
+keySocket.init(
+    "iloveradio",
+    {
+        "play-pause": "#playstop"
+        // prev is skipped
+        // next is skipped
+        // stop is omitted
     }
-}
+);

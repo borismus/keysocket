@@ -1,6 +1,10 @@
-function onKeyPress(key) {
-    if (key === PLAY) {
-	    var playPauseButton = document.querySelector('.play-button')
-	    simulateClick(playPauseButton);
+keySocket.init(
+    "tunein",
+    {
+        // function example
+        "play-pause": "#playerActionButton"
+        // prev is skipped
+        // next is skipped
+        // stop is omitted
     }
-}
+);

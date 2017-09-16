@@ -1,20 +1,19 @@
-function onKeyPress(key) {
-    if (key == NEXT) {
-        var nextbutton = document.querySelector('button#fwd');
-        simulateClick(nextbutton);
-    } else if (key == PREV) {
-        var prevbutton = document.querySelector('button#rew');
-        simulateClick(prevbutton);
-    } else if (key == PLAY) {
-        var playbutton = document.querySelector('button#play');
-        var pausebutton = document.querySelector('button#pause');
-        var hidebutton = document.querySelector('button.controls.hide');
-        if (hidebutton != null) {
-            if (hidebutton.id == 'play')
-                simulateClick(pausebutton);
-            else
-                simulateClick(playbutton);
-        }
+keySocket.init(
+    "saavn",
+    {
+        "play-pause": function () {
+            var playButton = document.querySelector('button#play');
+            var pauseButton = document.querySelector('button#pause');
+            var hideButton = document.querySelector('button.controls.hide');
+            if (hideButton) {
+                if (hideButton.id === "play")
+                    keySocket.simulateClick(pauseButton);
+                else
+                    keySocket.simulateClick(playButton);
+            }
+        },
+        "prev": "button#rew",
+        "next": "button#fwd"
+        // stop is omitted
     }
-
-}
+);
