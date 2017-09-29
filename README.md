@@ -13,6 +13,7 @@ when you're listening to music on various streaming websites.
    * Bugs Music
    * Chrome Built-In Player
    * Comcast/Xfinity
+   * Crunchyroll
    * Deezer
    * Digitally Imported (di.fm)
    * Gaana.com
