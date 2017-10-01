@@ -279,11 +279,11 @@
     },
     {
       "matches": ["*://music.163.com/*"],
-      "js": ["shared.js", "keysocket-163.js"]
+      "js": ["plugin-api.js", "keysocket-163.js"]
     },
     {
       "matches": ["*://*.crunchyroll.com/*"],
-      "js": ["shared.js", "keysocket-crunchyroll.js"]
+      "js": ["plugin-api.js", "keysocket-crunchyroll.js"]
     }
   ]
 }
