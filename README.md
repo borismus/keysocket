@@ -119,9 +119,49 @@ document.addEventListener("MediaNext", function () {
 });
 ```
 
-# Please contribute!
+# Please, contribute!
 
-* Looking for adapters for other music players. Create Pull Requests to contribute. Create Issues to inform us about
+* Looking for plugins for other music players. Create Pull Requests to contribute. Create Issues to inform us about
 broken sites (but PR is preferable). 
+
+Plugin creation is simple. If you have found a website with media content, that isn't supported by keysocket, just
+write a plugin by yourself and create new Pull Request to share it with others. How to do it?
+
+First of all, determine the fixed part of website's URL, where a media content is shown. In `extension/manifest.json`
+add an item into `content_scripts` array like this:
+
+```
+    {
+      "matches": ["*://example.com/player*"],
+      "js": ["plugin-api.js", "keysocket-example-service-name.js"]
+    },
+```
+
+Create new file into `extension` folder using the pattern `keysocket-example-service-name.js` (use your service name to
+replace `example-service-name` part). Write plugin's code there. Check other plugins for examples.
+
+Typically, plugin can interact with a player using either button press simulation or public API call. The second option
+implies you writing custom JS code to talk to player, while the first one requires just to mention DOM selectors to
+configure keysocket.
+
+```javascript
+keySocket.init('example-service-name', {
+    "play-pause": '...',
+    "prev": '...',
+    "next": '...',
+    "stop": '...'
+});
+```
+
+In the code above two arguments were passed to `keySocket.init` function. The first argument is a plugin name, it used for
+logging and can be anything you want. The second argument is a map used to bind keysocket events (which is caused by
+user pressing control keys) to buttons or code, that handles this event. The events are `play-pause`, `prev`, `next`
+and `stop`. Any of them can be omitted in the map.
+
+So, passing a function as an event handler, you set the code, that will be called when event is thrown. Passing anything
+else, which expected to be string, you define DOM selector to look up for a DOM object to simulate click on it.
+
+Different websites requires different approaches to dial with them. So, make a research to find the best solution for
+your case. Look through the other plugins (`extension/keysocket-*.js` files) for the reference.
 
 [crx]: https://chrome.google.com/webstore/detail/fphfgdknbpakeedbaenojjdcdoajihik
