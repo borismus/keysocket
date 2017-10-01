@@ -1,6 +1,9 @@
-function onKeyPress(key) {
-    if (key === PLAY) {
-        var playPauseButton = document.querySelector('button.ludo-bar__button--playpause');
-        simulateClick(playPauseButton);
+keySocket.init(
+    "nrkradio",
+    {
+        "play-pause": "button.ludo-bar__button--playpause",
+        "prev": ".ludo-bar__button:nth-child(2)",
+        "next": ".ludo-bar__button:nth-child(3)"
+        // stop is omitted
     }
-}
+);

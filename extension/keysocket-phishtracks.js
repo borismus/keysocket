@@ -1,14 +1,9 @@
-function onKeyPress(key) {
-    if (key === NEXT) {
-        var nextButton = document.querySelector('[data-control=next]');
-        simulateClick(nextButton);
-    } else if (key === PLAY) {
-        var playPauseButton = document.querySelector('[data-control=togglePause]');
-        simulateClick(playPauseButton);
-    } else if (key === PREV) {
-        var backButton = document.querySelector('[data-control=prev]');
-        simulateClick(backButton);
+keySocket.init(
+    "plex",
+    {
+        "play-pause": "[data-control=togglePause]",
+        "prev": "[data-control=prev]",
+        "next": "[data-control=next]"
+        // stop is omitted
     }
-}
-
-console.log('keysocket: Loading Phishtracks extension');
+);

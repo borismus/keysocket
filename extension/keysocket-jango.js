@@ -1,12 +1,9 @@
-function onKeyPress(key) {
-    if (key === NEXT) {
-        var nextButton = document.querySelector('#btn-ff button.pcb');
-        simulateClick(nextButton);
-    } else if (key === PLAY) {
-        var playPauseButton = document.querySelector('#btn-playpause button.pcb');
-        simulateClick(playPauseButton);
-    } else if (key === PREV) {
-        var playPrev = document.querySelector('#btn-rewind button.pcb');
-        simulateClick(playPrev);
+keySocket.init(
+    "myspace",
+    {
+        "play-pause": "#btn-playpause button.pcb",
+        "prev": "#btn-rewind button.pcb",
+        "next": "#btn-ff button.pcb"
+        // stop is omitted
     }
-}
+);

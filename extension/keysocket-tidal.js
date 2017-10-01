@@ -1,21 +1,19 @@
-function onKeyPress(key) {
-    if (key === NEXT) {
-        var nextButton = document.querySelector('button.play-controls__next');
-        simulateClick(nextButton);
-    } else if (key === PLAY) {
-        var playButton = document.querySelector('button.play-controls__play');
-        var pauseButton = document.querySelector('button.play-controls__pause');
-        if (isVisible(playButton)) {
-            simulateClick(playButton);
-        } else {
-            simulateClick(pauseButton);
-        }
-    } else if (key === PREV) {
-        var backButton = document.querySelector('button.play-controls__previous');
-        simulateClick(backButton);
-    }
-}
+// not tested (account is needed)
 
-function isVisible(el) {
-    return el.offsetParent != null;
-}
+keySocket.init(
+    "tidal",
+    {
+        "play-pause": function () {
+            var playButton = document.querySelector('button.play-controls__play');
+            var pauseButton = document.querySelector('button.play-controls__pause');
+            if (playButton.offsetParent !== null) {
+                keySocket.simulateClick(playButton);
+            } else {
+                keySocket.simulateClick(pauseButton);
+            }
+        },
+        "prev": "button.play-controls__previous",
+        "next": "button.play-controls__next"
+        // stop is omitted
+    }
+);

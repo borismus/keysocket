@@ -1,6 +1,9 @@
-function onKeyPress(key) {
-    if (key === PLAY) {
-        var playPauseButton = document.querySelector('#webplayer-region .controls a:first-child');
-        simulateClick(playPauseButton);
+keySocket.init(
+    "digitallyimported",
+    {
+        "play-pause": "#webplayer-region .controls a:first-child"
+        // prev is skipped
+        // next is skipped
+        // stop is omitted
     }
-}
+);
