@@ -159,9 +159,9 @@ user pressing control keys) to buttons or code, that handles this event. The eve
 and `stop`. Any of them can be omitted in the map.
 
 So, passing a function as an event handler, you set the code, that will be called when event is thrown. Passing anything
-else, which expected to be string, you define DOM selector to look up for a DOM object to simulate click on it.
+else, which expected to be a string, you define DOM selector to look up for a DOM object to simulate click on it.
 
-Different websites requires different approaches to dial with them. So, make a research to find the best solution for
+Different websites require different approaches to dial with them. So, make a research to find the best solution in
 your case. Look through the other plugins (`extension/keysocket-*.js` files) for the reference.
 
 [crx]: https://chrome.google.com/webstore/detail/fphfgdknbpakeedbaenojjdcdoajihik
