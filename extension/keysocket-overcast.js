@@ -1,10 +1,17 @@
-function onKeyPress(key) {
-    var player = document.getElementById('audioplayer');
-    if (key === PLAY) {
-        if (!player.paused) {
-            player.pause();
-        } else {
-            player.play();
+// not tested (account is needed)
+
+keySocket.init(
+    "overcast.fm",
+    {
+        "play-pause": function () {
+            if (!player.paused) {
+                player.pause();
+            } else {
+                player.play();
+            }
         }
+        // prev is skipped
+        // next is skipped
+        // stop is omitted
     }
-}
+);

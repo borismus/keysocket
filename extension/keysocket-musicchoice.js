@@ -1,7 +1,11 @@
-console.log('keysocket: Loading Music Choice extension');
+// not tested (account is needed)
 
-function onKeyPress(key) {
-    if (key === PLAY) {
-        simulateClick(document.querySelector('#audiomute'));
+keySocket.init(
+    "musicchoise",
+    {
+        "play-pause": "#audiomute"
+        // prev is skipped
+        // next is skipped
+        // stop is omitted
     }
-}
+);

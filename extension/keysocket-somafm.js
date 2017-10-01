@@ -1,6 +1,9 @@
-/* keysocket support for SomaFM at somafm.com */
-function onKeyPress(key) {
-    if (key === PLAY) {
-        simulateClick(document.getElementById('playBtn'));
+keySocket.init(
+    "somafm",
+    {
+        "play-pause": "#playBtn, #stopBtn"
+        // prev is skipped
+        // next is skipped
+        // stop is omitted
     }
-}
+);

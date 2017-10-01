@@ -1,9 +1,9 @@
-function onKeyPress(key) {
-    if (key === PREV) {
-        simulateClick(document.querySelector('#rw'));
-    } else if (key === NEXT) {
-        simulateClick(document.querySelector('#fw'));
-    } else if (key === PLAY) {
-        simulateClick(document.querySelector('#play'));
+keySocket.init(
+    "pleer.net",
+    {
+        "play-pause": "#play",
+        "prev": "#rw",
+        "next": "#fw"
+        // stop is omitted
     }
-}
+);

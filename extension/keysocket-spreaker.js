@@ -1,12 +1,9 @@
-function onKeyPress(key){
-    if(key === NEXT) {
-        var nextButton = document.getElementById('pl_next_button');
-        simulateClick(nextButton);
-    } else if(key === PLAY) {
-        var playPauseButton = document.getElementById('pl_play_button');
-        simulateClick(playPauseButton);
-    } else if(key === PREV) {
-        var backButton = document.getElementById('pl_prev_button');
-        simulateClick(backButton);
+keySocket.init(
+    "spreaker",
+    {
+        "play-pause": ".pl_btn_pause, .pl_btn_play",
+        "prev": ".pl_btn_prev",
+        "next": ".pl_btn_next"
+        // stop is omitted
     }
-}
+);
