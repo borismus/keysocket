@@ -59,6 +59,7 @@ when you're listening to music on various streaming websites.
    * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)
+   * Vimeo
    * XFINITY (untested)
    * Xiami Music
    * YouTube
