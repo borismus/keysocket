@@ -13,6 +13,7 @@ when you're listening to music on various streaming websites.
    * Bugs Music
    * Chrome Built-In Player
    * Comcast/Xfinity
+   * Crunchyroll
    * Deezer
    * Digitally Imported (di.fm)
    * Gaana.com
@@ -58,6 +59,7 @@ when you're listening to music on various streaming websites.
    * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)
+   * Vimeo
    * XFINITY (untested)
    * Xiami Music
    * YouTube

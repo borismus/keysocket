@@ -280,6 +280,14 @@
     {
       "matches": ["*://music.163.com/*"],
       "js": ["plugin-api.js", "keysocket-163.js"]
+    },
+    {
+      "matches": ["*://*.crunchyroll.com/*"],
+      "js": ["plugin-api.js", "keysocket-crunchyroll.js"]
+    },
+    {
+      "matches": ["*://*.vimeo.com/*"],
+      "js": ["plugin-api.js", "keysocket-vimeo.js"]
     }
   ]
 }
