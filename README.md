@@ -52,6 +52,7 @@ when you're listening to music on various streaming websites.
    * Streamsquid
    * Subsonic (and Madsonic)
    * Superplayer.fm (untested)
+   * Supersport.com
    * Synology Audio Station v.5 (untested)
    * thesixtyone
    * Tidal (untested)
