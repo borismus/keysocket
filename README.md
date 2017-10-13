@@ -42,9 +42,9 @@ when you're listening to music on various streaming websites.
    * Qobuz
    * Relax-Hub.com
    * Saavn.com
-   * Slacker
    * Showmax
    * Sirius XM Radio
+   * Slacker
    * SomaFM
    * Soundcloud
    * Sowndhaus
