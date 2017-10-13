@@ -292,6 +292,10 @@
     {
       "matches": ["*://www.supersport.com/*"],
       "js": ["plugin-api.js", "keysocket-supersport.js"]
+    },
+    {
+      "matches": ["*://www.showmax.com/*"],
+      "js": ["plugin-api.js", "keysocket-showmax.js"]
     }
   ]
 }
