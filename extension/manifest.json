@@ -288,6 +288,10 @@
     {
       "matches": ["*://*.vimeo.com/*"],
       "js": ["plugin-api.js", "keysocket-vimeo.js"]
+    },
+    {
+      "matches": ["*://www.supersport.com/*"],
+      "js": ["plugin-api.js", "keysocket-supersport.js"]
     }
   ]
 }
