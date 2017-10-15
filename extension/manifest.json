@@ -177,7 +177,7 @@
       "js": ["plugin-api.js", "keysocket-plex.js"]
     },
     {
-      "matches": ["*://play.pocketcasts.com/*"],
+      "matches": ["*://play.pocketcasts.com/*", "*://playbeta.pocketcasts.com/*"],
       "js": ["plugin-api.js", "keysocket-pocketcasts.js"]
     },
     {
