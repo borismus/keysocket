@@ -9,8 +9,14 @@ keySocket.init(
             }
             keySocket.simulateClick(playPauseButton);
         },
-        "prev": "PreviousTrack",
-        "next": "NextTrack"
+        "prev": function () {
+            var prev = document.getElementById('PreviousTrack');
+            keySocket.simulateClick(prev);
+        },
+        "next": function () {
+            var next = document.getElementById('NextTrack');
+            keySocket.simulateClick(next);
+        }
         // stop is omitted
     }
 );
