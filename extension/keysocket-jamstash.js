@@ -9,8 +9,8 @@ keySocket.init(
             }
             keySocket.simulateClick(playPauseButton);
         },
-        "prev": "PreviousTrack",
-        "next": "NextTrack"
+        "prev": "#PreviousTrack",
+        "next": "#NextTrack"
         // stop is omitted
     }
 );
