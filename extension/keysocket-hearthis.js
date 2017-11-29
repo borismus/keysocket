@@ -7,9 +7,11 @@ keySocket.init(
             } else {
 	            document.querySelector('.fa-play').click()
             }
-        }
+        },
+	    "next": function(){
+		    document.querySelector('.fa-fast-forward').click()
+	    }
 	    // prev is omitted
-	    // next is omitted
 	    // stop is omitted
     }
 );
