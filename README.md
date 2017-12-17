@@ -19,6 +19,7 @@ when you're listening to music on various streaming websites.
    * Gaana.com
    * Google Play Music
    * Groove Music
+   * HearThis.at
    * Hype Machine
    * iloveradio.de
    * Jamstash

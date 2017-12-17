@@ -105,6 +105,10 @@
       "js": ["plugin-api.js", "keysocket-groovemusic.js"]
     },
     {
+      "matches": ["*://hearthis.at/*"],
+      "js": ["plugin-api.js", "keysocket-hearthis.js"]
+    },
+    {
       "matches": ["*://hypem.com/*"],
       "js": ["plugin-api.js", "keysocket-hypem.js"]
     },
