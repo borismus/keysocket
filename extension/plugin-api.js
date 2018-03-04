@@ -122,7 +122,7 @@ keySocket.injectHandler = function (keysocketEventHandler)
         });
     };
 
-	injectCode('(' + handleKeysocketMessages + ')()');
+    injectCode('(' + handleKeysocketMessages + ')()');
     injectCode('window.keysocketOnKeyPressed = ' + keysocketEventHandler);
 
     function injectCode(injection) {

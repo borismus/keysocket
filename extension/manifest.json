@@ -45,7 +45,7 @@
     }
   },
   "background": {
-	"page": "background.html",
+    "page": "background.html",
     "persistent": true
   },
   "page_action": {
