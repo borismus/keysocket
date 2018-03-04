@@ -69,7 +69,7 @@
       "js": ["plugin-api.js","keysocket-eighttracks.js"]
     },
     {
-      "matches": ["https://music.amazon.com/*", "https://music.amazon.de/*", "https://music.amazon.co.jp/*"],
+      "matches": ["https://music.amazon.com/*", "https://music.amazon.de/*", "https://music.amazon.co.jp/*", "https://music.amazon.in/*"],
       "js": ["plugin-api.js", "keysocket-amazon-cloud-player.js"]
     },
     {
