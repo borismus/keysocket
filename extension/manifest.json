@@ -310,6 +310,10 @@
       "js": ["plugin-api.js", "keysocket-showmax.js"]
     },
     {
+      "matches": ["*://app.napster.com/*"],
+      "js": ["plugin-api.js", "keysocket-napster.js"]
+    },
+    {
       "matches": ["*://app.pluralsight.com/*"],
       "js": ["plugin-api.js", "keysocket-pluralsight.js"]
     }
