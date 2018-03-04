@@ -12,23 +12,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+ 
 var tabsState = {};
-var controllableTabs = {}
+var controllableTabs = {};
+var playingTabs = {};
 var lastPlayingTab = -1;
 var activeTab = -1;
-var playingTabs = {};
+
+function togglePlaying(tabId, state) {
+    if(state === undefined) {
+        state = !playingTabs[tabId];
+    }
+    
+    if (playingTabs.hasOwnProperty(tabId) && !state) {
+        delete playingTabs[tabId];
+    } else if (!playingTabs.hasOwnProperty(tabId) && state) {
+        playingTabs[tabId] = true;
+    }
+}
 
 function sendCommand(tabId, command) {
     
     if (command === 'play-pause') {
-        
-        if (playingTabs[tabId]) {
-            delete playingTabs[tabId]
-        } else {
-            playingTabs[tabId] = true;
-        }
-        
+        togglePlaying(tabId);
     }
     
     chrome.tabs.sendMessage(tabId, {command: command});
@@ -40,56 +46,45 @@ function registerTab(tabId) {
         
         chrome.tabs.get(tabId, function(tab) {
             if (tab.audible) {
-                playingTabs[tabId] = true;
+                togglePlaying(tabId, true);
             }
         });
 
         chrome.pageAction.show(tabId);
         //TODO: save state in local storage
-        toggleState(tabId, true)
+        tabsPluginState(tabId, true);
     }
-};
+}
 
 function unregisterTab(tabId) {
     if (controllableTabs.hasOwnProperty(tabId)) {
         delete controllableTabs[tabId];
-        delete tabsState[tabId];
-        
-        if (playingTabs.hasOwnProperty(tabId)) {
-            delete playingTabs[tabId];
-        }
-
+        delete tabsPluginState[tabId];
+        togglePlaying(tabId, false);
     }
-};
+}
 
-function checkActive(tabId, changeInfo) {
+function checkAudible(tabId, changeInfo) {
     if (!changeInfo.hasOwnProperty('audible')) {
         return;
     }
     
     if (!controllableTabs.hasOwnProperty(tabId)) {
-        console.log('ignore unregistered');
+        console.log('ignore unregistered', tabId);
         return;
     }
     
-    var audible = changeInfo.audible;
-    
-    if (audible) {
+    if (changeInfo.audible) {
         playingTabs[tabId] = true;
         lastPlayingTab = tabId;
         console.log('update playingTabs', playingTabs);
     } else {
-        
-        if (playingTabs[tabId] !== undefined) {
-            delete playingTabs[tabId];
-            console.log('delete tab', playingTabs);
-        }
-        
+        togglePlaying(tabId, false);
         lastPlayingTab = tabId;
     }
 }
 
-function toggleState(tabId, state) {
+function tabsPluginState(tabId, state) {
     tabId = tabId.id || tabId
     tabsState[tabId] = state !== undefined && state || !tabsState[tabId]
     postfix = ''
@@ -110,7 +105,6 @@ function toggleState(tabId, state) {
 
 function processAction(command) {
     console.log('Command:', command);
-
     var isPlaying = false;
     
     for (tabId in playingTabs) {
@@ -136,23 +130,25 @@ function processAction(command) {
     }
 }
 
+function processRegisterMessage(request, sender, sendResponse) {
+    console.log('Received tab message: ', request);
+
+    if (request.command == 'registerTab' && sender.tab) {
+        registerTab(sender.tab.id);
+    } else if (request.command == 'unregisterTab' && sender.tab) {
+        unregisterTab(sender.tab.id);
+    }
+}
+
+function switchActiveTab(evt) {
+    activeTab = evt.tabId;
+}
+
 chrome.commands.onCommand.addListener(processAction);
 chrome.tabs.onRemoved.addListener(unregisterTab);
-chrome.tabs.onUpdated.addListener(checkActive);
-chrome.pageAction.onClicked.addListener(toggleState);
+chrome.tabs.onUpdated.addListener(checkAudible);
+chrome.pageAction.onClicked.addListener(tabsPluginState);
+chrome.runtime.onMessage.addListener(processRegisterMessage);
+chrome.tabs.onActivated.addListener(switchActiveTab);
 
-chrome.tabs.onActivated.addListener(function (evt) {
-    activeTab = evt.tabId;
-});
 
-chrome.runtime.onMessage.addListener(
-    function (request, sender, sendResponse) {
-        console.log('Received tab message: ', request);
-
-        if (request.command == 'registerTab' && sender.tab) {
-            registerTab(sender.tab.id);
-        } else if (request.command == 'unregisterTab' && sender.tab) {
-            unregisterTab(sender.tab.id);
-        }
-    }
-);
