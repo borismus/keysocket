@@ -254,6 +254,10 @@
       "js": ["plugin-api.js","keysocket-tunein.js"]
     },
     {
+      "matches": ["*://tver.jp/*"],
+      "js": ["plugin-api.js", "keysocket-tver.js"]
+    },
+    {
       "matches": ["*://*.twitch.tv/*"],
       "js": ["plugin-api.js", "keysocket-twitch.js"]
     },
