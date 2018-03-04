@@ -25,9 +25,11 @@ when you're listening to music on various streaming websites.
    * Jamstash
    * Jango.com
    * Mixcloud
+   * Zing MP3
    * Music Choice (untested)
    * Myspace
    * Myzuka.fm
+   * Napster
    * Naxos Music Library
    * Netflix
    * Noon Pacific (untested)
@@ -38,6 +40,7 @@ when you're listening to music on various streaming websites.
    * Phish Tracks
    * Picarto.tv
    * Plex (untested)
+   * Pluralsight
    * Pocketcasts.com
    * Prostopleer
    * Qobuz
@@ -59,6 +62,7 @@ when you're listening to music on various streaming websites.
    * thesixtyone
    * Tidal (untested)
    * tunein.com
+   * tver.jp
    * Twitch.tv
    * Ustream.tv
    * vk.com (Vkontakte)
