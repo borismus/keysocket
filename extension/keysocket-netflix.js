@@ -1,8 +1,11 @@
 keySocket.init(
     "nexflix",
     {
-        "play-pause": ".player-play-pause",
-        "prev": function () {
+        "play-pause": function () {
+                var playPauseButton = document.querySelector('.button-nfplayerPlay, .button-nfplayerPause');
+                keySocket.simulateClick(playPauseButton);
+        },
+        "prev": function () { //Dont work.
             var prevButtonEpisode = null;
             var episodeList = document.querySelector('li.episode-list-item--expanded');
             if (episodeList) {
@@ -13,13 +16,13 @@ keySocket.init(
                 }
             }
         },
-        "next": "div.player-next-episode",
-        "stop": function () {
-            var isPlaying = document.querySelector('div.player-play-pause.pause');
-            if (isPlaying) {
-                var playPauseButton = document.querySelector('.player-play-pause');
-                keySocket.simulateClick(playPauseButton);
-            }
+        "next":  function () {      
+                var nextButton = document.querySelector('.button-nfplayerNextEpisode');
+                keySocket.simulateClick(nextButton);     
+        },
+        "stop": function () {           
+                var stopButton = document.querySelector('.button-nfplayerPause');
+                keySocket.simulateClick(stopButton);   
         }
     }
 );
