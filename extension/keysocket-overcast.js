@@ -1,17 +1,12 @@
-// not tested (account is needed)
-
-keySocket.init(
-    "overcast.fm",
-    {
-        "play-pause": function () {
-            if (!player.paused) {
-                player.pause();
-            } else {
-                player.play();
-            }
-        }
-        // prev is skipped
-        // next is skipped
-        // stop is omitted
+keySocket.init("overcast.fm", function (key) {
+    if (key === keySocket.NEXT) {
+        var seekForwardButton = document.getElementById("seekforwardbutton");
+        keySocket.simulateClick(seekForwardButton);
+    } else if (key === keySocket.PLAY) {
+        var playPauseButton = document.getElementById("playpausebutton");
+        keySocket.simulateClick(playPauseButton);
+    } else if (key === keySocket.PREV) {
+        var seekBackButton = document.getElementById("seekbackbutton");
+        keySocket.simulateClick(seekBackButton);
     }
-);
+});
