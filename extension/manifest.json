@@ -73,6 +73,10 @@
       "js": ["plugin-api.js", "keysocket-amazon-cloud-player.js"]
     },
     {
+      "matches": ["https://developer.apple.com/videos*"],
+      "js": ["plugin-api.js", "keysocket-apple-developer.js"]
+    },
+    {
       "matches": ["*://*.bandcamp.com/*"],
       "js": ["plugin-api.js", "keysocket-bandcamp.js"]
     },
