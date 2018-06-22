@@ -282,6 +282,10 @@
       "js": ["plugin-api.js", "keysocket-yandex-music-and-radio.js"]
     },
     {
+      "matches": ["*://music.youtube.com/*"],
+      "js": ["plugin-api.js", "keysocket-youtube-music.js"]
+    },
+    {
       "matches": ["*://*.youtube.com/*"],
       "js": ["plugin-api.js", "keysocket-youtube.js"]
     },
