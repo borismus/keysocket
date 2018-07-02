@@ -128,6 +128,8 @@ document.addEventListener("MediaNext", function () {
 });
 ```
 
+Web Page Media Control API documentation [available here](https://github.com/feedbee/web-page-media-control-api-spec).
+
 # Please, contribute!
 
 * Looking for plugins for other music players. Create Pull Requests to contribute. Create Issues to inform us about
