@@ -324,6 +324,10 @@
     {
       "matches": ["*://app.pluralsight.com/*"],
       "js": ["plugin-api.js", "keysocket-pluralsight.js"]
+    },
+    {
+      "matches": ["*://www.metopera.org/Season/On-Demand/opera/*"],
+      "js": ["plugin-api.js", "keysocket-metopera.js"]
     }
   ]
 }
