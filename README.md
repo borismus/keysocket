@@ -128,7 +128,7 @@ document.addEventListener("MediaNext", function () {
 });
 ```
 
-Web Page Media Control API documentation [available here](https://github.com/feedbee/web-page-media-control-api-spec).
+Web Page Media Control API documentation is [available here](https://github.com/feedbee/web-page-media-control-api-spec).
 
 # Please, contribute!
 
