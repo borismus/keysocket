@@ -26,6 +26,7 @@ when you're listening to music on various streaming websites.
    * Jango.com
    * Mixcloud
    * Zing MP3
+   * Met Opera Season On-Demand
    * Music Choice (untested)
    * Myspace
    * Myzuka.fm
@@ -35,7 +36,7 @@ when you're listening to music on various streaming websites.
    * Noon Pacific (untested)
    * NRK Radio
    * Ok.ru
-   * Overcast (untested)
+   * Overcast
    * Pandora
    * Phish Tracks
    * Picarto.tv
@@ -70,6 +71,7 @@ when you're listening to music on various streaming websites.
    * XFINITY (untested)
    * Xiami Music
    * YouTube
+   * YouTube Music
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
@@ -78,7 +80,6 @@ when you're listening to music on various streaming websites.
 
    * Music Choice (account is needed)
    * Noon Pacific (account is needed)
-   * Overcast (account is needed)
    * Plex (can't simulate click, not working)
    * Superplayer.fm (regional restrictions)
    * Synology (special environment is needed)
