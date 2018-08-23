@@ -1,3 +1,9 @@
+[![LICENSE](https://img.shields.io/badge/license-Apache_2.0-lightgrey.svg)](https://github.com/borismus/keysocket/blob/master/COPYING)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/users/fphfgdknbpakeedbaenojjdcdoajihik.svg)](https://chrome.google.com/webstore/detail/key-socket-media-keys/fphfgdknbpakeedbaenojjdcdoajihik)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/rating-count/fphfgdknbpakeedbaenojjdcdoajihik.svg)](https://chrome.google.com/webstore/detail/key-socket-media-keys/fphfgdknbpakeedbaenojjdcdoajihik)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/fphfgdknbpakeedbaenojjdcdoajihik.svg)](https://chrome.google.com/webstore/detail/key-socket-media-keys/fphfgdknbpakeedbaenojjdcdoajihik)
+[![github-stars-image](https://img.shields.io/github/stars/borismus/keysocket.svg?label=github%20stars)](https://github.com/borismus/keysocket)
+
 Global keyboard bindings to control your Chrome-based music player.
 Allows your keyboard media keys (play/pause, next, previous) to work
 when you're listening to music on various streaming websites.
