@@ -133,6 +133,10 @@
       "js": ["plugin-api.js", "keysocket-jango.js"]
     },
     {
+      "matches": ["*://www.linkedin.com/learning/*"],
+      "js": ["plugin-api.js", "keysocket-linkedin-learning.js"]
+    },
+    {
       "matches": ["*://*.mixcloud.com/*"],
       "js": ["plugin-api.js", "keysocket-mixcloud.js"]
     },
