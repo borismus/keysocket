@@ -43,7 +43,6 @@ when you're listening to music on various streaming websites.
    * Plex (untested)
    * Pluralsight
    * Pocketcasts.com
-   * Prostopleer
    * Qobuz
    * Relax-Hub.com
    * Saavn.com
