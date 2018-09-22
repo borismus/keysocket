@@ -192,10 +192,7 @@
       "matches": ["*://play.pocketcasts.com/*", "*://playbeta.pocketcasts.com/*"],
       "js": ["plugin-api.js", "keysocket-pocketcasts.js"]
     },
-    {
-      "matches": ["*://pleer.net/*"],
-      "js": ["plugin-api.js", "keysocket-prostopleer.js"]
-    },
+
     {
       "matches": ["*://*.qobuz.com/*"],
       "js": ["plugin-api.js","keysocket-qobuz.js"]
