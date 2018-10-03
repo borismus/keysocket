@@ -93,6 +93,10 @@
       "js": ["plugin-api.js", "keysocket-builtin-player.js"]
     },
     {
+      "matches": ["*://*.castbox.fm/*"],
+      "js": ["plugin-api.js", "keysocket-castbox.js"]
+    },
+    {
       "matches": ["*://www.deezer.com/*"],
       "js": ["plugin-api.js", "keysocket-deezer.js"]
     },
