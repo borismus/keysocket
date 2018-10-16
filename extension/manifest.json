@@ -169,6 +169,10 @@
       "js": ["plugin-api.js", "keysocket-ok.js"]
     },
     {
+      "matches": ["*://openings.ninja/*"],
+      "js": ["plugin-api.js", "keysocket-openings-ninja.js"]
+    },
+    {
       "matches": ["https://overcast.fm/*"],
       "js": ["plugin-api.js", "keysocket-overcast.js"]
     },
@@ -192,7 +196,6 @@
       "matches": ["*://play.pocketcasts.com/*", "*://playbeta.pocketcasts.com/*"],
       "js": ["plugin-api.js", "keysocket-pocketcasts.js"]
     },
-
     {
       "matches": ["*://*.qobuz.com/*"],
       "js": ["plugin-api.js","keysocket-qobuz.js"]
