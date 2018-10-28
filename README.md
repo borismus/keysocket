@@ -17,6 +17,7 @@ when you're listening to music on various streaming websites.
    * Birp
    * Bop
    * Bugs Music
+   * Castbox.fm
    * Chrome Built-In Player
    * Comcast/Xfinity
    * Crunchyroll
