@@ -16,6 +16,7 @@ when you're listening to music on various streaming websites.
    * Bandcamp
    * Birp
    * Bop
+   * Brain.fm
    * Bugs Music
    * Castbox.fm
    * Chrome Built-In Player

@@ -85,6 +85,10 @@
       "js": ["plugin-api.js", "keysocket-birp.js"]
     },
     {
+      "matches": ["*://brain.fm/*"],
+      "js": ["plugin-api.js", "keysocket-brainfm.js"]
+    },
+    {
       "matches": ["http://music.bugs.co.kr/newPlayer*"],
       "js": ["plugin-api.js","keysocket-bugs.js"]
     },
