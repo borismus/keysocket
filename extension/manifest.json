@@ -137,6 +137,10 @@
       "js": ["plugin-api.js", "keysocket-linkedin-learning.js"]
     },
     {
+      "matches": ["*://listen.moe/*"],
+      "js": ["plugin-api.js", "keysocket-listen-moe.js"]
+    },
+    {
       "matches": ["*://*.mixcloud.com/*"],
       "js": ["plugin-api.js", "keysocket-mixcloud.js"]
     },
