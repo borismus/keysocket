@@ -82,6 +82,7 @@ when you're listening to music on various streaming websites.
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
+   * IbizaSonica.com
 
 # Untested Sites (after latest changes)
 
