@@ -310,6 +310,11 @@
       "js": ["plugin-api.js", "keysocket-zvooq.js"]
     },
     {
+      "matches": ["*://ibizasonica.com/*", "*://dev.sonicabroadcast.com/*"],
+      "js": ["plugin-api.js", "keysocket-ibizasonica.js"],
+      "all_frames": true
+    },
+    {
       "matches": ["*://music.163.com/*"],
       "js": ["plugin-api.js", "keysocket-163.js"]
     },
