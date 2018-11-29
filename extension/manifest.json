@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -85,12 +85,20 @@
       "js": ["plugin-api.js", "keysocket-birp.js"]
     },
     {
+      "matches": ["*://brain.fm/*"],
+      "js": ["plugin-api.js", "keysocket-brainfm.js"]
+    },
+    {
       "matches": ["http://music.bugs.co.kr/newPlayer*"],
       "js": ["plugin-api.js","keysocket-bugs.js"]
     },
     {
       "matches": ["*://*/*.mp3", "*://*/*.mp3?*", "file:///*.mp3"],
       "js": ["plugin-api.js", "keysocket-builtin-player.js"]
+    },
+    {
+      "matches": ["*://*.castbox.fm/*"],
+      "js": ["plugin-api.js", "keysocket-castbox.js"]
     },
     {
       "matches": ["*://www.deezer.com/*"],
@@ -177,6 +185,10 @@
       "js": ["plugin-api.js", "keysocket-ok.js"]
     },
     {
+      "matches": ["*://openings.ninja/*"],
+      "js": ["plugin-api.js", "keysocket-openings-ninja.js"]
+    },
+    {
       "matches": ["https://overcast.fm/*"],
       "js": ["plugin-api.js", "keysocket-overcast.js"]
     },
@@ -199,10 +211,6 @@
     {
       "matches": ["*://play.pocketcasts.com/*", "*://playbeta.pocketcasts.com/*"],
       "js": ["plugin-api.js", "keysocket-pocketcasts.js"]
-    },
-    {
-      "matches": ["*://pleer.net/*"],
-      "js": ["plugin-api.js", "keysocket-prostopleer.js"]
     },
     {
       "matches": ["*://*.qobuz.com/*"],
