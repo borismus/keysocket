@@ -185,6 +185,10 @@
       "js": ["plugin-api.js", "keysocket-openings-ninja.js"]
     },
     {
+      "matches": ["*://openload.co/*"],
+      "js": ["plugin-api.js", "keysocket-openload.js"]
+    },
+    {
       "matches": ["https://overcast.fm/*"],
       "js": ["plugin-api.js", "keysocket-overcast.js"]
     },
