@@ -93,9 +93,17 @@ keySocket.simulateClick = function (element, options) {
     if (options && options.cancelable) {
         clickConfig.cancelable = options.cancelable;
     }
-    var clickDown = new MouseEvent('mousedown', clickConfig);
-    var clickUp = new MouseEvent('mouseup', clickConfig);
-    return element.dispatchEvent(clickDown) && element.dispatchEvent(clickUp);
+
+    console.log(options);
+
+    if (options && options.complex) {
+        var clickDown = new MouseEvent('mousedown', clickConfig);
+        var clickUp = new MouseEvent('mouseup', clickConfig);
+        return element.dispatchEvent(clickDown) && element.dispatchEvent(clickUp);
+    }
+
+    var click = new MouseEvent('click', clickConfig);
+    return element.dispatchEvent(click);
 };
 
 /**
