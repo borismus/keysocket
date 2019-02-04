@@ -340,10 +340,10 @@
     {
       "matches": ["*://www.metopera.org/Season/On-Demand/opera/*"],
       "js": ["plugin-api.js", "keysocket-metopera.js"]
-	},
-	{
-		"matches": ["*://www.noisli.com/*"],
-		"js": ["plugin-api.js", "keysocket-noisli.js"]
-	}
+    },
+    {
+        "matches": ["*://www.noisli.com/*"],
+        "js": ["plugin-api.js", "keysocket-noisli.js"]
+    }
   ]
 }

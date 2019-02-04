@@ -41,6 +41,7 @@ when you're listening to music on various streaming websites.
    * Napster
    * Naxos Music Library
    * Netflix
+   * Noisli (only without account tested)
    * Noon Pacific (untested)
    * NRK Radio
    * Ok.ru
