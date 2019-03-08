@@ -345,6 +345,10 @@
     {
       "matches": ["*://www.metopera.org/Season/On-Demand/opera/*"],
       "js": ["plugin-api.js", "keysocket-metopera.js"]
+    },
+    {
+      "matches": ["*://emp.bbc.co.uk/emp/*"],
+      "js": ["plugin-api.js", "keysocket-iplayer.js"]
     }
   ]
 }
