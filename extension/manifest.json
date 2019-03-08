@@ -340,6 +340,10 @@
     {
       "matches": ["*://www.metopera.org/Season/On-Demand/opera/*"],
       "js": ["plugin-api.js", "keysocket-metopera.js"]
+    },
+    {
+      "matches": ["*://www.mx3creations.com/track/*", "*://mx3creations.com/track/*"],
+      "js": ["plugin-api.js", "keysocket-mx3creations.js"]
     }
   ]
 }
