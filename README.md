@@ -46,6 +46,7 @@ when you're listening to music on various streaming websites.
    * Noon Pacific (untested)
    * NRK Radio
    * Ok.ru
+   * Openload.co
    * Overcast
    * Pandora
    * Phish Tracks
