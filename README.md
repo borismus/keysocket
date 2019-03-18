@@ -21,6 +21,7 @@ when you're listening to music on various streaming websites.
    * Castbox.fm
    * Chrome Built-In Player
    * Comcast/Xfinity
+   * Coursera
    * Crunchyroll
    * Deezer
    * Digitally Imported (di.fm)
@@ -83,6 +84,7 @@ when you're listening to music on various streaming websites.
    * Zvooq
    * Яндекс.Музыка (Yandex.Music)
    * Яндекс.Радио (Yandex.Radio)
+   * IbizaSonica.com
 
 # Untested Sites (after latest changes)
 
