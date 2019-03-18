@@ -69,7 +69,7 @@
       "js": ["plugin-api.js","keysocket-eighttracks.js"]
     },
     {
-      "matches": ["https://music.amazon.com/*", "https://music.amazon.de/*", "https://music.amazon.co.jp/*", "https://music.amazon.in/*"],
+      "matches": ["https://music.amazon.com/*", "https://music.amazon.de/*", "https://music.amazon.co.jp/*", "https://music.amazon.in/*", "https://music.amazon.co.uk/*"],
       "js": ["plugin-api.js", "keysocket-amazon-cloud-player.js"]
     },
     {
@@ -139,6 +139,10 @@
     {
       "matches": ["*://www.jango.com/*"],
       "js": ["plugin-api.js", "keysocket-jango.js"]
+    },
+    {
+      "matches": ["*://www.linkedin.com/learning/*"],
+      "js": ["plugin-api.js", "keysocket-linkedin-learning.js"]
     },
     {
       "matches": ["*://listen.moe/*"],
@@ -310,6 +314,11 @@
       "js": ["plugin-api.js", "keysocket-zvooq.js"]
     },
     {
+      "matches": ["*://ibizasonica.com/*", "*://dev.sonicabroadcast.com/*"],
+      "js": ["plugin-api.js", "keysocket-ibizasonica.js"],
+      "all_frames": true
+    },
+    {
       "matches": ["*://music.163.com/*"],
       "js": ["plugin-api.js", "keysocket-163.js"]
     },
@@ -342,8 +351,12 @@
       "js": ["plugin-api.js", "keysocket-metopera.js"]
     },
     {
-        "matches": ["*://www.noisli.com/*"],
-        "js": ["plugin-api.js", "keysocket-noisli.js"]
+      "matches": ["*://www.coursera.org/learn/*/lecture/*"],
+      "js": ["plugin-api.js", "keysocket-coursera.js"]
+    },
+    {
+      "matches": ["*://www.noisli.com/*"],
+      "js": ["plugin-api.js", "keysocket-noisli.js"]    
     }
   ]
 }
