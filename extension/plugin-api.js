@@ -94,8 +94,6 @@ keySocket.simulateClick = function (element, options) {
         clickConfig.cancelable = options.cancelable;
     }
 
-    console.log(options);
-
     if (options && options.complex) {
         var clickDown = new MouseEvent('mousedown', clickConfig);
         var clickUp = new MouseEvent('mouseup', clickConfig);
