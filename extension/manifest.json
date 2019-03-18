@@ -340,6 +340,10 @@
     {
       "matches": ["*://www.metopera.org/Season/On-Demand/opera/*"],
       "js": ["plugin-api.js", "keysocket-metopera.js"]
+    },
+    {
+      "matches": ["*://www.coursera.org/learn/*/lecture/*"],
+      "js": ["plugin-api.js", "keysocket-coursera.js"]
     }
   ]
 }
