@@ -2,10 +2,16 @@
 
 keySocket.init(
     "plex",
-    {
-        "play-pause": "button[aria-label=\"Play\"], button[aria-label=\"Pause\"]",
-        "prev": "button[aria-label=\"Previous\"]",
-        "next": "button[aria-label=\"Next\"]"
-        // stop is omitted
+    function(key) {
+        if (key === keySocket.NEXT) {
+            var nextButton = document.querySelector("button[aria-label=\"Next\"]");
+            keySocket.simulateClick(nextButton, {complex:true});
+        } else if (key === keySocket.PLAY) {
+            var playPauseButton = document.querySelector("button[aria-label=\"Play\"], button[aria-label=\"Pause\"");
+            keySocket.simulateClick(playPauseButton, {complex:true});
+        } else if (key === keySocket.PREV) {
+            var backButton = document.querySelector("button[aria-label=\"Previous\"]");
+            keySocket.simulateClick(backButton, {complex:true});
+        }
     }
 );

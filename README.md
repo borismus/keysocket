@@ -31,6 +31,7 @@ when you're listening to music on various streaming websites.
    * HearThis.at
    * Hype Machine
    * iloveradio.de
+   * BBC iPlayer
    * Jamstash
    * Jango.com
    * Mixcloud
@@ -46,11 +47,12 @@ when you're listening to music on various streaming websites.
    * Noon Pacific (untested)
    * NRK Radio
    * Ok.ru
+   * Openload.co
    * Overcast
    * Pandora
    * Phish Tracks
    * Picarto.tv
-   * Plex (untested)
+   * Plex
    * Pluralsight
    * Pocketcasts.com
    * Qobuz
@@ -90,7 +92,6 @@ when you're listening to music on various streaming websites.
 
    * Music Choice (account is needed)
    * Noon Pacific (account is needed)
-   * Plex (can't simulate click, not working)
    * Superplayer.fm (regional restrictions)
    * Synology (special environment is needed)
    * Tidal (regional restrictions)
