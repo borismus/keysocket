@@ -1,19 +1,19 @@
-// not tested (account is needed)
+// Tested on Brave Version 0.61.51 Chromium: 73.0.3683.75 (Official Build) (64-bit)
 
 keySocket.init(
     "tidal",
     {
         "play-pause": function () {
-            var playButton = document.querySelector('button.play-controls__play');
-            var pauseButton = document.querySelector('button.play-controls__pause');
-            if (playButton.offsetParent !== null) {
-                keySocket.simulateClick(playButton);
+            var playButton = document.querySelectorAll('[data-test=play]')[0];
+            var pauseButton = document.querySelectorAll('[data-test=pause]')[0];
+            if (playButton) {
+                keySocket.simulateClick(playButton);             
             } else {
                 keySocket.simulateClick(pauseButton);
             }
         },
-        "prev": "button.play-controls__previous",
-        "next": "button.play-controls__next"
+        "prev": "[data-test=previous]",
+        "next": "[data-test=next]"
         // stop is omitted
     }
 );
