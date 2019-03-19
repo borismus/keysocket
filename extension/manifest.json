@@ -362,6 +362,6 @@
 		"matches": ["*://openload.co/*"],
 		"js": ["plugin-api.js", "keysocket-openload.js"],
 		"all_frames": true
-	},
+	}
   ]
 }
