@@ -351,6 +351,10 @@
       "js": ["plugin-api.js", "keysocket-metopera.js"]
     },
     {
+      "matches": ["*://www.mx3creations.com/track/*", "*://mx3creations.com/track/*"],
+      "js": ["plugin-api.js", "keysocket-mx3creations.js"]
+    },
+    }
       "matches": ["*://www.coursera.org/learn/*/lecture/*"],
       "js": ["plugin-api.js", "keysocket-coursera.js"]
     },
