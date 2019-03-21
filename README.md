@@ -32,6 +32,7 @@ when you're listening to music on various streaming websites.
    * Hype Machine
    * iloveradio.de
    * BBC iPlayer
+   * Jamendo
    * Jamstash
    * Jango.com
    * Mixcloud

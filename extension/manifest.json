@@ -354,21 +354,26 @@
       "matches": ["*://www.mx3creations.com/track/*", "*://mx3creations.com/track/*"],
       "js": ["plugin-api.js", "keysocket-mx3creations.js"]
     },
-    }
+    {
       "matches": ["*://www.coursera.org/learn/*/lecture/*"],
       "js": ["plugin-api.js", "keysocket-coursera.js"]
     },
     {
       "matches": ["*://www.noisli.com/*"],
-      "js": ["plugin-api.js", "keysocket-noisli.js"]    
-    }
+      "js": ["plugin-api.js", "keysocket-noisli.js"]
+    },
+    {
       "matches": ["*://emp.bbc.co.uk/emp/*"],
       "js": ["plugin-api.js", "keysocket-iplayer.js"]
-	  },
-	  {
-		  "matches": ["*://openload.co/*"],
-		  "js": ["plugin-api.js", "keysocket-openload.js"],
-		  "all_frames": true
-	  }
+    },
+    {
+      "matches": ["*://openload.co/*"],
+      "js": ["plugin-api.js", "keysocket-openload.js"],
+      "all_frames": true
+    },
+    {
+      "matches": ["*://www.jamendo.com/*"],
+      "js": ["plugin-api.js", "keysocket-jamendo.js"]
+    }
   ]
 }
