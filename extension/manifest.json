@@ -298,7 +298,7 @@
       "js": ["plugin-api.js", "keysocket-xiami.js"]
     },
     {
-      "matches": ["*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*", "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
+      "matches": ["*://music.yandex.com", "*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*", "*://radio.yandex.com", "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
       "js": ["plugin-api.js", "keysocket-yandex-music-and-radio.js"]
     },
     {
