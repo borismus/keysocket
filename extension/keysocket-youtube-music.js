@@ -2,7 +2,7 @@ keySocket.init(
     "youtube.music",
     function (key) {
         if (key === keySocket.NEXT) {
-            var nextButton = document.querySelector('#left-controls > div > paper-icon-button:nth-child(3)');
+            var nextButton = document.querySelector('#left-controls > div > paper-icon-button:nth-child(4)');
             keySocket.simulateClick(nextButton);
         } else if (key === keySocket.PLAY) {
             var playPauseButton = document.querySelector('#left-controls > div > paper-icon-button.play-pause-button.style-scope.ytmusic-player-bar');
