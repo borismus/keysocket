@@ -2,8 +2,8 @@ keySocket.init(
     "rainwave",
     {
         "play-pause": ".audio_icon_play",
-        // "prev": ".inline_player .prevbutton",
-        // "next": ".inline_player .nextbutton"
+        // "prev": "Not used on rainwave",
+        // "next": "Not used on rainwave"
         "stop": ".audio_icon_stop"
     }
 );
