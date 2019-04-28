@@ -372,6 +372,11 @@
       "all_frames": true
     },
     {
+      "matches": ["*://rainwave.cc/*"],
+      "js": ["plugin-api.js", "keysocket-rainwave.js"],
+      "all_frames": true
+    },
+    {
       "matches": ["*://www.jamendo.com/*"],
       "js": ["plugin-api.js", "keysocket-jamendo.js"]
     }
