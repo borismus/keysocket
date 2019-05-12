@@ -364,7 +364,8 @@
     },
     {
       "matches": ["*://emp.bbc.co.uk/emp/*"],
-      "js": ["plugin-api.js", "keysocket-iplayer.js"]
+      "js": ["plugin-api.js", "keysocket-iplayer.js"],
+      "all_frames": true
     },
     {
       "matches": ["*://openload.co/*"],
