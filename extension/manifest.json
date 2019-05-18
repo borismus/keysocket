@@ -375,6 +375,10 @@
     {
       "matches": ["*://www.jamendo.com/*"],
       "js": ["plugin-api.js", "keysocket-jamendo.js"]
+    },
+    {
+      "matches": ["*://www.amazon.co.uk/gp/video/*"],
+      "js": ["plugin-api.js", "keysocket-prime.js"]
     }
   ]
 }
