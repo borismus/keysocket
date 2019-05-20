@@ -129,13 +129,8 @@ keySocket.injectHandler = function (keysocketEventHandler)
         });
     };
 
-    injectFunction(handleKeysocketMessages);
-
+    injectCode('(' + handleKeysocketMessages + ')()');
     injectCode('window.keysocketOnKeyPressed = ' + keysocketEventHandler);
-
-    function injectFunction(injectionFunction) {
-        injectCode('(' + injectionFunction + ')()');
-    }
 
     function injectCode(injection) {
         var injectedScript = document.createElement('script');

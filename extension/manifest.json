@@ -45,7 +45,7 @@
     }
   },
   "background": {
-    "scripts": ["background.js"],
+    "page": "background.html",
     "persistent": true
   },
   "page_action": {
