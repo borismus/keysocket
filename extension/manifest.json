@@ -77,6 +77,10 @@
       "js": ["plugin-api.js", "keysocket-apple-developer.js"]
     },
     {
+      "matches": ["*://ani.gamer.com.tw/animeVideo.php*"],
+      "js": ["plugin-api.js", "keysocket-bahamut-animation.js"]
+    },
+    {
       "matches": ["*://*.bandcamp.com/*"],
       "js": ["plugin-api.js", "keysocket-bandcamp.js"]
     },
