@@ -1,4 +1,4 @@
-[![LICENSE](https://img.shields.io/badge/license-Apache_2.0-lightgrey.svg)](https://github.com/borismus/keysocket/blob/master/COPYING)
+﻿[![LICENSE](https://img.shields.io/badge/license-Apache_2.0-lightgrey.svg)](https://github.com/borismus/keysocket/blob/master/COPYING)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/users/fphfgdknbpakeedbaenojjdcdoajihik.svg)](https://chrome.google.com/webstore/detail/key-socket-media-keys/fphfgdknbpakeedbaenojjdcdoajihik)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/rating-count/fphfgdknbpakeedbaenojjdcdoajihik.svg)](https://chrome.google.com/webstore/detail/key-socket-media-keys/fphfgdknbpakeedbaenojjdcdoajihik)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/fphfgdknbpakeedbaenojjdcdoajihik.svg)](https://chrome.google.com/webstore/detail/key-socket-media-keys/fphfgdknbpakeedbaenojjdcdoajihik)
@@ -13,6 +13,7 @@ when you're listening to music on various streaming websites.
    * 163 Music
    * 8tracks
    * Amazon Cloud Player
+   * Apple Music
    * Bandcamp
    * Birp
    * Bop
