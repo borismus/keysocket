@@ -374,6 +374,10 @@
     {
       "matches": ["*://www.jamendo.com/*"],
       "js": ["plugin-api.js", "keysocket-jamendo.js"]
+    },
+    {
+      "matches": ["*://beta.music.apple.com/*"],
+      "js": ["plugin-api.js", "keysocket-apple-music.js"]
     }
   ]
 }
