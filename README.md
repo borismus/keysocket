@@ -19,6 +19,7 @@ when you're listening to music on various streaming websites.
    * Brain.fm
    * Bugs Music
    * Castbox.fm
+   * CBC/Radio-Canada
    * Chrome Built-In Player
    * Comcast/Xfinity
    * Coursera

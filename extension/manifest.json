@@ -101,6 +101,10 @@
       "js": ["plugin-api.js", "keysocket-castbox.js"]
     },
     {
+      "matches": ["*://www.cbc.ca/listen/*"],
+      "js": ["plugin-api.js", "keysocket-cbc.js"]
+    },
+    {
       "matches": ["*://www.deezer.com/*"],
       "js": ["plugin-api.js", "keysocket-deezer.js"]
     },
