@@ -13,6 +13,7 @@ when you're listening to music on various streaming websites.
    * 163 Music
    * 8tracks
    * Amazon Cloud Player
+   * Amazon Prime Video
    * Bandcamp
    * Birp
    * Bop
@@ -32,6 +33,7 @@ when you're listening to music on various streaming websites.
    * Hype Machine
    * iloveradio.de
    * BBC iPlayer
+   * Jamendo
    * Jamstash
    * Jango.com
    * Mixcloud
@@ -43,6 +45,7 @@ when you're listening to music on various streaming websites.
    * Napster
    * Naxos Music Library
    * Netflix
+   * Noisli (only without account tested)
    * Noon Pacific (untested)
    * NRK Radio
    * Ok.ru

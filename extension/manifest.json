@@ -1,6 +1,6 @@
 {
   "name": "Key Socket Media Keys",
-  "version": "0.9.8",
+  "version": "0.9.10.1",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -298,7 +298,7 @@
       "js": ["plugin-api.js", "keysocket-xiami.js"]
     },
     {
-      "matches": ["*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*", "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
+      "matches": ["*://music.yandex.com/*", "*://music.yandex.ru/*", "*://music.yandex.by/*", "*://music.yandex.ua/*", "*://music.yandex.kz/*", "*://music.yandex.tr/*", "*://radio.yandex.com/*", "*://radio.yandex.ru/*", "*://radio.yandex.by/*", "*://radio.yandex.ua/*", "*://radio.yandex.kz/*", "*://radio.yandex.tr/*"],
       "js": ["plugin-api.js", "keysocket-yandex-music-and-radio.js"]
     },
     {
@@ -351,17 +351,34 @@
       "js": ["plugin-api.js", "keysocket-metopera.js"]
     },
     {
+      "matches": ["*://www.mx3creations.com/track/*", "*://mx3creations.com/track/*"],
+      "js": ["plugin-api.js", "keysocket-mx3creations.js"]
+    },
+    {
       "matches": ["*://www.coursera.org/learn/*/lecture/*"],
       "js": ["plugin-api.js", "keysocket-coursera.js"]
     },
     {
+      "matches": ["*://www.noisli.com/*"],
+      "js": ["plugin-api.js", "keysocket-noisli.js"]
+    },
+    {
       "matches": ["*://emp.bbc.co.uk/emp/*"],
-      "js": ["plugin-api.js", "keysocket-iplayer.js"]
-	},
-	{
-		"matches": ["*://openload.co/*"],
-		"js": ["plugin-api.js", "keysocket-openload.js"],
-		"all_frames": true
-	}
+      "js": ["plugin-api.js", "keysocket-iplayer.js"],
+      "all_frames": true
+    },
+    {
+      "matches": ["*://openload.co/*"],
+      "js": ["plugin-api.js", "keysocket-openload.js"],
+      "all_frames": true
+    },
+    {
+      "matches": ["*://www.jamendo.com/*"],
+      "js": ["plugin-api.js", "keysocket-jamendo.js"]
+    },
+    {
+      "matches": ["*://www.amazon.co.uk/gp/video/*"],
+      "js": ["plugin-api.js", "keysocket-prime.js"]
+    }
   ]
 }
