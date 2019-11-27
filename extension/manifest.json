@@ -237,7 +237,7 @@
       "js": ["plugin-api.js", "keysocket-soundcloud.js"]
     },
     {
-      "matches": ["https://sowndhaus.com/*"],
+      "matches": ["https://sowndhaus.audio/*"],
       "js": ["plugin-api.js", "keysocket-sowndhaus.js"]
     },
     {
