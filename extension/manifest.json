@@ -374,6 +374,10 @@
     {
       "matches": ["*://www.jamendo.com/*"],
       "js": ["plugin-api.js", "keysocket-jamendo.js"]
+    },
+    {
+      "matches": ["*://cirrusretro.com/listen/*"],
+      "js": ["plugin-api.js", "keysocket-cirrusretro.js"]
     }
   ]
 }

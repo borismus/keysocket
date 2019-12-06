@@ -20,6 +20,7 @@ when you're listening to music on various streaming websites.
    * Bugs Music
    * Castbox.fm
    * Chrome Built-In Player
+   * Cirrus Retro
    * Comcast/Xfinity
    * Coursera
    * Crunchyroll
