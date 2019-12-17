@@ -378,6 +378,10 @@
     {
       "matches": ["*://cirrusretro.com/listen/*"],
       "js": ["plugin-api.js", "keysocket-cirrusretro.js"]
+    },
+    {
+      "matches": ["*://gamemusic.multimedia.cx/listen/*"],
+      "js": ["plugin-api.js", "keysocket-gamemusicmultimediacx.js"]
     }
   ]
 }
