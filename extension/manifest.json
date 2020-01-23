@@ -262,7 +262,7 @@
       "js": ["plugin-api.js", "keysocket-superplayer.js"]
     },
     {
-      "matches": ["*://*/webman/*", "*://*/audio/"],
+      "matches": ["*://*/webman/*", "*://*/audio/", "*://*/*SYNO.SDS.AudioStation.Application*"],
       "js": ["plugin-api.js", "keysocket-synology.js"]
     },
     {
