@@ -104,6 +104,35 @@ keySocket.simulateClick = function (element, options) {
     return element.dispatchEvent(click);
 };
 
+
+/**
+ * Use keySocket.simulatePointer to emulate user pointer click on web page control (button, link or other active element).
+ *
+ * @param element
+ * @param options
+ * @returns {boolean}
+ */
+keySocket.simulatePointer = function (element, options) {
+    if (!element) {
+        console.log('keysocket: cannot simulate click, element undefined');
+        return false;
+    }
+
+    var clickConfig = {
+        bubbles: true,
+        cancelable: false,
+        view: window
+    };
+    if (options && options.cancelable) {
+        clickConfig.cancelable = options.cancelable;
+    }
+
+    var clickDown = new PointerEvent('pointerdown', clickConfig);
+	var clickUp = new PointerEvent('pointerup', clickConfig);
+	return element.dispatchEvent(clickDown) && element.dispatchEvent(clickUp);
+};
+
+
 /**
  * keySocket.injectHandler is used for players that have an API on web page side.
  * Extension can't execute web page JS functions in raw way from the extension's scope.

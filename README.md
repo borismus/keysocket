@@ -13,6 +13,7 @@ when you're listening to music on various streaming websites.
    * 163 Music
    * 8tracks
    * Amazon Cloud Player
+   * Amazon Prime Video
    * Bandcamp
    * Birp
    * Bop
