@@ -310,6 +310,11 @@
       "js": ["plugin-api.js", "keysocket-youtube.js"]
     },
     {
+      "matches": ["*://*.youtube.com/embed/*"],
+      "js": ["plugin-api.js", "keysocket-youtube-embed.js"],
+      "all_frames": true
+    },
+    {
       "matches": ["*://zvooq.com/*"],
       "js": ["plugin-api.js", "keysocket-zvooq.js"]
     },
