@@ -93,7 +93,7 @@
       "js": ["plugin-api.js","keysocket-bugs.js"]
     },
     {
-      "matches": ["*://*/*.mp3", "*://*/*.mp3?*", "file:///*.mp3"],
+      "matches": ["*://*/*.mp3", "*://*/*.mp3?*", "file:///*.mp3", "*://*/*.m4a", "*://*/*.m4a?*", "file:///*.m4a"],
       "js": ["plugin-api.js", "keysocket-builtin-player.js"]
     },
     {
