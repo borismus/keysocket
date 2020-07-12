@@ -27,6 +27,7 @@ when you're listening to music on various streaming websites.
    * Digitally Imported (di.fm)
    * Gaana.com
    * Google Play Music
+   * Google Podcasts
    * Groove Music
    * HearThis.at
    * Hype Machine

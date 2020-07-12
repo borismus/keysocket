@@ -374,6 +374,10 @@
     {
       "matches": ["*://www.jamendo.com/*"],
       "js": ["plugin-api.js", "keysocket-jamendo.js"]
+    },
+    {
+      "matches": ["https://podcasts.google.com/"],
+      "js": ["plugin-api.js", "keysocket-google-podcasts.js"]
     }
   ]
 }
