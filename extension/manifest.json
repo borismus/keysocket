@@ -374,6 +374,10 @@
     {
       "matches": ["*://www.jamendo.com/*"],
       "js": ["plugin-api.js", "keysocket-jamendo.js"]
+    },
+    {
+      "matches": ["*://www.jiosaavn.com/*"],
+      "js": ["plugin-api.js", "keysocket-jiosaavan.js"]
     }
   ]
 }
