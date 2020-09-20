@@ -109,6 +109,10 @@
       "js": ["plugin-api.js", "keysocket-digitallyimported.js"]
     },
     {
+      "matches": ["*://www.disneyplus.com/*/video/*"],
+      "js": ["plugin-api.js", "keysocket-disney-plus.js"]
+    },
+    {
       "matches": ["*://*.gaana.com/*"],
       "js": ["plugin-api.js", "keysocket-gaana.js"]
     },
