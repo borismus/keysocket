@@ -1,17 +1,17 @@
 keySocket.init(
     "youtube.music",
     function (key) {
-        if (key === keySocket.NEXT) {
-            var nextButton = document.querySelector('#left-controls > div > paper-icon-button.next-button');
+		if (key === keySocket.NEXT) {
+            var nextButton = document.querySelector('#left-controls > div > tp-yt-paper-icon-button.next-button');
             keySocket.simulateClick(nextButton);
         } else if (key === keySocket.PLAY) {
-            var playPauseButton = document.querySelector('#left-controls > div > paper-icon-button.play-pause-button');
+            var playPauseButton = document.querySelector('#left-controls > div > tp-yt-paper-icon-button.play-pause-button');
             playPauseButton.click();
         } else if (key === keySocket.PREV) {
-            var backButton = document.querySelector('#left-controls > div > paper-icon-button.previous-button');
+            var backButton = document.querySelector('#left-controls > div > tp-yt-paper-icon-button.previous-button');
             keySocket.simulateClick(backButton);
         } else if (key === keySocket.STOP) {
-            var stopButton = document.querySelector('#left-controls > div > paper-icon-button.play-pause-button');
+            var stopButton = document.querySelector('#left-controls > div > tp-yt-paper-icon-button.play-pause-button');
             stopButton.click();
         }
     }
