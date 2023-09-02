@@ -153,6 +153,10 @@
       "js": ["plugin-api.js", "keysocket-mixcloud.js"]
     },
     {
+      "matches": ["*://*.musi.sh/*"],
+      "js": ["plugin-api.js", "keysocket-musish.js"]
+    },
+    {
       "matches": ["*://*.musicchoice.com/*"],
       "js": ["plugin-api.js", "keysocket-musicchoice.js"]
     },
