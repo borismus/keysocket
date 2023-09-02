@@ -1,10 +1,9 @@
 keySocket.init(
     "tunein",
     {
-        // function example
-        "play-pause": "[data-testid=profilePlayerActionButton]"
-        // prev is skipped
-        // next is skipped
-        // stop is omitted
+        "play-pause": "[data-testid=playButtonWrapper] svg",
+        "stop": "[data-testid=player-status-playing]"
+        // prev is omitted
+        // next is omitted
     }
 );
