@@ -1,9 +1,9 @@
 keySocket.init(
     "spotify",
     {
-        "play-pause": ".spoticon-pause-16, .spoticon-play-16",
-        "prev": ".spoticon-skip-back-16",
-        "next": ".spoticon-skip-forward-16",
-        "stop": ".spoticon-pause-16"
+        "play-pause": "[data-testid=control-button-playpause]",
+        "prev": "[data-testid=control-button-skip-back]",
+        "next": "[data-testid=control-button-skip-forward]",
+        "stop": "button[aria-label=Pause]"
     }
 );
