@@ -35,6 +35,7 @@ when you're listening to music on various streaming websites.
    * Jamendo
    * Jamstash
    * Jango.com
+   * Kick.com
    * Mixcloud
    * Zing MP3
    * Met Opera Season On-Demand
