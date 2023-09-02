@@ -9,7 +9,7 @@
   "description": "Control your favorite web-based music player with your keyboard's media keys",
   "homepage_url": "https://github.com/borismus/keysocket",
   "permissions": ["tabs", "contextMenus"],
-  "manifest_version": 2,
+  "manifest_version": 3,
   "commands": {
     "prev": {
       "suggested_key": {
@@ -45,10 +45,10 @@
     }
   },
   "background": {
-    "scripts": ["background.js"],
-    "persistent": true
+    "service_worker": "background_service_worker.js",
+    "type": "module"
   },
-  "page_action": {
+  "action": {
     "default_title": "Key Socket Media Keys extension",
     "default_icon": {
       "19": "icons/icon19.png",
