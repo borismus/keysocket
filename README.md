@@ -38,6 +38,7 @@ when you're listening to music on various streaming websites.
    * Mixcloud
    * Zing MP3
    * Met Opera Season On-Demand
+   * Musi.sh
    * Music Choice (untested)
    * Myspace
    * Myzuka.fm
