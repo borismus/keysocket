@@ -14,6 +14,6 @@ keySocket.init(
                 button.click();
             }
         },
-        "stop": "[data-test=player-controls.pause-btn]"
+        "stop": "[\"data-test=player-controls.pause-btn\"]"
     }
 );
