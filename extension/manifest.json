@@ -129,6 +129,10 @@
       "js": ["plugin-api.js", "keysocket-hypem.js"]
     },
     {
+      "matches": ["*://*.idagio.com/*"],
+      "js": ["plugin-api.js","keysocket-idagio.js"]
+    },
+    {
       "matches": ["*://*.iloveradio.de/*"],
       "js": ["plugin-api.js","keysocket-iloveradio.js"]
     },
