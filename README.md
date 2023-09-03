@@ -30,6 +30,7 @@ when you're listening to music on various streaming websites.
    * Groove Music
    * HearThis.at
    * Hype Machine
+   * idagio.com
    * iloveradio.de
    * BBC iPlayer
    * Jamendo
