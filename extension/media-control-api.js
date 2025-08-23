@@ -32,10 +32,17 @@ document.addEventListener("MediaControlStateChanged", function (event) {
     }
 });
 
-// Unregister tab before move to another URI
-window.onunload = function() {
+// Unregister tab before navigating away or entering bfcache
+window.addEventListener("pagehide", function () {
     chrome.runtime.sendMessage({command: "unregisterTab"});
-};
+});
+
+// If restored from bfcache, re-register based on current controllable state
+window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+        registerOrUnregisterPage(isPageMediaControllable());
+    }
+});
 
 // Initial tab registration by meta tag
 registerOrUnregisterPage(isPageMediaControllable());
